@@ -15,6 +15,7 @@ StateFlags = {
 
 local ctl = {}
 _distance = 5
+_angels = -1
 
 
 function ctl.log_table(table)
@@ -229,6 +230,20 @@ function ctl.getDistanceMeters()
 end
 
 
+function ctl.setAngels(angels, silent)
+    _angels = angels
+    if (not silent) then ctl.updatedSettings() end
+end
+
+function ctl.getAngels()
+    if _angels > -1 then
+        return _angels .. 'k'
+    else
+        return "eq"
+    end
+end
+
+
 function ctl.setSkillLevel(skill, silent)
     _skill = skill
     if (not silent) then ctl.updatedSettings() end
@@ -246,7 +261,7 @@ function ctl.updatedSettings()
 end
 
 function ctl.getSettings( ... )
-    return ctl.getNumberOfEnemies() .. "× " .. ctl.getSkillDesc() .. ' ' .. ctl.getEnemyDesc() .. " @ " .. _distance .. "nm"
+    return ctl.getNumberOfEnemies() .. "× " .. ctl.getSkillDesc() .. ' ' .. ctl.getEnemyDesc() .. " @ " .. _distance .. "nm alt:" .. ctl.getAngels()
 end
 
 
@@ -331,7 +346,7 @@ function ctl.spawnGroup(rnd)
     local unit = newData.units[1]
     unit.skill = _skill
     ctl.log_table(newData)
-        
+    
     local spawnWaypoint = mist.utils.vecToWP(spawnPoint)
     local middleWaypoint = mist.utils.vecToWP(middlePoint)
     local playerPosition = mist.utils.unitToWP(player)
@@ -340,7 +355,14 @@ function ctl.spawnGroup(rnd)
     firstWaypoint = route[1]
     firstWaypoint.x = spawnWaypoint.x
     firstWaypoint.y = spawnWaypoint.y
-    firstWaypoint.alt = spawnWaypoint.alt
+
+    if _angels > -1 then
+        local altInMeters = mist.utils.feetToMeters(_angels * 1000)
+        spawnPoint.y = altInMeters
+        firstWaypoint.alt = altInMeters
+        middleWaypoint.alt = altInMeters
+        unit.alt = altInMeters
+    end
 
     playerPosition.task = firstWaypoint.task
     playerPosition.type = firstWaypoint.type
@@ -351,6 +373,7 @@ function ctl.spawnGroup(rnd)
         [1] = firstWaypoint,
         [2] = middleWaypoint
     }
+
 
     newData.units = {}
     for i = 1, numberOfEnemies do
@@ -483,6 +506,19 @@ function ctl.initializeF10Menu()
     local cmd50 = missionCommands.addCommand("75 miles", distanceMenu, ctl.setDistance, 75)
     local cmd75 = missionCommands.addCommand("100 miles", distanceMenu, ctl.setDistance, 100)
     local cmd100 = missionCommands.addCommand("150 miles", distanceMenu, ctl.setDistance, 150)
+
+    --angels
+    local angelsMenu = missionCommands.addSubMenu("Altitude")
+    local cmdMyAlt  = missionCommands.addCommand("my altitude", angelsMenu, ctl.setAngels, -1)
+    local cmd1  = missionCommands.addCommand("1,000 feet", angelsMenu, ctl.setAngels, 1)
+    local cmd5  = missionCommands.addCommand("5,000 feet", angelsMenu, ctl.setAngels, 5)
+    local cmd10 = missionCommands.addCommand("10k feet", angelsMenu, ctl.setAngels, 10)
+    local cmd15 = missionCommands.addCommand("15k feet", angelsMenu, ctl.setAngels, 15)
+    local cmd20 = missionCommands.addCommand("20k feet", angelsMenu, ctl.setAngels, 20)
+    local cmd25 = missionCommands.addCommand("25k feet", angelsMenu, ctl.setAngels, 25)
+    local cmd30 = missionCommands.addCommand("30k feet", angelsMenu, ctl.setAngels, 30)
+    local cmd40 = missionCommands.addCommand("40k feet", angelsMenu, ctl.setAngels, 40)
+    local cmd50 = missionCommands.addCommand("50k feet", angelsMenu, ctl.setAngels, 50)
 
     --enemy skill
     local skillMenu = missionCommands.addSubMenu("Enemy Skill")
