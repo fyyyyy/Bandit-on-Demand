@@ -18,7 +18,7 @@ _distance = 5
 _angels = -1
 
 
-function ctl.log_table(table)
+function log_table(table)
     mist.log:warn(mist.utils.oneLineSerialize(table))
 end
 
@@ -345,7 +345,7 @@ function ctl.spawnGroup(rnd)
 
     local unit = newData.units[1]
     unit.skill = _skill
-    ctl.log_table(newData)
+    log_table(newData)
     
     local spawnWaypoint = mist.utils.vecToWP(spawnPoint)
     local middleWaypoint = mist.utils.vecToWP(middlePoint)
@@ -386,15 +386,10 @@ function ctl.spawnGroup(rnd)
         gpName = newData.groupName,
         groupData = newData,
         route = newData.route,
-        -- doesnt work for air units
-        --disperse = true,
-        --maxDisp = 50,
-        --radius = 100,
-        --innerRadius = 5,
-        --anyTerrain = true,
         action = 'respawn',
     }
     g = mist.teleportToPoint(vars)
+    log_table(g)
 end
 
 function ctl.spawnRandomGroup()
