@@ -8,7 +8,7 @@ HOW TO USE\
 \
 2. THEN SELECT THE 'Enemy Type' OF AIRCRAFT YOU WANT TO FLY AGAINST\
 \
-3. TURN OFF ACTIVE PAUSE TO START\
+3. SELECT COMMANDS TO SPAWN THE ENEMY\
 ====================",
     ["DictKey_descriptionText_1"] = "BFM (Basic Fighter Maneuvers) and BVR Trainer for F-14B & F-14A\
 \
@@ -27,7 +27,7 @@ Please use VoiceAttack or F10 Menu:\
 ",
     ["DictKey_ActionRadioText_7"] = "",
     ["DictKey_ActionText_113"] = "SAM sites OFF",
-    ["DictKey_ActionText_60"] = "Loading Basic Fighter Maneuvers (BFM) Training Program. Please wait...",
+    ["DictKey_ActionText_60"] = "Loading Bandit On Demand BFM & BVR Training Program. Please wait...",
     ["DictKey_descriptionNeutralsTask_4"] = "",
     ["DictKey_ActionText_115"] = "Auto-restart ON",
     ["DictKey_ActionText_110"] = "...reloading...",
