@@ -1,0 +1,39 @@
+dictionary = 
+{
+    ["DictKey_ActionText_10"] = "Loading ...please wait...",
+    ["DictKey_ActionText_6"] = "THIS MISSION IS DESIGNED TO SPAWN WAVE AFTER WAVE OF ENEMIES TO TEST YOUR SKILL.\
+HOW TO USE\
+==================\
+1. USE F10 MENU TO SELECT 'Enemy Count' \
+\
+2. THEN SELECT THE 'Enemy Type' OF AIRCRAFT YOU WANT TO FLY AGAINST\
+\
+3. TURN OFF ACTIVE PAUSE TO START\
+====================",
+    ["DictKey_descriptionText_1"] = "BFM (Basic Fighter Maneuvers) and BVR Trainer for F-14B & F-14A\
+\
+",
+    ["DictKey_descriptionBlueTask_3"] = "USAGE:\
+=======================\
+Please use the F10 Menu:\
+        1. Select number of enemies\
+        2. Select type of enemy aircraft\
+        3. Use the Command menu to 'Spawn Group'\
+        4. Unpause the game to start\
+",
+    ["DictKey_ActionText_114"] = "Auto-restart OFF",
+    ["DictKey_ActionRadioText_7"] = "",
+    ["DictKey_ActionText_113"] = "SAM sites OFF",
+    ["DictKey_ActionText_60"] = "Loading Basic Fighter Maneuvers (BFM) Training Program. Please wait...",
+    ["DictKey_descriptionNeutralsTask_4"] = "",
+    ["DictKey_sortie_5"] = "",
+    ["DictKey_ActionText_110"] = "...reloading...",
+    ["DictKey_ActionText_95"] = "This mission is designed to test your piloting skill in BVR and BFM.\
+\
+You and your opponents will be armed with cannons or missiles. \
+\
+You will start at angels 20. Spawn bandits with VoiceAttack or F10 comms menu.",
+    ["DictKey_ActionText_112"] = "SAM sites ON",
+    ["DictKey_ActionText_115"] = "Auto-restart ON",
+    ["DictKey_descriptionRedTask_2"] = "",
+} -- end of dictionary
