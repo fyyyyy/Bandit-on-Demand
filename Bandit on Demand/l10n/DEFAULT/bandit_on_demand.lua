@@ -465,8 +465,6 @@ function ctl.initializeF10Menu()
     local twoCmd = missionCommands.addCommand("2× bandits", countMenu, ctl.setNumEnemies, 2)
     local threeCmd = missionCommands.addCommand("3× bandits", countMenu, ctl.setNumEnemies, 3)
     local fourCmd = missionCommands.addCommand("4× bandits", countMenu, ctl.setNumEnemies, 4)
-    local fiveCmd = missionCommands.addCommand("5× bandits", countMenu, ctl.setNumEnemies, 5)
-    local sixCmd = missionCommands.addCommand("6× bandits", countMenu, ctl.setNumEnemies, 6)
   
     --enemy type
     local enemiesMenu = missionCommands.addSubMenu("Enemy Type")
