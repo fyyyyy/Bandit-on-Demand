@@ -377,22 +377,46 @@ function ctl.spawnGroup(rnd)
         [2] = middleWaypoint
     }
 
+    -- Spawn enemies as individuals rather than inside a group. This improves AI behaviour in a guns/IR missiles dogfight.
+    -- The group AI works OK with radar missiles, but not with guns or IR. As only one aircraft in the group will get on your six.
+    local spawnAsGroup = false
+    if (spawnAsGroup) then
+        newData.units = {}
+        for i = 1, numberOfEnemies do
+            newData.units[i] = mist.utils.deepCopy(unit)
+            newData.units[i].unitName = string.sub(grp, 5) .. '@' .. _skill .. '-' .. i
+        end
 
-    newData.units = {}
-    for i = 1, numberOfEnemies do
-        newData.units[i] = mist.utils.deepCopy(unit)
-        newData.units[i].unitName = string.sub(grp, 5) .. '@' .. _skill .. '-' .. i
+        vars = {
+            point = spawnPoint,
+            gpName = newData.groupName,
+            groupData = newData,
+            route = newData.route,
+            action = 'respawn',
+        }
+        g = mist.teleportToPoint(vars)
+        log_table(g)
+    else -- spawn each aircraft as individual group - improves AI behaviour
+        newData.units = {[1] = unit}
+
+        for i = 1, numberOfEnemies do
+
+            singleUnit = mist.utils.deepCopy(newData)
+        
+            singleUnit.units[1].unitName = string.sub(grp, 5) .. '@' .. _skill .. '-' .. i
+            
+            vars = {
+                point = spawnPoint,
+                gpName = singleUnit.groupName .. '_' .. i,
+                groupData = singleUnit,
+                route = singleUnit.route,
+                action = 'respawn',
+            }
+            g = mist.teleportToPoint(vars)
+            log_table(g)
+        end
     end
 
-    vars = {
-        point = spawnPoint,
-        gpName = newData.groupName,
-        groupData = newData,
-        route = newData.route,
-        action = 'respawn',
-    }
-    g = mist.teleportToPoint(vars)
-    log_table(g)
 end
 
 function ctl.spawnRandomGroup()
