@@ -9,8 +9,8 @@ mission =
             [3] = "c_stop_wait_for_user();a_do_script_file(getValueResourceByKey(\"ResKey_Action_123\"));c_start_wait_for_user(2, 999); mission.trig.func[3]=nil;",
             [4] = "a_out_sound_stop(); mission.trig.func[4]=nil;",
             [5] = "a_out_text_delay(getValueDictByKey(\"DictKey_ActionText_110\"), 10, false, 0);a_load_mission(\"Bandit on Demand.miz\"); mission.trig.func[5]=nil;",
-            [6] = "a_ai_task(16, 2);",
-            [7] = "a_ai_task(16, 1);",
+            [6] = "a_ai_task(16, 2);a_ai_task(71, 2);",
+            [7] = "a_ai_task(16, 1);a_ai_task(71, 1);",
         }, -- end of ["actions"]
         ["events"] = 
         {
@@ -230,9 +230,9 @@ mission =
                         ["borderThickness"] = 1,
                         ["mapY"] = 148518.48368221,
                         ["layerName"] = "Author",
+                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["mapX"] = 15993.312525069,
                         ["colorString"] = "0x80ffffff",
-                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["name"] = "Text Box 6",
                         ["angle"] = 0,
                         ["text"] = "Missiles -M",
@@ -246,9 +246,9 @@ mission =
                         ["borderThickness"] = 4,
                         ["mapY"] = 150350.86623235,
                         ["layerName"] = "Author",
+                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["mapX"] = 20253.810747539,
                         ["colorString"] = "0x00ff00ff",
-                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["name"] = "Text Box 1",
                         ["angle"] = 0,
                         ["text"] = "Bandit Setups",
@@ -262,9 +262,9 @@ mission =
                         ["borderThickness"] = 2,
                         ["mapY"] = 147350.36380183,
                         ["layerName"] = "Author",
+                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["mapX"] = 18595.86221204,
                         ["colorString"] = "0x00ff00ff",
-                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["name"] = "Text Box 1",
                         ["angle"] = 0,
                         ["text"] = "Eastern",
@@ -278,9 +278,9 @@ mission =
                         ["borderThickness"] = 1,
                         ["mapY"] = 148924.38699831,
                         ["layerName"] = "Author",
+                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["mapX"] = 18856.148809484,
                         ["colorString"] = "0x00ff00ff",
-                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["name"] = "Text Box 3",
                         ["angle"] = 0,
                         ["text"] = "Guns",
@@ -294,9 +294,9 @@ mission =
                         ["borderThickness"] = 2,
                         ["mapY"] = 147214.66275488,
                         ["layerName"] = "Author",
+                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["mapX"] = 14258.455921738,
                         ["colorString"] = "0x000000ff",
-                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["name"] = "Text Box 1",
                         ["angle"] = 0,
                         ["text"] = "Historic",
@@ -310,9 +310,9 @@ mission =
                         ["borderThickness"] = 1,
                         ["mapY"] = 148508.70765891,
                         ["layerName"] = "Author",
+                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["mapX"] = 13858.03189512,
                         ["colorString"] = "0x00ff00ff",
-                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["name"] = "Missiles",
                         ["angle"] = 0,
                         ["text"] = "Missiles",
@@ -326,9 +326,9 @@ mission =
                         ["borderThickness"] = 1,
                         ["mapY"] = 148566.08766792,
                         ["layerName"] = "Author",
+                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["mapX"] = 18211.819738158,
                         ["colorString"] = "0x00ff00ff",
-                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["name"] = "asgasg",
                         ["angle"] = 0,
                         ["text"] = "Missiles -M",
@@ -342,9 +342,9 @@ mission =
                         ["borderThickness"] = 1,
                         ["mapY"] = 148561.2032622,
                         ["layerName"] = "Author",
+                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["mapX"] = 14501.381622656,
                         ["colorString"] = "0x00ff00ff",
-                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["name"] = "Text Box 2",
                         ["angle"] = 0,
                         ["text"] = "Guns",
@@ -358,9 +358,9 @@ mission =
                         ["borderThickness"] = 2,
                         ["mapY"] = 147216.08038834,
                         ["layerName"] = "Author",
+                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["mapX"] = 16408.11140587,
                         ["colorString"] = "0x80ffffff",
-                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["name"] = "Text Box 2",
                         ["angle"] = 0,
                         ["text"] = "Western",
@@ -374,9 +374,9 @@ mission =
                         ["borderThickness"] = 1,
                         ["mapY"] = 148733.56522881,
                         ["layerName"] = "Author",
+                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["mapX"] = 16786.466540224,
                         ["colorString"] = "0x80ffffff",
-                        ["font"] = "DejaVuLGCSansCondensed.ttf",
                         ["name"] = "Text Box 5",
                         ["angle"] = 0,
                         ["text"] = "Guns",
@@ -464,9 +464,9 @@ mission =
     }, -- end of ["triggers"]
     ["map"] = 
     {
-        ["centerY"] = 334712.04188482,
-        ["zoom"] = 3591623.0366492,
-        ["centerX"] = -110000,
+        ["centerY"] = 255987.03773732,
+        ["zoom"] = 148039.608015,
+        ["centerX"] = -5429.9944021701,
     }, -- end of ["map"]
     ["coalitions"] = 
     {
@@ -638,8 +638,8 @@ mission =
                                             ["ETA"] = 0,
                                             ["alt_type"] = "BARO",
                                             ["formation_template"] = "",
-                                            ["y"] = 243809.83484053,
-                                            ["x"] = -4412.5357726643,
+                                            ["y"] = 243800.21305595,
+                                            ["x"] = -4408.5051287909,
                                             ["ETA_locked"] = true,
                                             ["speed"] = 0,
                                             ["action"] = "Off Road",
@@ -689,19 +689,329 @@ mission =
                                         ["livery_id"] = "USA_summer",
                                         ["skill"] = "Average",
                                         ["type"] = "Vulcan",
+                                        ["unitId"] = 131,
+                                        ["y"] = 243800.21305595,
+                                        ["x"] = -4408.5051287909,
+                                        ["name"] = "Ground-2-2",
+                                        ["heading"] = 5.7154041770665,
+                                        ["playerCanDrive"] = true,
+                                    }, -- end of [1]
+                                    [2] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["livery_id"] = "USA_summer",
+                                        ["skill"] = "Average",
+                                        ["type"] = "Vulcan",
+                                        ["unitId"] = 132,
+                                        ["y"] = 242752.10462875,
+                                        ["x"] = -5587.2340578832,
+                                        ["name"] = "Ground-2-3",
+                                        ["heading"] = 5.7154041770665,
+                                        ["playerCanDrive"] = true,
+                                    }, -- end of [2]
+                                    [3] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["livery_id"] = "USA_summer",
+                                        ["skill"] = "Average",
+                                        ["type"] = "Vulcan",
                                         ["unitId"] = 29,
-                                        ["y"] = 243809.83484053,
-                                        ["x"] = -4412.5357726643,
+                                        ["y"] = 242174.47048383,
+                                        ["x"] = -6254.5509665459,
                                         ["name"] = "Ground-2-1",
                                         ["heading"] = 5.7154041770665,
                                         ["playerCanDrive"] = false,
-                                    }, -- end of [1]
+                                    }, -- end of [3]
                                 }, -- end of ["units"]
-                                ["y"] = 243809.83484053,
-                                ["x"] = -4412.5357726643,
+                                ["y"] = 243800.21305595,
+                                ["x"] = -4408.5051287909,
                                 ["name"] = "Ground-2",
                                 ["start_time"] = 0,
                             }, -- end of [1]
+                            [2] = 
+                            {
+                                ["visible"] = false,
+                                ["tasks"] = 
+                                {
+                                    [1] = 
+                                    {
+                                        ["number"] = 1,
+                                        ["auto"] = false,
+                                        ["id"] = "WrappedAction",
+                                        ["enabled"] = true,
+                                        ["params"] = 
+                                        {
+                                            ["action"] = 
+                                            {
+                                                ["id"] = "Option",
+                                                ["params"] = 
+                                                {
+                                                    ["name"] = 0,
+                                                    ["value"] = 4,
+                                                }, -- end of ["params"]
+                                            }, -- end of ["action"]
+                                        }, -- end of ["params"]
+                                    }, -- end of [1]
+                                    [2] = 
+                                    {
+                                        ["number"] = 2,
+                                        ["auto"] = false,
+                                        ["id"] = "WrappedAction",
+                                        ["enabled"] = true,
+                                        ["params"] = 
+                                        {
+                                            ["action"] = 
+                                            {
+                                                ["id"] = "Option",
+                                                ["params"] = 
+                                                {
+                                                    ["name"] = 0,
+                                                    ["value"] = 0,
+                                                }, -- end of ["params"]
+                                            }, -- end of ["action"]
+                                        }, -- end of ["params"]
+                                    }, -- end of [2]
+                                }, -- end of ["tasks"]
+                                ["uncontrollable"] = false,
+                                ["task"] = "Ground Nothing",
+                                ["taskSelected"] = true,
+                                ["route"] = 
+                                {
+                                    ["spans"] = 
+                                    {
+                                    }, -- end of ["spans"]
+                                    ["points"] = 
+                                    {
+                                        [1] = 
+                                        {
+                                            ["alt"] = 69,
+                                            ["type"] = "Turning Point",
+                                            ["ETA"] = 0,
+                                            ["alt_type"] = "BARO",
+                                            ["formation_template"] = "",
+                                            ["y"] = 251247.36692153,
+                                            ["x"] = -5790.2875589274,
+                                            ["ETA_locked"] = true,
+                                            ["speed"] = 0,
+                                            ["action"] = "Off Road",
+                                            ["task"] = 
+                                            {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = 
+                                                {
+                                                    ["tasks"] = 
+                                                    {
+                                                        [1] = 
+                                                        {
+                                                            ["enabled"] = true,
+                                                            ["auto"] = false,
+                                                            ["id"] = "WrappedAction",
+                                                            ["number"] = 1,
+                                                            ["params"] = 
+                                                            {
+                                                                ["action"] = 
+                                                                {
+                                                                    ["id"] = "Option",
+                                                                    ["params"] = 
+                                                                    {
+                                                                        ["name"] = 9,
+                                                                        ["value"] = 2,
+                                                                    }, -- end of ["params"]
+                                                                }, -- end of ["action"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                        [2] = 
+                                                        {
+                                                            ["enabled"] = true,
+                                                            ["auto"] = false,
+                                                            ["id"] = "WrappedAction",
+                                                            ["number"] = 2,
+                                                            ["params"] = 
+                                                            {
+                                                                ["action"] = 
+                                                                {
+                                                                    ["id"] = "Option",
+                                                                    ["params"] = 
+                                                                    {
+                                                                        ["value"] = 4,
+                                                                        ["name"] = 0,
+                                                                    }, -- end of ["params"]
+                                                                }, -- end of ["action"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [2]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["speed_locked"] = true,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["groupId"] = 71,
+                                ["hidden"] = false,
+                                ["units"] = 
+                                {
+                                    [1] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Excellent",
+                                        ["type"] = "Patriot ln",
+                                        ["unitId"] = 130,
+                                        ["y"] = 251247.36692153,
+                                        ["x"] = -5790.2875589274,
+                                        ["name"] = "Ground-3-10",
+                                        ["heading"] = 5.6199601914217,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [1]
+                                    [2] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "High",
+                                        ["type"] = "Patriot ln",
+                                        ["unitId"] = 129,
+                                        ["y"] = 251366.77496639,
+                                        ["x"] = -5882.2717465914,
+                                        ["name"] = "Ground-3-9",
+                                        ["heading"] = 2.3561944901923,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [2]
+                                    [3] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Excellent",
+                                        ["type"] = "Patriot ln",
+                                        ["unitId"] = 128,
+                                        ["y"] = 251376.88415885,
+                                        ["x"] = -5728.6173595434,
+                                        ["name"] = "Ground-3-8",
+                                        ["heading"] = 0.75049157835756,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [3]
+                                    [4] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "High",
+                                        ["type"] = "Patriot ln",
+                                        ["unitId"] = 127,
+                                        ["y"] = 251211.76769469,
+                                        ["x"] = -5942.8344069878,
+                                        ["name"] = "Ground-3-7",
+                                        ["heading"] = 3.8571776469075,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [4]
+                                    [5] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "High",
+                                        ["type"] = "Patriot str",
+                                        ["unitId"] = 121,
+                                        ["y"] = 251267.36348407,
+                                        ["x"] = -5850.8485768924,
+                                        ["name"] = "Ground-3-6",
+                                        ["heading"] = 3.8571776469075,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [5]
+                                    [6] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "High",
+                                        ["type"] = "rapier_fsa_optical_tracker_unit",
+                                        ["unitId"] = 120,
+                                        ["y"] = 251282.21807338,
+                                        ["x"] = -5829.1380232824,
+                                        ["name"] = "Ground-3-5",
+                                        ["heading"] = 3.8571776469075,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [6]
+                                    [7] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "High",
+                                        ["type"] = "Patriot cp",
+                                        ["unitId"] = 119,
+                                        ["y"] = 251298.21532341,
+                                        ["x"] = -5810.2841214634,
+                                        ["name"] = "Ground-3-4",
+                                        ["heading"] = 3.8571776469075,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [7]
+                                    [8] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "High",
+                                        ["type"] = "Patriot EPP",
+                                        ["unitId"] = 118,
+                                        ["y"] = 251315.35523415,
+                                        ["x"] = -5794.8582017924,
+                                        ["name"] = "Ground-3-3",
+                                        ["heading"] = 3.8571776469075,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [8]
+                                    [9] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "High",
+                                        ["type"] = "Patriot ECS",
+                                        ["unitId"] = 117,
+                                        ["y"] = 251329.06716275,
+                                        ["x"] = -5826.8527018494,
+                                        ["name"] = "Ground-3-2",
+                                        ["heading"] = 3.8571776469075,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [9]
+                                    [10] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Excellent",
+                                        ["type"] = "Patriot AMG",
+                                        ["unitId"] = 116,
+                                        ["y"] = 251307.9279395,
+                                        ["x"] = -5851.9912376084,
+                                        ["name"] = "Ground-3-1",
+                                        ["heading"] = 3.8571776469075,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [10]
+                                }, -- end of ["units"]
+                                ["y"] = 251247.36692153,
+                                ["x"] = -5790.2875589274,
+                                ["name"] = "Patriot-1",
+                                ["start_time"] = 0,
+                            }, -- end of [2]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
                     ["plane"] = 
@@ -993,8 +1303,8 @@ mission =
                                                     [25] = 0,
                                                     [13] = 0,
                                                     [26] = 0,
-                                                    [7] = 0,
                                                     [27] = 0,
+                                                    [7] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
                                                     [23] = 0,
@@ -1026,8 +1336,8 @@ mission =
                                                     [25] = 255,
                                                     [13] = 264,
                                                     [26] = 259,
-                                                    [7] = 262,
                                                     [27] = 262,
+                                                    [7] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
                                                     [23] = 260,
@@ -1387,8 +1697,8 @@ mission =
                                                     [25] = 0,
                                                     [13] = 0,
                                                     [26] = 0,
-                                                    [7] = 0,
                                                     [27] = 0,
+                                                    [7] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
                                                     [23] = 0,
@@ -1420,8 +1730,8 @@ mission =
                                                     [25] = 255,
                                                     [13] = 264,
                                                     [26] = 259,
-                                                    [7] = 262,
                                                     [27] = 262,
+                                                    [7] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
                                                     [23] = 260,
@@ -1743,8 +2053,8 @@ mission =
                                                     [25] = 0,
                                                     [13] = 0,
                                                     [26] = 0,
-                                                    [7] = 0,
                                                     [27] = 0,
+                                                    [7] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
                                                     [23] = 0,
@@ -1776,8 +2086,8 @@ mission =
                                                     [25] = 255,
                                                     [13] = 264,
                                                     [26] = 259,
-                                                    [7] = 262,
                                                     [27] = 262,
+                                                    [7] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
                                                     [23] = 260,
@@ -2140,10 +2450,10 @@ mission =
                                                     [13] = 0,
                                                     [26] = 0,
                                                     [23] = 0,
-                                                    [27] = 0,
+                                                    [7] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
-                                                    [7] = 0,
+                                                    [27] = 0,
                                                     [29] = 0,
                                                     [30] = 0,
                                                 }, -- end of ["modulations"]
@@ -2173,10 +2483,10 @@ mission =
                                                     [13] = 264,
                                                     [26] = 259,
                                                     [23] = 260,
-                                                    [27] = 262,
+                                                    [7] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
-                                                    [7] = 262,
+                                                    [27] = 262,
                                                     [29] = 253,
                                                     [30] = 263,
                                                 }, -- end of ["channels"]
@@ -2544,10 +2854,10 @@ mission =
                                                     [13] = 0,
                                                     [26] = 0,
                                                     [23] = 0,
-                                                    [7] = 0,
+                                                    [27] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
-                                                    [27] = 0,
+                                                    [7] = 0,
                                                     [29] = 0,
                                                     [30] = 0,
                                                 }, -- end of ["modulations"]
@@ -2577,10 +2887,10 @@ mission =
                                                     [13] = 264,
                                                     [26] = 259,
                                                     [23] = 260,
-                                                    [7] = 262,
+                                                    [27] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
-                                                    [27] = 262,
+                                                    [7] = 262,
                                                     [29] = 253,
                                                     [30] = 263,
                                                 }, -- end of ["channels"]
@@ -2940,8 +3250,8 @@ mission =
                                                     [25] = 0,
                                                     [13] = 0,
                                                     [26] = 0,
-                                                    [7] = 0,
                                                     [27] = 0,
+                                                    [7] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
                                                     [23] = 0,
@@ -2973,8 +3283,8 @@ mission =
                                                     [25] = 255,
                                                     [13] = 264,
                                                     [26] = 259,
-                                                    [7] = 262,
                                                     [27] = 262,
+                                                    [7] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
                                                     [23] = 260,
@@ -3302,8 +3612,8 @@ mission =
                                                     [25] = 0,
                                                     [13] = 0,
                                                     [26] = 0,
-                                                    [7] = 0,
                                                     [27] = 0,
+                                                    [7] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
                                                     [23] = 0,
@@ -3335,8 +3645,8 @@ mission =
                                                     [25] = 255,
                                                     [13] = 264,
                                                     [26] = 259,
-                                                    [7] = 262,
                                                     [27] = 262,
+                                                    [7] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
                                                     [23] = 260,
@@ -3723,15 +4033,15 @@ mission =
                                                 ["Sequence 2 Red"] = 
                                                 {
                                                 }, -- end of ["Sequence 2 Red"]
-                                                ["Start Location"] = 
-                                                {
-                                                }, -- end of ["Start Location"]
-                                                ["Sequence 1 Blue"] = 
-                                                {
-                                                }, -- end of ["Sequence 1 Blue"]
                                                 ["Sequence 3 Yellow"] = 
                                                 {
                                                 }, -- end of ["Sequence 3 Yellow"]
+                                                ["Sequence 1 Blue"] = 
+                                                {
+                                                }, -- end of ["Sequence 1 Blue"]
+                                                ["Start Location"] = 
+                                                {
+                                                }, -- end of ["Start Location"]
                                                 ["A/A Waypoint"] = 
                                                 {
                                                 }, -- end of ["A/A Waypoint"]
@@ -4123,15 +4433,15 @@ mission =
                                                 ["Sequence 2 Red"] = 
                                                 {
                                                 }, -- end of ["Sequence 2 Red"]
-                                                ["Start Location"] = 
-                                                {
-                                                }, -- end of ["Start Location"]
-                                                ["Sequence 1 Blue"] = 
-                                                {
-                                                }, -- end of ["Sequence 1 Blue"]
                                                 ["Sequence 3 Yellow"] = 
                                                 {
                                                 }, -- end of ["Sequence 3 Yellow"]
+                                                ["Sequence 1 Blue"] = 
+                                                {
+                                                }, -- end of ["Sequence 1 Blue"]
+                                                ["Start Location"] = 
+                                                {
+                                                }, -- end of ["Start Location"]
                                                 ["A/A Waypoint"] = 
                                                 {
                                                 }, -- end of ["A/A Waypoint"]
@@ -4444,8 +4754,8 @@ mission =
                                             ["LaserCode100"] = 6,
                                             ["LaserCode1"] = 8,
                                             ["HelmetMountedDevice"] = 1,
-                                            ["LaserCode10"] = 8,
                                             ["LAU3ROF"] = 0,
+                                            ["LaserCode10"] = 8,
                                         }, -- end of ["AddPropAircraft"]
                                         ["type"] = "F-16C_50",
                                         ["Radio"] = 
@@ -4813,8 +5123,8 @@ mission =
                                             ["LaserCode100"] = 6,
                                             ["LaserCode1"] = 8,
                                             ["HelmetMountedDevice"] = 1,
-                                            ["LaserCode10"] = 8,
                                             ["LAU3ROF"] = 0,
+                                            ["LaserCode10"] = 8,
                                         }, -- end of ["AddPropAircraft"]
                                         ["type"] = "F-16C_50",
                                         ["Radio"] = 
@@ -6505,15 +6815,15 @@ mission =
                                                 ["Sequence 2 Red"] = 
                                                 {
                                                 }, -- end of ["Sequence 2 Red"]
-                                                ["Sequence 3 Yellow"] = 
-                                                {
-                                                }, -- end of ["Sequence 3 Yellow"]
-                                                ["Sequence 1 Blue"] = 
-                                                {
-                                                }, -- end of ["Sequence 1 Blue"]
                                                 ["Start Location"] = 
                                                 {
                                                 }, -- end of ["Start Location"]
+                                                ["Sequence 1 Blue"] = 
+                                                {
+                                                }, -- end of ["Sequence 1 Blue"]
+                                                ["Sequence 3 Yellow"] = 
+                                                {
+                                                }, -- end of ["Sequence 3 Yellow"]
                                                 ["A/A Waypoint"] = 
                                                 {
                                                 }, -- end of ["A/A Waypoint"]
@@ -6929,15 +7239,15 @@ mission =
                                                 ["Sequence 2 Red"] = 
                                                 {
                                                 }, -- end of ["Sequence 2 Red"]
-                                                ["Sequence 3 Yellow"] = 
-                                                {
-                                                }, -- end of ["Sequence 3 Yellow"]
-                                                ["Sequence 1 Blue"] = 
-                                                {
-                                                }, -- end of ["Sequence 1 Blue"]
                                                 ["Start Location"] = 
                                                 {
                                                 }, -- end of ["Start Location"]
+                                                ["Sequence 1 Blue"] = 
+                                                {
+                                                }, -- end of ["Sequence 1 Blue"]
+                                                ["Sequence 3 Yellow"] = 
+                                                {
+                                                }, -- end of ["Sequence 3 Yellow"]
                                                 ["A/A Waypoint"] = 
                                                 {
                                                 }, -- end of ["A/A Waypoint"]
@@ -7274,8 +7584,8 @@ mission =
                                             ["LaserCode100"] = 6,
                                             ["HelmetMountedDevice"] = 1,
                                             ["LaserCode1"] = 8,
-                                            ["LAU3ROF"] = 0,
                                             ["LaserCode10"] = 8,
+                                            ["LAU3ROF"] = 0,
                                         }, -- end of ["AddPropAircraft"]
                                         ["type"] = "F-16C_50",
                                         ["Radio"] = 
@@ -7667,8 +7977,8 @@ mission =
                                             ["LaserCode100"] = 6,
                                             ["HelmetMountedDevice"] = 1,
                                             ["LaserCode1"] = 8,
-                                            ["LAU3ROF"] = 0,
                                             ["LaserCode10"] = 8,
+                                            ["LAU3ROF"] = 0,
                                         }, -- end of ["AddPropAircraft"]
                                         ["type"] = "F-16C_50",
                                         ["Radio"] = 
@@ -9230,18 +9540,18 @@ mission =
                                                 ["Sequence 1 Blue"] = 
                                                 {
                                                 }, -- end of ["Sequence 1 Blue"]
-                                                ["Start Location"] = 
+                                                ["Sequence 3 Yellow"] = 
                                                 {
-                                                }, -- end of ["Start Location"]
+                                                }, -- end of ["Sequence 3 Yellow"]
                                                 ["A/A Waypoint"] = 
                                                 {
                                                 }, -- end of ["A/A Waypoint"]
                                                 ["PP"] = 
                                                 {
                                                 }, -- end of ["PP"]
-                                                ["Sequence 3 Yellow"] = 
+                                                ["Start Location"] = 
                                                 {
-                                                }, -- end of ["Sequence 3 Yellow"]
+                                                }, -- end of ["Start Location"]
                                             }, -- end of ["GroupsPoints"]
                                             ["Points"] = 
                                             {
@@ -17173,11 +17483,11 @@ mission =
                                         ["AddPropAircraft"] = 
                                         {
                                             ["MissileToneVolume"] = 5,
+                                            ["MountSIRENA"] = false,
                                             ["NAV_Initial_Hdg"] = 0,
-                                            ["ADF_Selected_Frequency"] = 1,
                                             ["ADF_NEAR_Frequency"] = 303,
                                             ["ADF_FAR_Frequency"] = 625,
-                                            ["MountSIRENA"] = false,
+                                            ["ADF_Selected_Frequency"] = 1,
                                         }, -- end of ["AddPropAircraft"]
                                         ["type"] = "MiG-19P",
                                         ["unitId"] = 49,
@@ -18981,11 +19291,11 @@ mission =
                                         ["AddPropAircraft"] = 
                                         {
                                             ["MissileToneVolume"] = 5,
+                                            ["ADF_NEAR_Frequency"] = 303,
                                             ["NAV_Initial_Hdg"] = 0,
-                                            ["MountSIRENA"] = false,
                                             ["ADF_Selected_Frequency"] = 1,
                                             ["ADF_FAR_Frequency"] = 625,
-                                            ["ADF_NEAR_Frequency"] = 303,
+                                            ["MountSIRENA"] = false,
                                         }, -- end of ["AddPropAircraft"]
                                         ["type"] = "MiG-19P",
                                         ["unitId"] = 56,
@@ -19210,7 +19520,6 @@ mission =
             }, -- end of ["rules"]
             ["comment"] = "Cancel Help",
             ["eventlist"] = "",
-            ["predicate"] = "triggerOnce",
             ["actions"] = 
             {
                 [1] = 
@@ -19218,6 +19527,7 @@ mission =
                     ["predicate"] = "a_out_sound_stop",
                 }, -- end of [1]
             }, -- end of ["actions"]
+            ["predicate"] = "triggerOnce",
         }, -- end of [4]
         [5] = 
         {
@@ -19234,6 +19544,7 @@ mission =
             }, -- end of ["rules"]
             ["comment"] = "Restart",
             ["eventlist"] = "",
+            ["predicate"] = "triggerOnce",
             ["actions"] = 
             {
                 [1] = 
@@ -19251,7 +19562,6 @@ mission =
                     ["file"] = "Bandit on Demand.miz",
                 }, -- end of [2]
             }, -- end of ["actions"]
-            ["predicate"] = "triggerOnce",
         }, -- end of [5]
         [6] = 
         {
@@ -19267,6 +19577,7 @@ mission =
                 }, -- end of [1]
             }, -- end of ["rules"]
             ["eventlist"] = "",
+            ["predicate"] = "triggerFront",
             ["actions"] = 
             {
                 [1] = 
@@ -19278,8 +19589,16 @@ mission =
                         [2] = 2,
                     }, -- end of ["ai_task"]
                 }, -- end of [1]
+                [2] = 
+                {
+                    ["predicate"] = "a_ai_task",
+                    ["ai_task"] = 
+                    {
+                        [1] = 71,
+                        [2] = 2,
+                    }, -- end of ["ai_task"]
+                }, -- end of [2]
             }, -- end of ["actions"]
-            ["predicate"] = "triggerFront",
             ["comment"] = "SAMs ON",
         }, -- end of [6]
         [7] = 
@@ -19296,6 +19615,7 @@ mission =
                 }, -- end of [1]
             }, -- end of ["rules"]
             ["eventlist"] = "",
+            ["predicate"] = "triggerFront",
             ["actions"] = 
             {
                 [1] = 
@@ -19307,12 +19627,20 @@ mission =
                         [2] = 1,
                     }, -- end of ["ai_task"]
                 }, -- end of [1]
+                [2] = 
+                {
+                    ["predicate"] = "a_ai_task",
+                    ["ai_task"] = 
+                    {
+                        [1] = 71,
+                        [2] = 1,
+                    }, -- end of ["ai_task"]
+                }, -- end of [2]
             }, -- end of ["actions"]
-            ["predicate"] = "triggerFront",
             ["comment"] = "SAMs OFF",
         }, -- end of [7]
     }, -- end of ["trigrules"]
-    ["currentKey"] = 39244,
+    ["currentKey"] = 43861,
     ["start_time"] = 21605,
     ["forcedOptions"] = 
     {
