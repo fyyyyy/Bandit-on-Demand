@@ -212,7 +212,7 @@ options =
     ["format"] = 1,
     ["sound"] = 
     {
-        ["main_output"] = "{0.0.0.00000000}.{9367994f-ccd5-4e50-8270-eaf7fb3145f0}",
+        ["main_output"] = "",
         ["FakeAfterburner"] = true,
         ["volume"] = 73,
         ["headphones_on_external_views"] = true,
