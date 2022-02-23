@@ -25,7 +25,7 @@ This is a universal BFM/BVR training mission/script which allows you to spawn ba
 
  
 
-It gets pretty intense at times. AI skill level is always Ace. Adding more support to choose skill and fuel level of bandits. Im still learning the Tomcat and needed more "engagements" to practice, so I extended sesksa's script with more functionalty and created VoiceAttack commands.
+It gets pretty intense at times. AI skill level is ace by default, but can be changed to average / good / high. Adding more support to choose skill and fuel level of bandits. Im still learning the Tomcat and needed more "engagements" to practice, so I extended sesksa's script with more functionalty and created VoiceAttack commands.
 
 Voice Profile .vap : import in VoiceAttack. Unbind F11 and F12 keys, so that the radio menu can be operated from anywhere without switching to external views.
 
