@@ -1,4 +1,6 @@
--- By winghunter / DCS for MSFS
+-- Bandit on Demand™ - spawn bandits with your voice, anywhere, any map.
+-- By winghunter
+-- Discussion thread https://forums.eagle.ru/topic/293643-bandit-on-demand-spawn-bandits-with-your-voice-anywhere-any-map-bfmbvr/
 -- Based on the script from seska with <3 <3 <3
 
 

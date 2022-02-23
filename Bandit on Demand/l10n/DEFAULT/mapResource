@@ -2,5 +2,5 @@ mapResource =
 {
     ["ResKey_Action_122"] = "mist_4_5_106.lua",
     ["ResKey_ImageBriefing_121"] = "bandit.png",
-    ["ResKey_Action_123"] = "spawn_ctrl.lua",
+    ["ResKey_Action_123"] = "bandit_on_demand.lua",
 } -- end of mapResource
