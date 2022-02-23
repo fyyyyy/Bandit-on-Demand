@@ -17,8 +17,8 @@ This is a universal BFM/BVR training mission/script which allows you to spawn ba
 * "Missiles On/Off" - bandits spawn with missiles or guns
 * "Sam sites On/Off" - turns SAM sites on / off
 * "Set enemy count 4" - next wave will spawn 4 bandits
-* "Set enemy skill (average;good;high;ace)" 
-* "Set enemy type [F16;F18;F15;F14;SU27;SU30;MIG29;MIG31;MIG21;A10;Bf109;A4;F5;Fw190;I16;MiG15;MiG19;Mosquito;P51D;Spitfire]" - Sets enemy aircraft type for next spawn
+* "Set enemy skill (average good high ace)" 
+* "Set enemy type (F16 F18 F15 F14 SU27 SU30 MIG29 MIG31 MIG21 A10 Bf109 A4 F5 Fw190 I16 MiG15 MiG19 Mosquito P51D Spitfire)" - Sets enemy aircraft type for next spawn
 * "Set enemy distance (1-150) miles" - Sets enemy distance to 1,5,10.25,50,75,100,150 miles
 * "Set enemy distance on my six" - next wave will spawn 1 mile on your 6'o clock
 * "Spawn random group" - spawns 1-4 random bandits at previous distance
