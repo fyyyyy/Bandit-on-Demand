@@ -90,122 +90,102 @@ EnemyGroups = {
     [EnemyKeys[1]] = {
         description = "A-10C's",
         guns_id = "Red-A-10C",
-        missiles_id = "Red-A-10C-M",
-        
+        missiles_id = "Red-A-10C-M",    
     },
     [EnemyKeys[2]] = {
         description = "F-16's",
         guns_id = "Red-F-16",
-        missiles_id = "Red-F-16-M",
-        
+        missiles_id = "Red-F-16-M",    
     },
     [EnemyKeys[3]] = {
         description = "F/A-18C's",
         guns_id = "Red-FA-18C",
-        missiles_id = "Red-FA-18C-M",
-        
+        missiles_id = "Red-FA-18C-M",    
     },
     [EnemyKeys[4]] = {
         description = "F-15C's",
         guns_id = "Red-F-15C",
-        missiles_id = "Red-F-15C-M",
-        
+        missiles_id = "Red-F-15C-M",    
     },
     [EnemyKeys[5]] = {
         description = "F-14B's",
         guns_id = "Red-F-14B",
-        missiles_id = "Red-F-14B-M",
-        
+        missiles_id = "Red-F-14B-M",    
     },
     [EnemyKeys[6]] = {
         description = "Su-27's",
         guns_id = "Red-Su-27",
-        missiles_id = "Red-Su-27-M",
-        
+        missiles_id = "Red-Su-27-M",    
     },
     [EnemyKeys[7]] = {
         description = "Su-30's",
         guns_id = "Red-Su-30",
-        missiles_id = "Red-Su-30-M",
-        
+        missiles_id = "Red-Su-30-M",    
     },
     [EnemyKeys[8]] = {
         description = "MiG-29's",
         guns_id = "Red-MiG-29A",
-        missiles_id = "Red-MiG-29A-M",
-        
+        missiles_id = "Red-MiG-29A-M",    
     },
     [EnemyKeys[9]] = {
         description = "MiG-31's",
         guns_id = "Red-MiG-31",
-        missiles_id = "Red-MiG-31-M",
-        
+        missiles_id = "Red-MiG-31-M",    
     },
     [EnemyKeys[10]] = {
         description = "MiG-21's",
         guns_id = "Red-MiG-21",
-        missiles_id = "Red-MiG-21-M",
-        
+        missiles_id = "Red-MiG-21-M",    
     },
     [EnemyKeys[11]] = {
         description = "Bf-109's",
         guns_id = "Red-Bf-109",
-        missiles_id = "Red-Bf-109",
-        
+        missiles_id = "Red-Bf-109",    
     },
     [EnemyKeys[12]] = {
         description = "A-4's",
         guns_id = "Red-A4E-C",
-        missiles_id = "Red-A4E-C-M",
-        
+        missiles_id = "Red-A4E-C-M",    
     },
     [EnemyKeys[13]] = {
         description = "F-5's",
         guns_id = "Red-F5-E",
-        missiles_id = "Red-F5-E-M",
-        
+        missiles_id = "Red-F5-E-M",    
     },
     [EnemyKeys[14]] = {
         description = "Fw-190's",
         guns_id = "Red-Fw-190",
-        missiles_id = "Red-Fw-190",
-        
+        missiles_id = "Red-Fw-190",    
     },
     [EnemyKeys[15]] = {
         description = "I-16's",
         guns_id = "Red-I-16",
-        missiles_id = "Red-I-16",
-        
+        missiles_id = "Red-I-16",    
     },
     [EnemyKeys[16]] = {
         description = "MiG-15's",
         guns_id = "Red-Mig-15",
-        missiles_id = "Red-Mig-15",
-        
+        missiles_id = "Red-Mig-15",    
     },
     [EnemyKeys[17]] = {
         description = "MiG-19's",
         guns_id = "Red-Mig-19",
-        missiles_id = "Red-Mig-19-M",
-        
+        missiles_id = "Red-Mig-19-M",    
     },    
     [EnemyKeys[18]] = {
         description = "Mosquito's",
         guns_id = "Red-Mosquito",
-        missiles_id = "Red-Mosquito",
-        
+        missiles_id = "Red-Mosquito",    
     },    
     [EnemyKeys[19]] = {
         description = "P-51D's",
         guns_id = "Red-P51",
-        missiles_id = "Red-P51",
-        
+        missiles_id = "Red-P51",    
     },    
     [EnemyKeys[20]] = {
         description = "Spitfire's",
         guns_id = "Red-Spitfire",
-        missiles_id = "Red-Spitfire",
-        
+        missiles_id = "Red-Spitfire",    
     },    
 }
 
@@ -259,7 +239,7 @@ end
 
 
 function ctl.updatedSettings()
-    ctl.send_message("Set " .. ctl.getSettings())
+    ctl.send_message("Set " .. ctl.getSettings(), 2)
     ctl.updateCommandMenu()
 end
 
@@ -337,7 +317,8 @@ function ctl.spawnGroup(rnd)
     ctl.send_message(
         "\nSpawning " .. spawnMode .. " Bandits\n" ..
         "---------------\n" ..
-        ctl.getSettings()
+        ctl.getSettings(),
+        2
     )
 
     local newData = mist.getGroupData(grp)
@@ -386,37 +367,31 @@ function ctl.spawnGroup(rnd)
             newData.units[i] = mist.utils.deepCopy(unit)
             newData.units[i].unitName = string.sub(grp, 5) .. '@' .. _skill .. '-' .. i
         end
-
-        vars = {
-            point = spawnPoint,
-            gpName = newData.groupName,
-            groupData = newData,
-            route = newData.route,
-            action = 'respawn',
-        }
-        g = mist.teleportToPoint(vars)
-        log_table(g)
-    else -- spawn each aircraft as individual group - improves AI behaviour
+        ctl.teleport(newData, newData.groupName, spawnPoint)
+    else -- spawn each aircraft as individual group - improves AI behaviour for dogfights
         newData.units = {[1] = unit}
-
+        point = mist.utils.deepCopy(spawnPoint)
         for i = 1, numberOfEnemies do
-
             singleUnit = mist.utils.deepCopy(newData)
-        
             singleUnit.units[1].unitName = string.sub(grp, 5) .. '@' .. _skill .. '-' .. i
-            
-            vars = {
-                point = spawnPoint,
-                gpName = singleUnit.groupName .. '_' .. i,
-                groupData = singleUnit,
-                route = singleUnit.route,
-                action = 'respawn',
-            }
-            g = mist.teleportToPoint(vars)
-            log_table(g)
+            point.x = point.x + (i * 50)
+            point.z = point.z + (i * 50)
+            point.y = point.y + (i * 25) -- alt
+            ctl.teleport(singleUnit, singleUnit.groupName .. '_' .. i, point)
         end
     end
+end
 
+function ctl.teleport( group, groupName , spawnPoint)
+    vars = {
+        point = spawnPoint,
+        gpName = groupName,
+        groupData = group,
+        route = group.route,
+        action = 'respawn',
+    }
+    g = mist.teleportToPoint(vars)
+    log_table(g)
 end
 
 function ctl.spawnRandomGroup()
@@ -437,10 +412,10 @@ end
 
 function ctl.toggleSAMs(bool)
     if bool == false then
-        ctl.send_message("SAM sites OFF")
+        ctl.send_message("SAM sites OFF", 2)
         trigger.action.setUserFlag(StateFlags.sam, 0)
     else
-        ctl.send_message("SAM sites ON")
+        ctl.send_message("SAM sites ON", 2)
         trigger.action.setUserFlag(StateFlags.sam, 1)
     end
     ctl.updateCommandMenu()
@@ -448,10 +423,10 @@ end
 
 function ctl.toggleMissiles(bool)
     if bool == false then
-        ctl.send_message("Next Spawn: Missiles OFF. Guns only")
+        ctl.send_message("Next Spawn: Missiles OFF. Guns only", 2)
         trigger.action.setUserFlag(StateFlags.missiles, 0)
     else
-        ctl.send_message("Next Spawn: Missiles ON")
+        ctl.send_message("Next Spawn: Missiles ON", 2)
         trigger.action.setUserFlag(StateFlags.missiles, 1)
     end
     ctl.updateCommandMenu()
@@ -486,11 +461,15 @@ end
 function ctl.initializeF10Menu()
     --number of enemies
     local countMenu = missionCommands.addSubMenu("Enemy Count")
-    local oneCmd = missionCommands.addCommand("1× bandit", countMenu, ctl.setNumEnemies, 1)
-    local twoCmd = missionCommands.addCommand("2× bandits", countMenu, ctl.setNumEnemies, 2)
-    local threeCmd = missionCommands.addCommand("3× bandits", countMenu, ctl.setNumEnemies, 3)
-    local fourCmd = missionCommands.addCommand("4× bandits", countMenu, ctl.setNumEnemies, 4)
-  
+    local Cmd1 = missionCommands.addCommand("1× bandit", countMenu, ctl.setNumEnemies, 1)
+    local Cmd2 = missionCommands.addCommand("2× bandits", countMenu, ctl.setNumEnemies, 2)
+    local Cmd3 = missionCommands.addCommand("3× bandits", countMenu, ctl.setNumEnemies, 3)
+    local Cmd4 = missionCommands.addCommand("4× bandits", countMenu, ctl.setNumEnemies, 4)
+    local Cmd5 = missionCommands.addCommand("5× bandits", countMenu, ctl.setNumEnemies, 5)
+    local Cmd6 = missionCommands.addCommand("6× bandits", countMenu, ctl.setNumEnemies, 6)
+    local Cmd7 = missionCommands.addCommand("7× bandits", countMenu, ctl.setNumEnemies, 7)
+    local Cmd8 = missionCommands.addCommand("8× bandits", countMenu, ctl.setNumEnemies, 8)
+    
     --enemy type
     local enemiesMenu = missionCommands.addSubMenu("Enemy Type")
     local modernMenu = missionCommands.addSubMenu("Modern", enemiesMenu)
@@ -565,7 +544,7 @@ function ctl.initializeF10Menu()
         "    Default SAM sites: OFF\n" ..
         "    Default Missiles: OFF\n" ..
         "=======================\n",
-        10
+        5
     )
 end
 
