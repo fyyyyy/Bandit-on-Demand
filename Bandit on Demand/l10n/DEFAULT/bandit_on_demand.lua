@@ -374,12 +374,16 @@ function ctl.spawnGroup(rnd)
         for i = 1, numberOfEnemies do
             singleUnit = mist.utils.deepCopy(newData)
             singleUnit.units[1].unitName = string.sub(grp, 5) .. '@' .. _skill .. '-' .. i
-            point.x = point.x + (i * 50)
-            point.z = point.z + (i * 50)
-            point.y = point.y + (i * 25) -- alt
-            ctl.teleport(singleUnit, singleUnit.groupName .. '_' .. i, point)
+            ctl.teleport(singleUnit, singleUnit.groupName .. '_' .. i, ctl.disperseUnit(point, i * 50))
         end
     end
+end
+
+function ctl.disperseUnit( point , offset)
+    point.x = point.x + (offset)
+    point.z = point.z + (offset)
+    point.y = point.y + (offset / 2) -- altitude
+    return point
 end
 
 function ctl.teleport( group, groupName , spawnPoint)
