@@ -312,6 +312,7 @@ function ctl.spawnGroup(rnd)
     local point = Unit.getPoint(player)
 
     local spawnPoint = mist.projectPoint(point, ctl.getDistanceMeters(), mist.getHeading(player))
+    -- direct AI to meet half way between spawnPoint and player aircraft
     local middlePoint = mist.projectPoint(point, ctl.getDistanceMeters() / 2, mist.getHeading(player))
 
     ctl.send_message(
@@ -333,7 +334,8 @@ function ctl.spawnGroup(rnd)
     
     local spawnWaypoint = mist.utils.vecToWP(spawnPoint)
     local middleWaypoint = mist.utils.vecToWP(middlePoint)
-    local playerPosition = mist.utils.unitToWP(player)
+    --alternative: direct AI to player position
+    --local playerPosition = mist.utils.unitToWP(player)
     
     route = mist.getGroupRoute(grp, 'task')
     firstWaypoint = route[1]
@@ -348,8 +350,8 @@ function ctl.spawnGroup(rnd)
         unit.alt = altInMeters
     end
 
-    playerPosition.task = firstWaypoint.task
-    playerPosition.type = firstWaypoint.type
+    --playerPosition.task = firstWaypoint.task
+    --playerPosition.type = firstWaypoint.type
     middleWaypoint.task = firstWaypoint.task
     middleWaypoint.type = firstWaypoint.type
 
@@ -361,6 +363,7 @@ function ctl.spawnGroup(rnd)
     -- Spawn enemies as individuals rather than inside a group. This improves AI behaviour in a guns/IR missiles dogfight.
     -- The group AI works OK with radar missiles, but not with guns or IR. As only one aircraft in the group will get on your six.
     local spawnAsGroup = false
+
     if (spawnAsGroup) then
         newData.units = {}
         for i = 1, numberOfEnemies do
@@ -512,7 +515,7 @@ function ctl.initializeF10Menu()
     local cmd75 = missionCommands.addCommand("100 miles", distanceMenu, ctl.setDistance, 100)
     local cmd100 = missionCommands.addCommand("150 miles", distanceMenu, ctl.setDistance, 150)
 
-    --angels
+    --angels / altitude
     local angelsMenu = missionCommands.addSubMenu("Altitude")
     local cmdMyAlt  = missionCommands.addCommand("my altitude", angelsMenu, ctl.setAngels, -1)
     local cmd1  = missionCommands.addCommand("1,000 feet", angelsMenu, ctl.setAngels, 1)
@@ -553,7 +556,7 @@ function ctl.initializeF10Menu()
 end
 
 function ctl.updateCommandMenu()
-    -- remove previous
+    -- Remove previous commands
     if (Menus.startCmd) then missionCommands.removeItem(Menus.startCmd) end
     if (Menus.startRandomCmd) then missionCommands.removeItem(Menus.startRandomCmd) end
     if (Menus.autoRestartCmd) then missionCommands.removeItem(Menus.autoRestartCmd) end
@@ -562,13 +565,11 @@ function ctl.updateCommandMenu()
     if (Menus.MissilesCmdOff) then missionCommands.removeItem(Menus.MissilesCmdOff) end
     if (Menus.MissilesCmdOn) then missionCommands.removeItem(Menus.MissilesCmdOn) end
 
+    -- Add new commands
     Menus.startCmd = missionCommands.addCommand("Spawn " .. ctl.getSettings(), commandMenu, ctl.spawnGroup, {})
     Menus.startRandomCmd = missionCommands.addCommand("Spawn Random Bandits", commandMenu, ctl.spawnRandomGroup, {})
     
-    -- Disabled, accidential restarts
-    --Menus.autoRestartCmd = missionCommands.addCommand("Restart", commandMenu, ctl.doRestart, {})
-
-    -- MISSILES ON/OFF
+    -- missiles ON/OFF
     local missiles = trigger.misc.getUserFlag(StateFlags.missiles)
     txt1 = ""
     txt2 = ""
@@ -576,9 +577,9 @@ function ctl.updateCommandMenu()
     Menus.MissilesCmdOff = missionCommands.addCommand("Turn MISSILES OFF" .. txt1, commandMenu, ctl.toggleMissiles, false)
     Menus.MissilesCmdOn = missionCommands.addCommand("Turn MISSILES ON" .. txt2, commandMenu, ctl.toggleMissiles, true)
 
+    -- Sam ON / OFF
     txt1 = ""
     txt2 = ""
-    -- SAM ON / OFF
     local sam = trigger.misc.getUserFlag(StateFlags.sam)
     if sam == 0 then txt1 = "◀" else txt2 = "◀" end
     Menus.SAMsCmdOff = missionCommands.addCommand("Turn SAM OFF" .. txt1, commandMenu, ctl.toggleSAMs, false)
