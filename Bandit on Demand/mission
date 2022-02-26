@@ -9,8 +9,8 @@ mission =
             [3] = "c_stop_wait_for_user();a_do_script_file(getValueResourceByKey(\"ResKey_Action_123\"));c_start_wait_for_user(2, 999); mission.trig.func[3]=nil;",
             [4] = "a_out_sound_stop(); mission.trig.func[4]=nil;",
             [5] = "a_out_text_delay(getValueDictByKey(\"DictKey_ActionText_110\"), 10, false, 0);a_load_mission(\"Bandit on Demand.miz\"); mission.trig.func[5]=nil;",
-            [6] = "a_ai_task(16, 2);a_ai_task(71, 2);",
-            [7] = "a_ai_task(16, 1);a_ai_task(71, 1);",
+            [6] = "a_ai_task(16, 2);a_ai_task(71, 2);a_ai_task(76, 2);a_ai_task(77, 2);",
+            [7] = "a_ai_task(16, 1);a_ai_task(71, 1);a_ai_task(76, 1);a_ai_task(77, 1);",
         }, -- end of ["actions"]
         ["events"] = 
         {
@@ -224,6 +224,22 @@ mission =
                 ["name"] = "Author",
                 ["objects"] = 
                 {
+                    [13] = 
+                    {
+                        ["visible"] = true,
+                        ["borderThickness"] = 4,
+                        ["mapY"] = 164721.04678665,
+                        ["layerName"] = "Author",
+                        ["font"] = "DejaVuLGCSansCondensed.ttf",
+                        ["mapX"] = 16024.522553145,
+                        ["colorString"] = "0xff0000ff",
+                        ["name"] = "Text Box 3",
+                        ["angle"] = 0,
+                        ["text"] = "IR Stingers",
+                        ["fillColorString"] = "0xffffff80",
+                        ["primitiveType"] = "TextBox",
+                        ["fontSize"] = 24,
+                    }, -- end of [13]
                     [7] = 
                     {
                         ["visible"] = true,
@@ -352,22 +368,38 @@ mission =
                         ["primitiveType"] = "TextBox",
                         ["fontSize"] = 15,
                     }, -- end of [10]
-                    [3] = 
+                    [14] = 
                     {
                         ["visible"] = true,
-                        ["borderThickness"] = 2,
-                        ["mapY"] = 147216.08038834,
+                        ["borderThickness"] = 4,
+                        ["mapY"] = 794267.86376284,
                         ["layerName"] = "Author",
                         ["font"] = "DejaVuLGCSansCondensed.ttf",
-                        ["mapX"] = 16408.11140587,
-                        ["colorString"] = "0x80ffffff",
-                        ["name"] = "Text Box 2",
+                        ["mapX"] = -76388.566991584,
+                        ["colorString"] = "0xff0000ff",
+                        ["name"] = "Text Box 4",
                         ["angle"] = 0,
-                        ["text"] = "Western",
+                        ["text"] = "S-300",
+                        ["fillColorString"] = "0xffffff80",
+                        ["primitiveType"] = "TextBox",
+                        ["fontSize"] = 24,
+                    }, -- end of [14]
+                    [11] = 
+                    {
+                        ["visible"] = true,
+                        ["borderThickness"] = 4,
+                        ["mapY"] = 102956.58515429,
+                        ["layerName"] = "Author",
+                        ["font"] = "DejaVuLGCSansCondensed.ttf",
+                        ["mapX"] = 10955.508650338,
+                        ["colorString"] = "0x00ff00ff",
+                        ["name"] = "Text Box 1",
+                        ["angle"] = 0,
+                        ["text"] = "SA-2",
                         ["fillColorString"] = "0xff000080",
                         ["primitiveType"] = "TextBox",
-                        ["fontSize"] = 20,
-                    }, -- end of [3]
+                        ["fontSize"] = 24,
+                    }, -- end of [11]
                     [6] = 
                     {
                         ["visible"] = true,
@@ -384,6 +416,38 @@ mission =
                         ["primitiveType"] = "TextBox",
                         ["fontSize"] = 15,
                     }, -- end of [6]
+                    [12] = 
+                    {
+                        ["visible"] = true,
+                        ["borderThickness"] = 4,
+                        ["mapY"] = 252776.21657008,
+                        ["layerName"] = "Author",
+                        ["font"] = "DejaVuLGCSansCondensed.ttf",
+                        ["mapX"] = -6118.9378649244,
+                        ["colorString"] = "0xffffffff",
+                        ["name"] = "Text Box 2",
+                        ["angle"] = 0,
+                        ["text"] = "Patriot",
+                        ["fillColorString"] = "0x0000ff80",
+                        ["primitiveType"] = "TextBox",
+                        ["fontSize"] = 24,
+                    }, -- end of [12]
+                    [3] = 
+                    {
+                        ["visible"] = true,
+                        ["borderThickness"] = 2,
+                        ["mapY"] = 147216.08038834,
+                        ["layerName"] = "Author",
+                        ["font"] = "DejaVuLGCSansCondensed.ttf",
+                        ["mapX"] = 16408.11140587,
+                        ["colorString"] = "0x80ffffff",
+                        ["name"] = "Text Box 2",
+                        ["angle"] = 0,
+                        ["text"] = "Western",
+                        ["fillColorString"] = "0xff000080",
+                        ["primitiveType"] = "TextBox",
+                        ["fontSize"] = 20,
+                    }, -- end of [3]
                 }, -- end of ["objects"]
             }, -- end of [5]
         }, -- end of ["layers"]
@@ -464,9 +528,9 @@ mission =
     }, -- end of ["triggers"]
     ["map"] = 
     {
-        ["centerY"] = 213404.58313206,
-        ["zoom"] = 2757964.8983946,
-        ["centerX"] = 3734.7888618796,
+        ["centerY"] = 334712.04188482,
+        ["zoom"] = 3591623.0366492,
+        ["centerX"] = -110000,
     }, -- end of ["map"]
     ["coalitions"] = 
     {
@@ -1303,8 +1367,8 @@ mission =
                                                     [25] = 0,
                                                     [13] = 0,
                                                     [26] = 0,
-                                                    [7] = 0,
                                                     [27] = 0,
+                                                    [7] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
                                                     [23] = 0,
@@ -1336,8 +1400,8 @@ mission =
                                                     [25] = 255,
                                                     [13] = 264,
                                                     [26] = 259,
-                                                    [7] = 262,
                                                     [27] = 262,
+                                                    [7] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
                                                     [23] = 260,
@@ -1556,8 +1620,8 @@ mission =
                                             ["type"] = "Turning Point",
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
-                                            ["y"] = 197079.46910532,
-                                            ["x"] = 13720.585699507,
+                                            ["y"] = 156252.53541533,
+                                            ["x"] = 11869.114761675,
                                             ["formation_template"] = "",
                                             ["speed_locked"] = true,
                                         }, -- end of [1]
@@ -1697,8 +1761,8 @@ mission =
                                                     [25] = 0,
                                                     [13] = 0,
                                                     [26] = 0,
-                                                    [7] = 0,
                                                     [27] = 0,
+                                                    [7] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
                                                     [23] = 0,
@@ -1730,8 +1794,8 @@ mission =
                                                     [25] = 255,
                                                     [13] = 264,
                                                     [26] = 259,
-                                                    [7] = 262,
                                                     [27] = 262,
+                                                    [7] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
                                                     [23] = 260,
@@ -1741,9 +1805,9 @@ mission =
                                             }, -- end of [2]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 15,
-                                        ["psi"] = 1.5975164834441,
-                                        ["y"] = 197079.46910532,
-                                        ["x"] = 13720.585699507,
+                                        ["psi"] = -1.4980171002918,
+                                        ["y"] = 156252.53541533,
+                                        ["x"] = 11869.114761675,
                                         ["name"] = "Peninsula-2",
                                         ["payload"] = 
                                         {
@@ -1756,7 +1820,7 @@ mission =
                                             ["chaff"] = 140,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.5975164834441,
+                                        ["heading"] = 1.4980171002918,
                                         ["callsign"] = 
                                         {
                                             [1] = 1,
@@ -1767,8 +1831,8 @@ mission =
                                         ["onboard_num"] = "010",
                                     }, -- end of [1]
                                 }, -- end of ["units"]
-                                ["y"] = 197079.46910532,
-                                ["x"] = 13720.585699507,
+                                ["y"] = 156252.53541533,
+                                ["x"] = 11869.114761675,
                                 ["name"] = "F14 Peninsula Guns 50% Fuel",
                                 ["communication"] = true,
                                 ["start_time"] = 0,
@@ -1805,11 +1869,11 @@ mission =
                                                     {
                                                         [1] = 
                                                         {
-                                                            ["number"] = 1,
-                                                            ["auto"] = true,
-                                                            ["id"] = "EngageTargets",
                                                             ["enabled"] = true,
                                                             ["key"] = "CAP",
+                                                            ["id"] = "EngageTargets",
+                                                            ["number"] = 1,
+                                                            ["auto"] = true,
                                                             ["params"] = 
                                                             {
                                                                 ["targetTypes"] = 
@@ -1935,14 +1999,14 @@ mission =
                                             ["type"] = "Turning Point",
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
-                                            ["y"] = 788668.1569537,
-                                            ["x"] = -290507.98388921,
+                                            ["y"] = 788083.17053849,
+                                            ["x"] = -291001.74417242,
                                             ["formation_template"] = "",
                                             ["speed_locked"] = true,
                                         }, -- end of [1]
                                         [2] = 
                                         {
-                                            ["alt"] = 43,
+                                            ["alt"] = 45,
                                             ["action"] = "Landing",
                                             ["alt_type"] = "BARO",
                                             ["speed"] = 138.88888888889,
@@ -1957,12 +2021,12 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Land",
-                                            ["ETA"] = 4409.1880599917,
+                                            ["ETA"] = 366.21845157038,
                                             ["ETA_locked"] = false,
-                                            ["y"] = 243128.820313,
-                                            ["x"] = -5412.409668,
+                                            ["y"] = 683858.71875,
+                                            ["x"] = -284887.375,
                                             ["formation_template"] = "",
-                                            ["airdromeId"] = 12,
+                                            ["airdromeId"] = 25,
                                             ["speed_locked"] = true,
                                         }, -- end of [2]
                                     }, -- end of ["points"]
@@ -2053,8 +2117,8 @@ mission =
                                                     [25] = 0,
                                                     [13] = 0,
                                                     [26] = 0,
-                                                    [7] = 0,
                                                     [27] = 0,
+                                                    [7] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
                                                     [23] = 0,
@@ -2086,8 +2150,8 @@ mission =
                                                     [25] = 255,
                                                     [13] = 264,
                                                     [26] = 259,
-                                                    [7] = 262,
                                                     [27] = 262,
+                                                    [7] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
                                                     [23] = 260,
@@ -2097,9 +2161,9 @@ mission =
                                             }, -- end of [2]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 21,
-                                        ["psi"] = 1.0892373409851,
-                                        ["y"] = 788668.1569537,
-                                        ["x"] = -290507.98388921,
+                                        ["psi"] = 1.5121980895,
+                                        ["y"] = 788083.17053849,
+                                        ["x"] = -291001.74417242,
                                         ["name"] = "Mountains-2",
                                         ["payload"] = 
                                         {
@@ -2144,7 +2208,7 @@ mission =
                                             ["chaff"] = 140,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0892373409851,
+                                        ["heading"] = -1.5121980895,
                                         ["callsign"] = 
                                         {
                                             [1] = 2,
@@ -2235,8 +2299,8 @@ mission =
                                                     [25] = 0,
                                                     [13] = 0,
                                                     [26] = 0,
-                                                    [27] = 0,
                                                     [7] = 0,
+                                                    [27] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
                                                     [23] = 0,
@@ -2268,8 +2332,8 @@ mission =
                                                     [25] = 255,
                                                     [13] = 264,
                                                     [26] = 259,
-                                                    [27] = 262,
                                                     [7] = 262,
+                                                    [27] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
                                                     [23] = 260,
@@ -2279,9 +2343,9 @@ mission =
                                             }, -- end of [2]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 150,
-                                        ["psi"] = 1.0892373409851,
-                                        ["y"] = 788708.1569537,
-                                        ["x"] = -290547.98388921,
+                                        ["psi"] = 1.5121980895,
+                                        ["y"] = 788123.17053849,
+                                        ["x"] = -291041.74417242,
                                         ["name"] = "F14 Mountains Ph Sp Sw-1",
                                         ["payload"] = 
                                         {
@@ -2326,7 +2390,7 @@ mission =
                                             ["chaff"] = 140,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0892373409851,
+                                        ["heading"] = -1.5121980895,
                                         ["callsign"] = 
                                         {
                                             [1] = 2,
@@ -2337,8 +2401,8 @@ mission =
                                         ["onboard_num"] = "029",
                                     }, -- end of [2]
                                 }, -- end of ["units"]
-                                ["y"] = 788668.1569537,
-                                ["x"] = -290507.98388921,
+                                ["y"] = 788083.17053849,
+                                ["x"] = -291001.74417242,
                                 ["name"] = "F14 Mountains Ph Sp Sw",
                                 ["communication"] = true,
                                 ["uncontrollable"] = false,
@@ -2632,10 +2696,10 @@ mission =
                                                     [13] = 0,
                                                     [26] = 0,
                                                     [23] = 0,
-                                                    [27] = 0,
+                                                    [7] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
-                                                    [7] = 0,
+                                                    [27] = 0,
                                                     [29] = 0,
                                                     [30] = 0,
                                                 }, -- end of ["modulations"]
@@ -2665,10 +2729,10 @@ mission =
                                                     [13] = 264,
                                                     [26] = 259,
                                                     [23] = 260,
-                                                    [27] = 262,
+                                                    [7] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
-                                                    [7] = 262,
+                                                    [27] = 262,
                                                     [29] = 253,
                                                     [30] = 263,
                                                 }, -- end of ["channels"]
@@ -3036,10 +3100,10 @@ mission =
                                                     [13] = 0,
                                                     [26] = 0,
                                                     [23] = 0,
-                                                    [7] = 0,
+                                                    [27] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
-                                                    [27] = 0,
+                                                    [7] = 0,
                                                     [29] = 0,
                                                     [30] = 0,
                                                 }, -- end of ["modulations"]
@@ -3069,10 +3133,10 @@ mission =
                                                     [13] = 264,
                                                     [26] = 259,
                                                     [23] = 260,
-                                                    [7] = 262,
+                                                    [27] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
-                                                    [27] = 262,
+                                                    [7] = 262,
                                                     [29] = 253,
                                                     [30] = 263,
                                                 }, -- end of ["channels"]
@@ -3314,14 +3378,14 @@ mission =
                                             ["type"] = "Turning Point",
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
-                                            ["y"] = 790052.36745383,
-                                            ["x"] = -289054.49113894,
+                                            ["y"] = 789558.09920559,
+                                            ["x"] = -289254.52098216,
                                             ["formation_template"] = "",
                                             ["speed_locked"] = true,
                                         }, -- end of [1]
                                         [2] = 
                                         {
-                                            ["alt"] = 43,
+                                            ["alt"] = 45,
                                             ["action"] = "Landing",
                                             ["alt_type"] = "BARO",
                                             ["speed"] = 138.88888888889,
@@ -3336,12 +3400,12 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Land",
-                                            ["ETA"] = 4506.6355320137,
+                                            ["ETA"] = 370.80783273218,
                                             ["ETA_locked"] = false,
-                                            ["y"] = 243128.820313,
-                                            ["x"] = -5412.409668,
+                                            ["y"] = 683858.71875,
+                                            ["x"] = -284887.375,
                                             ["formation_template"] = "",
-                                            ["airdromeId"] = 12,
+                                            ["airdromeId"] = 25,
                                             ["speed_locked"] = true,
                                         }, -- end of [2]
                                     }, -- end of ["points"]
@@ -3432,8 +3496,8 @@ mission =
                                                     [25] = 0,
                                                     [13] = 0,
                                                     [26] = 0,
-                                                    [7] = 0,
                                                     [27] = 0,
+                                                    [7] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
                                                     [23] = 0,
@@ -3465,8 +3529,8 @@ mission =
                                                     [25] = 255,
                                                     [13] = 264,
                                                     [26] = 259,
-                                                    [7] = 262,
                                                     [27] = 262,
+                                                    [7] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
                                                     [23] = 260,
@@ -3476,9 +3540,9 @@ mission =
                                             }, -- end of [2]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 40,
-                                        ["psi"] = 1.0923688316219,
-                                        ["y"] = 790052.36745383,
-                                        ["x"] = -289054.49113894,
+                                        ["psi"] = 1.5295031470045,
+                                        ["y"] = 789558.09920559,
+                                        ["x"] = -289254.52098216,
                                         ["name"] = "Mountains-1",
                                         ["payload"] = 
                                         {
@@ -3491,7 +3555,7 @@ mission =
                                             ["chaff"] = 140,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0923688316219,
+                                        ["heading"] = -1.5295031470045,
                                         ["callsign"] = 
                                         {
                                             [1] = 6,
@@ -3582,8 +3646,8 @@ mission =
                                                     [25] = 0,
                                                     [13] = 0,
                                                     [26] = 0,
-                                                    [27] = 0,
                                                     [7] = 0,
+                                                    [27] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
                                                     [23] = 0,
@@ -3615,8 +3679,8 @@ mission =
                                                     [25] = 255,
                                                     [13] = 264,
                                                     [26] = 259,
-                                                    [27] = 262,
                                                     [7] = 262,
+                                                    [27] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
                                                     [23] = 260,
@@ -3626,9 +3690,9 @@ mission =
                                             }, -- end of [2]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 151,
-                                        ["psi"] = 1.0923688316219,
-                                        ["y"] = 790092.36745383,
-                                        ["x"] = -289094.49113894,
+                                        ["psi"] = 1.5295031470045,
+                                        ["y"] = 789598.09920559,
+                                        ["x"] = -289294.52098216,
                                         ["name"] = "F14 Mountains Guns 50% Fuel-1",
                                         ["payload"] = 
                                         {
@@ -3641,7 +3705,7 @@ mission =
                                             ["chaff"] = 140,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0923688316219,
+                                        ["heading"] = -1.5295031470045,
                                         ["callsign"] = 
                                         {
                                             [1] = 6,
@@ -3652,8 +3716,8 @@ mission =
                                         ["onboard_num"] = "030",
                                     }, -- end of [2]
                                 }, -- end of ["units"]
-                                ["y"] = 790052.36745383,
-                                ["x"] = -289054.49113894,
+                                ["y"] = 789558.09920559,
+                                ["x"] = -289254.52098216,
                                 ["name"] = "F14 Mountains Guns 50% Fuel",
                                 ["communication"] = true,
                                 ["uncontrollable"] = false,
@@ -3944,8 +4008,8 @@ mission =
                                                     [25] = 0,
                                                     [13] = 0,
                                                     [26] = 0,
-                                                    [7] = 0,
                                                     [27] = 0,
+                                                    [7] = 0,
                                                     [14] = 0,
                                                     [28] = 0,
                                                     [23] = 0,
@@ -3977,8 +4041,8 @@ mission =
                                                     [25] = 255,
                                                     [13] = 264,
                                                     [26] = 259,
-                                                    [7] = 262,
                                                     [27] = 262,
+                                                    [7] = 262,
                                                     [14] = 266,
                                                     [28] = 257,
                                                     [23] = 260,
@@ -4052,11 +4116,11 @@ mission =
                                                     {
                                                         [1] = 
                                                         {
-                                                            ["number"] = 1,
-                                                            ["auto"] = true,
-                                                            ["id"] = "EngageTargets",
                                                             ["enabled"] = true,
                                                             ["key"] = "CAP",
+                                                            ["id"] = "EngageTargets",
+                                                            ["number"] = 1,
+                                                            ["auto"] = true,
                                                             ["params"] = 
                                                             {
                                                                 ["targetTypes"] = 
@@ -4201,17 +4265,17 @@ mission =
                                             ["type"] = "Turning Point",
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
-                                            ["y"] = 786340.81874518,
-                                            ["x"] = -293203.77489063,
+                                            ["y"] = 786676.31550218,
+                                            ["x"] = -292839.73220372,
                                             ["formation_template"] = "",
                                             ["speed_locked"] = true,
                                         }, -- end of [1]
                                         [2] = 
                                         {
-                                            ["alt"] = 43,
+                                            ["alt"] = 45,
                                             ["action"] = "Landing",
                                             ["alt_type"] = "BARO",
-                                            ["speed"] = 179.86111111111,
+                                            ["speed"] = 138.88888888889,
                                             ["task"] = 
                                             {
                                                 ["id"] = "ComboTask",
@@ -4223,12 +4287,12 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Land",
-                                            ["ETA"] = 4506.6355320137,
+                                            ["ETA"] = 571.6576677607,
                                             ["ETA_locked"] = false,
-                                            ["y"] = 243128.820313,
-                                            ["x"] = -5412.409668,
+                                            ["y"] = 683858.71875,
+                                            ["x"] = -284887.375,
                                             ["formation_template"] = "",
-                                            ["airdromeId"] = 12,
+                                            ["airdromeId"] = 25,
                                             ["speed_locked"] = true,
                                         }, -- end of [2]
                                     }, -- end of ["points"]
@@ -4354,7 +4418,7 @@ mission =
                                             }, -- end of [2]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 57,
-                                        ["psi"] = 1.0835972806192,
+                                        ["psi"] = 1.4936056829062,
                                         ["dataCartridge"] = 
                                         {
                                             ["GroupsPoints"] = 
@@ -4365,15 +4429,15 @@ mission =
                                                 ["Sequence 2 Red"] = 
                                                 {
                                                 }, -- end of ["Sequence 2 Red"]
-                                                ["Start Location"] = 
-                                                {
-                                                }, -- end of ["Start Location"]
-                                                ["Sequence 1 Blue"] = 
-                                                {
-                                                }, -- end of ["Sequence 1 Blue"]
                                                 ["Sequence 3 Yellow"] = 
                                                 {
                                                 }, -- end of ["Sequence 3 Yellow"]
+                                                ["Sequence 1 Blue"] = 
+                                                {
+                                                }, -- end of ["Sequence 1 Blue"]
+                                                ["Start Location"] = 
+                                                {
+                                                }, -- end of ["Start Location"]
                                                 ["A/A Waypoint"] = 
                                                 {
                                                 }, -- end of ["A/A Waypoint"]
@@ -4388,8 +4452,8 @@ mission =
                                             {
                                             }, -- end of ["Points"]
                                         }, -- end of ["dataCartridge"]
-                                        ["y"] = 786340.81874518,
-                                        ["x"] = -293203.77489063,
+                                        ["y"] = 786676.31550218,
+                                        ["x"] = -292839.73220372,
                                         ["name"] = "Mountains Guns 50% Fuel-1-1",
                                         ["payload"] = 
                                         {
@@ -4402,7 +4466,7 @@ mission =
                                             ["chaff"] = 60,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0835972806192,
+                                        ["heading"] = -1.4936056829062,
                                         ["callsign"] = 
                                         {
                                             [1] = 8,
@@ -4528,7 +4592,7 @@ mission =
                                             }, -- end of [2]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 152,
-                                        ["psi"] = 1.0835972806192,
+                                        ["psi"] = 1.4936056829062,
                                         ["dataCartridge"] = 
                                         {
                                             ["GroupsPoints"] = 
@@ -4545,25 +4609,25 @@ mission =
                                                 ["Sequence 1 Blue"] = 
                                                 {
                                                 }, -- end of ["Sequence 1 Blue"]
-                                                ["Sequence 3 Yellow"] = 
+                                                ["Start Location"] = 
                                                 {
-                                                }, -- end of ["Sequence 3 Yellow"]
+                                                }, -- end of ["Start Location"]
                                                 ["A/A Waypoint"] = 
                                                 {
                                                 }, -- end of ["A/A Waypoint"]
                                                 ["PP"] = 
                                                 {
                                                 }, -- end of ["PP"]
-                                                ["Start Location"] = 
+                                                ["Sequence 3 Yellow"] = 
                                                 {
-                                                }, -- end of ["Start Location"]
+                                                }, -- end of ["Sequence 3 Yellow"]
                                             }, -- end of ["GroupsPoints"]
                                             ["Points"] = 
                                             {
                                             }, -- end of ["Points"]
                                         }, -- end of ["dataCartridge"]
-                                        ["y"] = 786380.81874518,
-                                        ["x"] = -293243.77489063,
+                                        ["y"] = 786716.31550218,
+                                        ["x"] = -292879.73220372,
                                         ["name"] = "F18 Mountains Guns 50% Fuel-1-1",
                                         ["payload"] = 
                                         {
@@ -4576,7 +4640,7 @@ mission =
                                             ["chaff"] = 60,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0835972806192,
+                                        ["heading"] = -1.4936056829062,
                                         ["callsign"] = 
                                         {
                                             [1] = 8,
@@ -4587,8 +4651,8 @@ mission =
                                         ["onboard_num"] = "031",
                                     }, -- end of [2]
                                 }, -- end of ["units"]
-                                ["y"] = 786340.81874518,
-                                ["x"] = -293203.77489063,
+                                ["y"] = 786676.31550218,
+                                ["x"] = -292839.73220372,
                                 ["name"] = "F18 Mountains Guns 50% Fuel-1",
                                 ["communication"] = true,
                                 ["uncontrollable"] = false,
@@ -4626,11 +4690,11 @@ mission =
                                                     {
                                                         [1] = 
                                                         {
-                                                            ["number"] = 1,
-                                                            ["auto"] = true,
-                                                            ["id"] = "EngageTargets",
                                                             ["enabled"] = true,
                                                             ["key"] = "CAP",
+                                                            ["id"] = "EngageTargets",
+                                                            ["number"] = 1,
+                                                            ["auto"] = true,
                                                             ["params"] = 
                                                             {
                                                                 ["targetTypes"] = 
@@ -4775,14 +4839,14 @@ mission =
                                             ["type"] = "Turning Point",
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
-                                            ["y"] = 785633.7912846,
-                                            ["x"] = -294227.52890294,
+                                            ["y"] = 785519.06377877,
+                                            ["x"] = -294541.57297345,
                                             ["formation_template"] = "",
                                             ["speed_locked"] = true,
                                         }, -- end of [1]
                                         [2] = 
                                         {
-                                            ["alt"] = 43,
+                                            ["alt"] = 45,
                                             ["action"] = "Landing",
                                             ["alt_type"] = "BARO",
                                             ["speed"] = 138.88888888889,
@@ -4797,12 +4861,12 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Land",
-                                            ["ETA"] = 4506.6355320137,
+                                            ["ETA"] = 568.23155357637,
                                             ["ETA_locked"] = false,
-                                            ["y"] = 243128.820313,
-                                            ["x"] = -5412.409668,
+                                            ["y"] = 683858.71875,
+                                            ["x"] = -284887.375,
                                             ["formation_template"] = "",
-                                            ["airdromeId"] = 12,
+                                            ["airdromeId"] = 25,
                                             ["speed_locked"] = true,
                                         }, -- end of [2]
                                     }, -- end of ["points"]
@@ -4928,7 +4992,7 @@ mission =
                                             }, -- end of [2]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 58,
-                                        ["psi"] = 1.0815867902009,
+                                        ["psi"] = 1.4761150406489,
                                         ["dataCartridge"] = 
                                         {
                                             ["GroupsPoints"] = 
@@ -4939,15 +5003,15 @@ mission =
                                                 ["Sequence 2 Red"] = 
                                                 {
                                                 }, -- end of ["Sequence 2 Red"]
-                                                ["Start Location"] = 
-                                                {
-                                                }, -- end of ["Start Location"]
-                                                ["Sequence 1 Blue"] = 
-                                                {
-                                                }, -- end of ["Sequence 1 Blue"]
                                                 ["Sequence 3 Yellow"] = 
                                                 {
                                                 }, -- end of ["Sequence 3 Yellow"]
+                                                ["Sequence 1 Blue"] = 
+                                                {
+                                                }, -- end of ["Sequence 1 Blue"]
+                                                ["Start Location"] = 
+                                                {
+                                                }, -- end of ["Start Location"]
                                                 ["A/A Waypoint"] = 
                                                 {
                                                 }, -- end of ["A/A Waypoint"]
@@ -4962,8 +5026,8 @@ mission =
                                             {
                                             }, -- end of ["Points"]
                                         }, -- end of ["dataCartridge"]
-                                        ["y"] = 785633.7912846,
-                                        ["x"] = -294227.52890294,
+                                        ["y"] = 785519.06377877,
+                                        ["x"] = -294541.57297345,
                                         ["name"] = "MountainsSidewinder",
                                         ["payload"] = 
                                         {
@@ -5012,7 +5076,7 @@ mission =
                                             ["chaff"] = 60,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0815867902009,
+                                        ["heading"] = -1.4761150406489,
                                         ["callsign"] = 
                                         {
                                             [1] = 9,
@@ -5138,7 +5202,7 @@ mission =
                                             }, -- end of [2]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 153,
-                                        ["psi"] = 1.0815867902009,
+                                        ["psi"] = 1.4761150406489,
                                         ["dataCartridge"] = 
                                         {
                                             ["GroupsPoints"] = 
@@ -5155,25 +5219,25 @@ mission =
                                                 ["Sequence 1 Blue"] = 
                                                 {
                                                 }, -- end of ["Sequence 1 Blue"]
-                                                ["Sequence 3 Yellow"] = 
+                                                ["Start Location"] = 
                                                 {
-                                                }, -- end of ["Sequence 3 Yellow"]
+                                                }, -- end of ["Start Location"]
                                                 ["A/A Waypoint"] = 
                                                 {
                                                 }, -- end of ["A/A Waypoint"]
                                                 ["PP"] = 
                                                 {
                                                 }, -- end of ["PP"]
-                                                ["Start Location"] = 
+                                                ["Sequence 3 Yellow"] = 
                                                 {
-                                                }, -- end of ["Start Location"]
+                                                }, -- end of ["Sequence 3 Yellow"]
                                             }, -- end of ["GroupsPoints"]
                                             ["Points"] = 
                                             {
                                             }, -- end of ["Points"]
                                         }, -- end of ["dataCartridge"]
-                                        ["y"] = 785673.7912846,
-                                        ["x"] = -294267.52890294,
+                                        ["y"] = 785559.06377877,
+                                        ["x"] = -294581.57297345,
                                         ["name"] = "F18 Mountains 2Sw 4Sp-1",
                                         ["payload"] = 
                                         {
@@ -5222,7 +5286,7 @@ mission =
                                             ["chaff"] = 60,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0815867902009,
+                                        ["heading"] = -1.4761150406489,
                                         ["callsign"] = 
                                         {
                                             [1] = 9,
@@ -5233,8 +5297,8 @@ mission =
                                         ["onboard_num"] = "032",
                                     }, -- end of [2]
                                 }, -- end of ["units"]
-                                ["y"] = 785633.7912846,
-                                ["x"] = -294227.52890294,
+                                ["y"] = 785519.06377877,
+                                ["x"] = -294541.57297345,
                                 ["name"] = "F18 Mountains 2Sw 4Sp",
                                 ["communication"] = true,
                                 ["uncontrollable"] = false,
@@ -5272,11 +5336,11 @@ mission =
                                                     {
                                                         [1] = 
                                                         {
-                                                            ["number"] = 1,
-                                                            ["auto"] = true,
-                                                            ["id"] = "EngageTargets",
                                                             ["enabled"] = true,
                                                             ["key"] = "CAP",
+                                                            ["id"] = "EngageTargets",
+                                                            ["number"] = 1,
+                                                            ["auto"] = true,
                                                             ["params"] = 
                                                             {
                                                                 ["targetTypes"] = 
@@ -5421,17 +5485,17 @@ mission =
                                             ["type"] = "Turning Point",
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
-                                            ["y"] = 784330.4618321,
-                                            ["x"] = -296263.07027422,
+                                            ["y"] = 784180.28237325,
+                                            ["x"] = -296220.72253291,
                                             ["formation_template"] = "",
                                             ["speed_locked"] = true,
                                         }, -- end of [1]
                                         [2] = 
                                         {
-                                            ["alt"] = 43,
+                                            ["alt"] = 45,
                                             ["action"] = "Landing",
                                             ["alt_type"] = "BARO",
-                                            ["speed"] = 220.97222222222,
+                                            ["speed"] = 138.88888888889,
                                             ["task"] = 
                                             {
                                                 ["id"] = "ComboTask",
@@ -5443,12 +5507,12 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Land",
-                                            ["ETA"] = 4506.6355320137,
+                                            ["ETA"] = 457.585507805,
                                             ["ETA_locked"] = false,
-                                            ["y"] = 243128.820313,
-                                            ["x"] = -5412.409668,
+                                            ["y"] = 683858.71875,
+                                            ["x"] = -284887.375,
                                             ["formation_template"] = "",
-                                            ["airdromeId"] = 12,
+                                            ["airdromeId"] = 25,
                                             ["speed_locked"] = true,
                                         }, -- end of [2]
                                     }, -- end of ["points"]
@@ -5470,8 +5534,8 @@ mission =
                                             ["LaserCode100"] = 6,
                                             ["LaserCode1"] = 8,
                                             ["HelmetMountedDevice"] = 1,
-                                            ["LaserCode10"] = 8,
                                             ["LAU3ROF"] = 0,
+                                            ["LaserCode10"] = 8,
                                         }, -- end of ["AddPropAircraft"]
                                         ["type"] = "F-16C_50",
                                         ["Radio"] = 
@@ -5576,9 +5640,9 @@ mission =
                                             }, -- end of [2]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 59,
-                                        ["psi"] = 1.0776655007371,
-                                        ["y"] = 784330.4618321,
-                                        ["x"] = -296263.07027422,
+                                        ["psi"] = 1.4583030610551,
+                                        ["y"] = 784180.28237325,
+                                        ["x"] = -296220.72253291,
                                         ["name"] = "Mountains Guns 50% Fuel-2-1",
                                         ["payload"] = 
                                         {
@@ -5591,7 +5655,7 @@ mission =
                                             ["chaff"] = 60,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0776655007371,
+                                        ["heading"] = -1.4583030610551,
                                         ["callsign"] = 
                                         {
                                             [1] = 9,
@@ -5612,8 +5676,8 @@ mission =
                                         {
                                             ["LaserCode100"] = 6,
                                             ["LaserCode1"] = 8,
-                                            ["LAU3ROF"] = 0,
                                             ["LaserCode10"] = 8,
+                                            ["LAU3ROF"] = 0,
                                             ["HelmetMountedDevice"] = 1,
                                         }, -- end of ["AddPropAircraft"]
                                         ["type"] = "F-16C_50",
@@ -5719,9 +5783,9 @@ mission =
                                             }, -- end of [2]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 154,
-                                        ["psi"] = 1.0776655007371,
-                                        ["y"] = 784370.4618321,
-                                        ["x"] = -296303.07027422,
+                                        ["psi"] = 1.4583030610551,
+                                        ["y"] = 784220.28237325,
+                                        ["x"] = -296260.72253291,
                                         ["name"] = "F16 Mountains Guns 50% Fuel-2-1",
                                         ["payload"] = 
                                         {
@@ -5734,7 +5798,7 @@ mission =
                                             ["chaff"] = 60,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0776655007371,
+                                        ["heading"] = -1.4583030610551,
                                         ["callsign"] = 
                                         {
                                             [1] = 9,
@@ -5745,8 +5809,8 @@ mission =
                                         ["onboard_num"] = "033",
                                     }, -- end of [2]
                                 }, -- end of ["units"]
-                                ["y"] = 784330.4618321,
-                                ["x"] = -296263.07027422,
+                                ["y"] = 784180.28237325,
+                                ["x"] = -296220.72253291,
                                 ["name"] = "F16 Mountains Guns 50% Fuel-2",
                                 ["communication"] = true,
                                 ["uncontrollable"] = false,
@@ -5784,11 +5848,11 @@ mission =
                                                     {
                                                         [1] = 
                                                         {
-                                                            ["number"] = 1,
-                                                            ["auto"] = true,
-                                                            ["id"] = "EngageTargets",
                                                             ["enabled"] = true,
                                                             ["key"] = "CAP",
+                                                            ["id"] = "EngageTargets",
+                                                            ["number"] = 1,
+                                                            ["auto"] = true,
                                                             ["params"] = 
                                                             {
                                                                 ["targetTypes"] = 
@@ -5933,17 +5997,17 @@ mission =
                                             ["type"] = "Turning Point",
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
-                                            ["y"] = 783326.18511578,
-                                            ["x"] = -297730.85932115,
+                                            ["y"] = 782977.64822931,
+                                            ["x"] = -297945.2545129,
                                             ["formation_template"] = "",
                                             ["speed_locked"] = true,
                                         }, -- end of [1]
                                         [2] = 
                                         {
-                                            ["alt"] = 43,
+                                            ["alt"] = 45,
                                             ["action"] = "Landing",
                                             ["alt_type"] = "BARO",
-                                            ["speed"] = 220.97222222222,
+                                            ["speed"] = 138.88888888889,
                                             ["task"] = 
                                             {
                                                 ["id"] = "ComboTask",
@@ -5955,12 +6019,12 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Land",
-                                            ["ETA"] = 4506.6355320137,
+                                            ["ETA"] = 453.87256753963,
                                             ["ETA_locked"] = false,
-                                            ["y"] = 243128.820313,
-                                            ["x"] = -5412.409668,
+                                            ["y"] = 683858.71875,
+                                            ["x"] = -284887.375,
                                             ["formation_template"] = "",
-                                            ["airdromeId"] = 12,
+                                            ["airdromeId"] = 25,
                                             ["speed_locked"] = true,
                                         }, -- end of [2]
                                     }, -- end of ["points"]
@@ -5982,8 +6046,8 @@ mission =
                                             ["LaserCode100"] = 6,
                                             ["LaserCode1"] = 8,
                                             ["HelmetMountedDevice"] = 1,
-                                            ["LaserCode10"] = 8,
                                             ["LAU3ROF"] = 0,
+                                            ["LaserCode10"] = 8,
                                         }, -- end of ["AddPropAircraft"]
                                         ["type"] = "F-16C_50",
                                         ["Radio"] = 
@@ -6088,9 +6152,9 @@ mission =
                                             }, -- end of [2]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 60,
-                                        ["psi"] = 1.0747865171016,
-                                        ["y"] = 783326.18511578,
-                                        ["x"] = -297730.85932115,
+                                        ["psi"] = 1.4398111007943,
+                                        ["y"] = 782977.64822931,
+                                        ["x"] = -297945.2545129,
                                         ["name"] = "Mountains 2Sw 4Sp-1-1",
                                         ["payload"] = 
                                         {
@@ -6139,7 +6203,7 @@ mission =
                                             ["chaff"] = 60,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0747865171016,
+                                        ["heading"] = -1.4398111007943,
                                         ["callsign"] = 
                                         {
                                             [1] = 10,
@@ -6160,8 +6224,8 @@ mission =
                                         {
                                             ["LaserCode100"] = 6,
                                             ["LaserCode1"] = 8,
-                                            ["LAU3ROF"] = 0,
                                             ["LaserCode10"] = 8,
+                                            ["LAU3ROF"] = 0,
                                             ["HelmetMountedDevice"] = 1,
                                         }, -- end of ["AddPropAircraft"]
                                         ["type"] = "F-16C_50",
@@ -6267,9 +6331,9 @@ mission =
                                             }, -- end of [2]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 155,
-                                        ["psi"] = 1.0747865171016,
-                                        ["y"] = 783366.18511578,
-                                        ["x"] = -297770.85932115,
+                                        ["psi"] = 1.4398111007943,
+                                        ["y"] = 783017.64822931,
+                                        ["x"] = -297985.2545129,
                                         ["name"] = "F16 Mountains 2Am 4 Sw-1",
                                         ["payload"] = 
                                         {
@@ -6318,7 +6382,7 @@ mission =
                                             ["chaff"] = 60,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0747865171016,
+                                        ["heading"] = -1.4398111007943,
                                         ["callsign"] = 
                                         {
                                             [1] = 10,
@@ -6329,8 +6393,8 @@ mission =
                                         ["onboard_num"] = "034",
                                     }, -- end of [2]
                                 }, -- end of ["units"]
-                                ["y"] = 783326.18511578,
-                                ["x"] = -297730.85932115,
+                                ["y"] = 782977.64822931,
+                                ["x"] = -297945.2545129,
                                 ["name"] = "F16 Mountains 2Am 4 Sw",
                                 ["communication"] = true,
                                 ["uncontrollable"] = false,
@@ -6368,11 +6432,11 @@ mission =
                                                     {
                                                         [1] = 
                                                         {
-                                                            ["number"] = 1,
-                                                            ["key"] = "CAP",
-                                                            ["id"] = "EngageTargets",
                                                             ["enabled"] = true,
                                                             ["auto"] = true,
+                                                            ["id"] = "EngageTargets",
+                                                            ["number"] = 1,
+                                                            ["key"] = "CAP",
                                                             ["params"] = 
                                                             {
                                                                 ["targetTypes"] = 
@@ -6517,17 +6581,17 @@ mission =
                                             ["type"] = "Turning Point",
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
-                                            ["y"] = 780221.22383378,
-                                            ["x"] = -301976.79393325,
+                                            ["y"] = 780753.90962353,
+                                            ["x"] = -301553.15694472,
                                             ["formation_template"] = "",
                                             ["speed_locked"] = true,
                                         }, -- end of [1]
                                         [2] = 
                                         {
-                                            ["alt"] = 43,
+                                            ["alt"] = 45,
                                             ["action"] = "Landing",
                                             ["alt_type"] = "BARO",
-                                            ["speed"] = 220.97222222222,
+                                            ["speed"] = 138.88888888889,
                                             ["task"] = 
                                             {
                                                 ["id"] = "ComboTask",
@@ -6539,12 +6603,12 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Land",
-                                            ["ETA"] = 4506.6355320137,
+                                            ["ETA"] = 442.88886300225,
                                             ["ETA_locked"] = false,
-                                            ["y"] = 243128.820313,
-                                            ["x"] = -5412.409668,
+                                            ["y"] = 683858.71875,
+                                            ["x"] = -284887.375,
                                             ["formation_template"] = "",
-                                            ["airdromeId"] = 12,
+                                            ["airdromeId"] = 25,
                                             ["speed_locked"] = true,
                                         }, -- end of [2]
                                     }, -- end of ["points"]
@@ -6563,9 +6627,9 @@ mission =
                                         ["speed"] = 220.97222222222,
                                         ["type"] = "F-15C",
                                         ["unitId"] = 61,
-                                        ["psi"] = 1.0662913669664,
-                                        ["y"] = 780221.22383378,
-                                        ["x"] = -301976.79393325,
+                                        ["psi"] = 1.4004649041314,
+                                        ["y"] = 780753.90962353,
+                                        ["x"] = -301553.15694472,
                                         ["name"] = "Mountains 2Am 4 Sw-1-1",
                                         ["payload"] = 
                                         {
@@ -6609,7 +6673,7 @@ mission =
                                             ["chaff"] = 120,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0662913669664,
+                                        ["heading"] = -1.4004649041314,
                                         ["callsign"] = 
                                         {
                                             [1] = 2,
@@ -6628,9 +6692,9 @@ mission =
                                         ["speed"] = 220.97222222222,
                                         ["type"] = "F-15C",
                                         ["unitId"] = 157,
-                                        ["psi"] = 1.0662913669664,
-                                        ["y"] = 780261.22383378,
-                                        ["x"] = -302016.79393325,
+                                        ["psi"] = 1.4004649041314,
+                                        ["y"] = 780793.90962353,
+                                        ["x"] = -301593.15694472,
                                         ["name"] = "F16 Mountains 4Am 4Sw-1",
                                         ["payload"] = 
                                         {
@@ -6674,7 +6738,7 @@ mission =
                                             ["chaff"] = 120,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0662913669664,
+                                        ["heading"] = -1.4004649041314,
                                         ["callsign"] = 
                                         {
                                             [1] = 2,
@@ -6685,8 +6749,8 @@ mission =
                                         ["onboard_num"] = "036",
                                     }, -- end of [2]
                                 }, -- end of ["units"]
-                                ["y"] = 780221.22383378,
-                                ["x"] = -301976.79393325,
+                                ["y"] = 780753.90962353,
+                                ["x"] = -301553.15694472,
                                 ["name"] = "F16 Mountains 4Am 4Sw",
                                 ["communication"] = true,
                                 ["uncontrollable"] = false,
@@ -6724,11 +6788,11 @@ mission =
                                                     {
                                                         [1] = 
                                                         {
-                                                            ["enabled"] = true,
-                                                            ["auto"] = true,
-                                                            ["id"] = "EngageTargets",
                                                             ["number"] = 1,
                                                             ["key"] = "CAP",
+                                                            ["id"] = "EngageTargets",
+                                                            ["enabled"] = true,
+                                                            ["auto"] = true,
                                                             ["params"] = 
                                                             {
                                                                 ["targetTypes"] = 
@@ -6880,10 +6944,10 @@ mission =
                                         }, -- end of [1]
                                         [2] = 
                                         {
-                                            ["alt"] = 43,
+                                            ["alt"] = 45,
                                             ["action"] = "Landing",
                                             ["alt_type"] = "BARO",
-                                            ["speed"] = 220.97222222222,
+                                            ["speed"] = 138.88888888889,
                                             ["task"] = 
                                             {
                                                 ["id"] = "ComboTask",
@@ -6895,12 +6959,12 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Land",
-                                            ["ETA"] = 4506.6355320137,
+                                            ["ETA"] = 448.39473914091,
                                             ["ETA_locked"] = false,
-                                            ["y"] = 243128.820313,
-                                            ["x"] = -5412.409668,
+                                            ["y"] = 683858.71875,
+                                            ["x"] = -284887.375,
                                             ["formation_template"] = "",
-                                            ["airdromeId"] = 12,
+                                            ["airdromeId"] = 25,
                                             ["speed_locked"] = true,
                                         }, -- end of [2]
                                     }, -- end of ["points"]
@@ -6919,7 +6983,7 @@ mission =
                                         ["speed"] = 220.97222222222,
                                         ["type"] = "F-15C",
                                         ["unitId"] = 62,
-                                        ["psi"] = 1.0704692826817,
+                                        ["psi"] = 1.4185317985248,
                                         ["y"] = 781795.12638864,
                                         ["x"] = -299915.93900161,
                                         ["name"] = "Mountains Guns 50% Fuel-3-1",
@@ -6933,7 +6997,7 @@ mission =
                                             ["chaff"] = 120,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0704692826817,
+                                        ["heading"] = -1.4185317985248,
                                         ["callsign"] = 
                                         {
                                             [1] = 1,
@@ -6952,7 +7016,7 @@ mission =
                                         ["speed"] = 220.97222222222,
                                         ["type"] = "F-15C",
                                         ["unitId"] = 156,
-                                        ["psi"] = 1.0704692826817,
+                                        ["psi"] = 1.4185317985248,
                                         ["y"] = 781835.12638864,
                                         ["x"] = -299955.93900161,
                                         ["name"] = "F16 Mountains Guns 50% Fuel-3-1",
@@ -6966,7 +7030,7 @@ mission =
                                             ["chaff"] = 120,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0704692826817,
+                                        ["heading"] = -1.4185317985248,
                                         ["callsign"] = 
                                         {
                                             [1] = 1,
@@ -7951,15 +8015,15 @@ mission =
                                                 ["Sequence 2 Red"] = 
                                                 {
                                                 }, -- end of ["Sequence 2 Red"]
-                                                ["Sequence 3 Yellow"] = 
-                                                {
-                                                }, -- end of ["Sequence 3 Yellow"]
-                                                ["Sequence 1 Blue"] = 
-                                                {
-                                                }, -- end of ["Sequence 1 Blue"]
                                                 ["Start Location"] = 
                                                 {
                                                 }, -- end of ["Start Location"]
+                                                ["Sequence 1 Blue"] = 
+                                                {
+                                                }, -- end of ["Sequence 1 Blue"]
+                                                ["Sequence 3 Yellow"] = 
+                                                {
+                                                }, -- end of ["Sequence 3 Yellow"]
                                                 ["A/A Waypoint"] = 
                                                 {
                                                 }, -- end of ["A/A Waypoint"]
@@ -8375,15 +8439,15 @@ mission =
                                                 ["Sequence 2 Red"] = 
                                                 {
                                                 }, -- end of ["Sequence 2 Red"]
-                                                ["Sequence 3 Yellow"] = 
-                                                {
-                                                }, -- end of ["Sequence 3 Yellow"]
-                                                ["Sequence 1 Blue"] = 
-                                                {
-                                                }, -- end of ["Sequence 1 Blue"]
                                                 ["Start Location"] = 
                                                 {
                                                 }, -- end of ["Start Location"]
+                                                ["Sequence 1 Blue"] = 
+                                                {
+                                                }, -- end of ["Sequence 1 Blue"]
+                                                ["Sequence 3 Yellow"] = 
+                                                {
+                                                }, -- end of ["Sequence 3 Yellow"]
                                                 ["A/A Waypoint"] = 
                                                 {
                                                 }, -- end of ["A/A Waypoint"]
@@ -8720,8 +8784,8 @@ mission =
                                             ["LaserCode100"] = 6,
                                             ["HelmetMountedDevice"] = 1,
                                             ["LaserCode1"] = 8,
-                                            ["LAU3ROF"] = 0,
                                             ["LaserCode10"] = 8,
+                                            ["LAU3ROF"] = 0,
                                         }, -- end of ["AddPropAircraft"]
                                         ["type"] = "F-16C_50",
                                         ["Radio"] = 
@@ -9113,8 +9177,8 @@ mission =
                                             ["LaserCode100"] = 6,
                                             ["HelmetMountedDevice"] = 1,
                                             ["LaserCode1"] = 8,
-                                            ["LAU3ROF"] = 0,
                                             ["LaserCode10"] = 8,
+                                            ["LAU3ROF"] = 0,
                                         }, -- end of ["AddPropAircraft"]
                                         ["type"] = "F-16C_50",
                                         ["Radio"] = 
@@ -9307,7 +9371,7 @@ mission =
                                     {
                                         [1] = 
                                         {
-                                            ["alt"] = 6096,
+                                            ["alt"] = 2000,
                                             ["action"] = "Fly Over Point",
                                             ["alt_type"] = "BARO",
                                             ["properties"] = 
@@ -9316,7 +9380,7 @@ mission =
                                                 {
                                                 }, -- end of ["addopt"]
                                             }, -- end of ["properties"]
-                                            ["speed"] = 123.33333333333,
+                                            ["speed"] = 138.88888888889,
                                             ["task"] = 
                                             {
                                                 ["id"] = "ComboTask",
@@ -9326,11 +9390,11 @@ mission =
                                                     {
                                                         [1] = 
                                                         {
-                                                            ["number"] = 1,
-                                                            ["key"] = "CAP",
-                                                            ["id"] = "EngageTargets",
                                                             ["enabled"] = true,
                                                             ["auto"] = true,
+                                                            ["id"] = "EngageTargets",
+                                                            ["number"] = 1,
+                                                            ["key"] = "CAP",
                                                             ["params"] = 
                                                             {
                                                                 ["targetTypes"] = 
@@ -9456,14 +9520,14 @@ mission =
                                             ["type"] = "Turning Point",
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
-                                            ["y"] = 778831.51612467,
-                                            ["x"] = -303829.7375454,
+                                            ["y"] = 778620.93585881,
+                                            ["x"] = -304956.83848418,
                                             ["formation_template"] = "",
                                             ["speed_locked"] = true,
                                         }, -- end of [1]
                                         [2] = 
                                         {
-                                            ["alt"] = 43,
+                                            ["alt"] = 45,
                                             ["action"] = "Landing",
                                             ["alt_type"] = "BARO",
                                             ["properties"] = 
@@ -9472,7 +9536,7 @@ mission =
                                                 {
                                                 }, -- end of ["addopt"]
                                             }, -- end of ["properties"]
-                                            ["speed"] = 123.33333333333,
+                                            ["speed"] = 138.88888888889,
                                             ["task"] = 
                                             {
                                                 ["id"] = "ComboTask",
@@ -9484,12 +9548,12 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Land",
-                                            ["ETA"] = 4506.6355320137,
+                                            ["ETA"] = 691.57259691861,
                                             ["ETA_locked"] = false,
-                                            ["y"] = 243128.820313,
-                                            ["x"] = -5412.409668,
+                                            ["y"] = 683858.71875,
+                                            ["x"] = -284887.375,
                                             ["formation_template"] = "",
-                                            ["airdromeId"] = 12,
+                                            ["airdromeId"] = 25,
                                             ["speed_locked"] = true,
                                         }, -- end of [2]
                                     }, -- end of ["points"]
@@ -9500,12 +9564,12 @@ mission =
                                 {
                                     [1] = 
                                     {
-                                        ["alt"] = 6096,
+                                        ["alt"] = 2000,
                                         ["hardpoint_racks"] = true,
                                         ["alt_type"] = "BARO",
                                         ["livery_id"] = "USAF 363rd FS, 357th FG DESERT RAT",
                                         ["skill"] = "Client",
-                                        ["speed"] = 123.33333333333,
+                                        ["speed"] = 138.88888888889,
                                         ["type"] = "P-51D-30-NA",
                                         ["Radio"] = 
                                         {
@@ -9534,9 +9598,9 @@ mission =
                                             }, -- end of [2]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 160,
-                                        ["psi"] = 1.0625506661705,
-                                        ["y"] = 778831.51612467,
-                                        ["x"] = -303829.7375454,
+                                        ["psi"] = 1.3620926434349,
+                                        ["y"] = 778620.93585881,
+                                        ["x"] = -304956.83848418,
                                         ["name"] = "F16 Mountains 4Am 4Sw-1-1",
                                         ["payload"] = 
                                         {
@@ -9549,7 +9613,7 @@ mission =
                                             ["chaff"] = 0,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0625506661705,
+                                        ["heading"] = -1.3620926434349,
                                         ["callsign"] = 
                                         {
                                             [1] = 5,
@@ -9561,11 +9625,11 @@ mission =
                                     }, -- end of [1]
                                     [2] = 
                                     {
-                                        ["alt"] = 6096,
+                                        ["alt"] = 2000,
                                         ["alt_type"] = "BARO",
                                         ["livery_id"] = "USAF 363rd FS, 357th FG DESERT RAT",
                                         ["skill"] = "Client",
-                                        ["speed"] = 123.33333333333,
+                                        ["speed"] = 138.88888888889,
                                         ["type"] = "P-51D-30-NA",
                                         ["Radio"] = 
                                         {
@@ -9594,9 +9658,9 @@ mission =
                                             }, -- end of [2]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 161,
-                                        ["psi"] = 1.0625506661705,
-                                        ["y"] = 778871.51612467,
-                                        ["x"] = -303869.7375454,
+                                        ["psi"] = 1.3620926434349,
+                                        ["y"] = 778660.93585881,
+                                        ["x"] = -304996.83848418,
                                         ["name"] = "F16 Mountains 4Am 4Sw-1-2",
                                         ["payload"] = 
                                         {
@@ -9608,7 +9672,7 @@ mission =
                                             ["chaff"] = 0,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0625506661705,
+                                        ["heading"] = -1.3620926434349,
                                         ["callsign"] = 
                                         {
                                             [1] = 5,
@@ -9619,8 +9683,8 @@ mission =
                                         ["onboard_num"] = "038",
                                     }, -- end of [2]
                                 }, -- end of ["units"]
-                                ["y"] = 778831.51612467,
-                                ["x"] = -303829.7375454,
+                                ["y"] = 778620.93585881,
+                                ["x"] = -304956.83848418,
                                 ["name"] = "P51 Mountains ",
                                 ["communication"] = true,
                                 ["uncontrollable"] = false,
@@ -9658,11 +9722,11 @@ mission =
                                                     {
                                                         [1] = 
                                                         {
-                                                            ["number"] = 1,
-                                                            ["key"] = "CAP",
-                                                            ["id"] = "EngageTargets",
                                                             ["enabled"] = true,
                                                             ["auto"] = true,
+                                                            ["id"] = "EngageTargets",
+                                                            ["number"] = 1,
+                                                            ["key"] = "CAP",
                                                             ["params"] = 
                                                             {
                                                                 ["targetTypes"] = 
@@ -9788,14 +9852,14 @@ mission =
                                             ["type"] = "Turning Point",
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
-                                            ["y"] = 779871.2233737,
-                                            ["x"] = -302481.206361,
+                                            ["y"] = 779573.96668985,
+                                            ["x"] = -303050.77682208,
                                             ["formation_template"] = "",
                                             ["speed_locked"] = true,
                                         }, -- end of [1]
                                         [2] = 
                                         {
-                                            ["alt"] = 43,
+                                            ["alt"] = 45,
                                             ["action"] = "Landing",
                                             ["alt_type"] = "BARO",
                                             ["speed"] = 138.88888888889,
@@ -9810,12 +9874,12 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Land",
-                                            ["ETA"] = 4506.6355320137,
+                                            ["ETA"] = 558.66498471493,
                                             ["ETA_locked"] = false,
-                                            ["y"] = 243128.820313,
-                                            ["x"] = -5412.409668,
+                                            ["y"] = 683858.71875,
+                                            ["x"] = -284887.375,
                                             ["formation_template"] = "",
-                                            ["airdromeId"] = 12,
+                                            ["airdromeId"] = 25,
                                             ["speed_locked"] = true,
                                         }, -- end of [2]
                                     }, -- end of ["points"]
@@ -9880,9 +9944,9 @@ mission =
                                             }, -- end of [1]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 162,
-                                        ["psi"] = 1.0652957950989,
-                                        ["y"] = 779871.2233737,
-                                        ["x"] = -302481.206361,
+                                        ["psi"] = 1.3832612243544,
+                                        ["y"] = 779573.96668985,
+                                        ["x"] = -303050.77682208,
                                         ["name"] = "F5 Mountains 2xSw-1-1",
                                         ["payload"] = 
                                         {
@@ -9895,7 +9959,7 @@ mission =
                                             ["chaff"] = 30,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0652957950989,
+                                        ["heading"] = -1.3832612243544,
                                         ["callsign"] = 
                                         {
                                             [1] = 6,
@@ -9960,9 +10024,9 @@ mission =
                                             }, -- end of [1]
                                         }, -- end of ["Radio"]
                                         ["unitId"] = 163,
-                                        ["psi"] = 1.0652957950989,
-                                        ["y"] = 779974.16468549,
-                                        ["x"] = -302512.08875454,
+                                        ["psi"] = 1.3832612243544,
+                                        ["y"] = 779676.90800164,
+                                        ["x"] = -303081.65921562,
                                         ["name"] = "F5 Mountains 2xSw-1-2",
                                         ["payload"] = 
                                         {
@@ -9975,7 +10039,7 @@ mission =
                                             ["chaff"] = 30,
                                             ["gun"] = 100,
                                         }, -- end of ["payload"]
-                                        ["heading"] = -1.0652957950989,
+                                        ["heading"] = -1.3832612243544,
                                         ["callsign"] = 
                                         {
                                             [1] = 6,
@@ -9986,8 +10050,8 @@ mission =
                                         ["onboard_num"] = "040",
                                     }, -- end of [2]
                                 }, -- end of ["units"]
-                                ["y"] = 779871.2233737,
-                                ["x"] = -302481.206361,
+                                ["y"] = 779573.96668985,
+                                ["x"] = -303050.77682208,
                                 ["name"] = "F5 Mountains 50% fuel guns",
                                 ["communication"] = true,
                                 ["uncontrollable"] = false,
@@ -10374,6 +10438,560 @@ mission =
                                 ["name"] = "Ground-1",
                                 ["start_time"] = 0,
                             }, -- end of [1]
+                            [2] = 
+                            {
+                                ["visible"] = false,
+                                ["tasks"] = 
+                                {
+                                    [1] = 
+                                    {
+                                        ["number"] = 1,
+                                        ["auto"] = false,
+                                        ["id"] = "WrappedAction",
+                                        ["enabled"] = true,
+                                        ["params"] = 
+                                        {
+                                            ["action"] = 
+                                            {
+                                                ["id"] = "Option",
+                                                ["params"] = 
+                                                {
+                                                    ["name"] = 0,
+                                                    ["value"] = 4,
+                                                }, -- end of ["params"]
+                                            }, -- end of ["action"]
+                                        }, -- end of ["params"]
+                                    }, -- end of [1]
+                                    [2] = 
+                                    {
+                                        ["number"] = 2,
+                                        ["auto"] = false,
+                                        ["id"] = "WrappedAction",
+                                        ["enabled"] = true,
+                                        ["params"] = 
+                                        {
+                                            ["action"] = 
+                                            {
+                                                ["id"] = "Option",
+                                                ["params"] = 
+                                                {
+                                                    ["name"] = 0,
+                                                    ["value"] = 0,
+                                                }, -- end of ["params"]
+                                            }, -- end of ["action"]
+                                        }, -- end of ["params"]
+                                    }, -- end of [2]
+                                }, -- end of ["tasks"]
+                                ["uncontrollable"] = false,
+                                ["task"] = "Ground Nothing",
+                                ["taskSelected"] = true,
+                                ["route"] = 
+                                {
+                                    ["spans"] = 
+                                    {
+                                        [1] = 
+                                        {
+                                            [1] = 
+                                            {
+                                                ["y"] = 99494.274338047,
+                                                ["x"] = 10399.158069117,
+                                            }, -- end of [1]
+                                            [2] = 
+                                            {
+                                                ["y"] = 99456.442640523,
+                                                ["x"] = 10419.384917298,
+                                            }, -- end of [2]
+                                        }, -- end of [1]
+                                    }, -- end of ["spans"]
+                                    ["points"] = 
+                                    {
+                                        [1] = 
+                                        {
+                                            ["alt"] = 50,
+                                            ["type"] = "Turning Point",
+                                            ["ETA"] = 0,
+                                            ["alt_type"] = "BARO",
+                                            ["formation_template"] = "",
+                                            ["y"] = 102883.47405843,
+                                            ["x"] = 10670.147901419,
+                                            ["ETA_locked"] = true,
+                                            ["speed"] = 0,
+                                            ["action"] = "Off Road",
+                                            ["task"] = 
+                                            {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = 
+                                                {
+                                                    ["tasks"] = 
+                                                    {
+                                                        [1] = 
+                                                        {
+                                                            ["number"] = 1,
+                                                            ["auto"] = false,
+                                                            ["id"] = "WrappedAction",
+                                                            ["enabled"] = true,
+                                                            ["params"] = 
+                                                            {
+                                                                ["action"] = 
+                                                                {
+                                                                    ["id"] = "Option",
+                                                                    ["params"] = 
+                                                                    {
+                                                                        ["value"] = 2,
+                                                                        ["name"] = 9,
+                                                                    }, -- end of ["params"]
+                                                                }, -- end of ["action"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                        [2] = 
+                                                        {
+                                                            ["number"] = 2,
+                                                            ["auto"] = false,
+                                                            ["id"] = "WrappedAction",
+                                                            ["enabled"] = true,
+                                                            ["params"] = 
+                                                            {
+                                                                ["action"] = 
+                                                                {
+                                                                    ["id"] = "Option",
+                                                                    ["params"] = 
+                                                                    {
+                                                                        ["value"] = 4,
+                                                                        ["name"] = 0,
+                                                                    }, -- end of ["params"]
+                                                                }, -- end of ["action"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [2]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["speed_locked"] = true,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["groupId"] = 76,
+                                ["hidden"] = false,
+                                ["units"] = 
+                                {
+                                    [1] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "SNR_75V",
+                                        ["unitId"] = 170,
+                                        ["y"] = 102883.47405843,
+                                        ["x"] = 10670.147901419,
+                                        ["name"] = "Ground-3-17",
+                                        ["heading"] = 5.2033735276433,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [1]
+                                    [2] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "p-19 s-125 sr",
+                                        ["unitId"] = 168,
+                                        ["y"] = 102901.11143998,
+                                        ["x"] = 10660.718014252,
+                                        ["name"] = "Ground-3-15",
+                                        ["heading"] = 5.2033735276433,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [2]
+                                    [3] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "S_75M_Volhov",
+                                        ["unitId"] = 169,
+                                        ["y"] = 102832.02243442,
+                                        ["x"] = 10713.299155403,
+                                        ["name"] = "Ground-3-16",
+                                        ["heading"] = 5.2033735276433,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [3]
+                                    [4] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "S_75M_Volhov",
+                                        ["unitId"] = 167,
+                                        ["y"] = 103004.57816095,
+                                        ["x"] = 10685.559700548,
+                                        ["name"] = "Ground-3-14",
+                                        ["heading"] = 5.2033735276433,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [4]
+                                    [5] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "S_75M_Volhov",
+                                        ["unitId"] = 166,
+                                        ["y"] = 102919.72806375,
+                                        ["x"] = 10753.276605046,
+                                        ["name"] = "Ground-3-13",
+                                        ["heading"] = 5.2033735276433,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [5]
+                                    [6] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "S_75M_Volhov",
+                                        ["unitId"] = 165,
+                                        ["y"] = 102834.47003338,
+                                        ["x"] = 10604.381001781,
+                                        ["name"] = "Ground-3-12",
+                                        ["heading"] = 5.2033735276433,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [6]
+                                    [7] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "KAMAZ Truck",
+                                        ["unitId"] = 172,
+                                        ["y"] = 102923.39946218,
+                                        ["x"] = 10699.837361135,
+                                        ["name"] = "SA-2-2",
+                                        ["heading"] = 5.2033735276433,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [7]
+                                    [8] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "KAMAZ Truck",
+                                        ["unitId"] = 171,
+                                        ["y"] = 102901.77900472,
+                                        ["x"] = 10630.488723998,
+                                        ["name"] = "SA-2-1",
+                                        ["heading"] = 5.2033735276433,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [8]
+                                    [9] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "S_75M_Volhov",
+                                        ["unitId"] = 164,
+                                        ["y"] = 102938.90092225,
+                                        ["x"] = 10595.40647227,
+                                        ["name"] = "Ground-3-11",
+                                        ["heading"] = 5.2033735276433,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [9]
+                                }, -- end of ["units"]
+                                ["y"] = 102883.47405843,
+                                ["x"] = 10670.147901419,
+                                ["name"] = "SA-2",
+                                ["start_time"] = 0,
+                            }, -- end of [2]
+                            [3] = 
+                            {
+                                ["visible"] = false,
+                                ["tasks"] = 
+                                {
+                                    [1] = 
+                                    {
+                                        ["number"] = 1,
+                                        ["auto"] = false,
+                                        ["id"] = "WrappedAction",
+                                        ["enabled"] = true,
+                                        ["params"] = 
+                                        {
+                                            ["action"] = 
+                                            {
+                                                ["id"] = "Option",
+                                                ["params"] = 
+                                                {
+                                                    ["name"] = 0,
+                                                    ["value"] = 4,
+                                                }, -- end of ["params"]
+                                            }, -- end of ["action"]
+                                        }, -- end of ["params"]
+                                    }, -- end of [1]
+                                    [2] = 
+                                    {
+                                        ["number"] = 2,
+                                        ["auto"] = false,
+                                        ["id"] = "WrappedAction",
+                                        ["enabled"] = true,
+                                        ["params"] = 
+                                        {
+                                            ["action"] = 
+                                            {
+                                                ["id"] = "Option",
+                                                ["params"] = 
+                                                {
+                                                    ["name"] = 0,
+                                                    ["value"] = 0,
+                                                }, -- end of ["params"]
+                                            }, -- end of ["action"]
+                                        }, -- end of ["params"]
+                                    }, -- end of [2]
+                                }, -- end of ["tasks"]
+                                ["uncontrollable"] = false,
+                                ["task"] = "Ground Nothing",
+                                ["taskSelected"] = true,
+                                ["route"] = 
+                                {
+                                    ["spans"] = 
+                                    {
+                                    }, -- end of ["spans"]
+                                    ["points"] = 
+                                    {
+                                        [1] = 
+                                        {
+                                            ["alt"] = 206,
+                                            ["type"] = "Turning Point",
+                                            ["ETA"] = 0,
+                                            ["alt_type"] = "BARO",
+                                            ["formation_template"] = "",
+                                            ["y"] = 794641.12861546,
+                                            ["x"] = -85498.238686877,
+                                            ["ETA_locked"] = true,
+                                            ["speed"] = 0,
+                                            ["action"] = "Off Road",
+                                            ["task"] = 
+                                            {
+                                                ["id"] = "ComboTask",
+                                                ["params"] = 
+                                                {
+                                                    ["tasks"] = 
+                                                    {
+                                                        [1] = 
+                                                        {
+                                                            ["enabled"] = true,
+                                                            ["auto"] = false,
+                                                            ["id"] = "WrappedAction",
+                                                            ["number"] = 1,
+                                                            ["params"] = 
+                                                            {
+                                                                ["action"] = 
+                                                                {
+                                                                    ["id"] = "Option",
+                                                                    ["params"] = 
+                                                                    {
+                                                                        ["value"] = 2,
+                                                                        ["name"] = 9,
+                                                                    }, -- end of ["params"]
+                                                                }, -- end of ["action"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [1]
+                                                        [2] = 
+                                                        {
+                                                            ["enabled"] = true,
+                                                            ["auto"] = false,
+                                                            ["id"] = "WrappedAction",
+                                                            ["number"] = 2,
+                                                            ["params"] = 
+                                                            {
+                                                                ["action"] = 
+                                                                {
+                                                                    ["id"] = "Option",
+                                                                    ["params"] = 
+                                                                    {
+                                                                        ["value"] = 4,
+                                                                        ["name"] = 0,
+                                                                    }, -- end of ["params"]
+                                                                }, -- end of ["action"]
+                                                            }, -- end of ["params"]
+                                                        }, -- end of [2]
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["speed_locked"] = true,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["groupId"] = 77,
+                                ["hidden"] = false,
+                                ["units"] = 
+                                {
+                                    [1] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "S-300PS 64H6E sr",
+                                        ["unitId"] = 177,
+                                        ["y"] = 794641.12861546,
+                                        ["x"] = -85498.238686877,
+                                        ["name"] = "SA-300-4",
+                                        ["heading"] = 0,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [1]
+                                    [2] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "S-300PS 54K6 cp",
+                                        ["unitId"] = 176,
+                                        ["y"] = 794619.65301284,
+                                        ["x"] = -85499.777374421,
+                                        ["name"] = "SA-300-3",
+                                        ["heading"] = 0,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [2]
+                                    [3] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "S-300PS 40B6MD sr",
+                                        ["unitId"] = 175,
+                                        ["y"] = 794654.56863577,
+                                        ["x"] = -85550.290540005,
+                                        ["name"] = "SA-300-2",
+                                        ["heading"] = 0,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [3]
+                                    [4] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "S-300PS 40B6M tr",
+                                        ["unitId"] = 174,
+                                        ["y"] = 794619.3418212,
+                                        ["x"] = -85556.199554061,
+                                        ["name"] = "SA-300-1",
+                                        ["heading"] = 0,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [4]
+                                    [5] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "S-300PS 5P85D ln",
+                                        ["unitId"] = 180,
+                                        ["y"] = 794915.86580985,
+                                        ["x"] = -85506.786898869,
+                                        ["name"] = "SA-300-7",
+                                        ["heading"] = 0,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [5]
+                                    [6] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "S-300PS 5P85D ln",
+                                        ["unitId"] = 179,
+                                        ["y"] = 794719.95727571,
+                                        ["x"] = -85265.668703004,
+                                        ["name"] = "SA-300-6",
+                                        ["heading"] = 0,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [6]
+                                    [7] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "S-300PS 5P85D ln",
+                                        ["unitId"] = 178,
+                                        ["y"] = 794330.82452336,
+                                        ["x"] = -85570.625227888,
+                                        ["name"] = "SA-300-5",
+                                        ["heading"] = 0,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [7]
+                                    [8] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "Ural-375",
+                                        ["unitId"] = 182,
+                                        ["y"] = 794817.91154278,
+                                        ["x"] = -85372.413737632,
+                                        ["name"] = "SA-300-9",
+                                        ["heading"] = 0,
+                                        ["playerCanDrive"] = true,
+                                    }, -- end of [8]
+                                    [9] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "Ural-375",
+                                        ["unitId"] = 181,
+                                        ["y"] = 794412.28041119,
+                                        ["x"] = -85652.462475537,
+                                        ["name"] = "SA-300-8",
+                                        ["heading"] = 0,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [9]
+                                    [10] = 
+                                    {
+                                        ["transportable"] = 
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["skill"] = "Average",
+                                        ["type"] = "S-300PS 5P85D ln",
+                                        ["unitId"] = 173,
+                                        ["y"] = 794490.14149527,
+                                        ["x"] = -85786.835636774,
+                                        ["name"] = "SA-1-1",
+                                        ["heading"] = 0,
+                                        ["playerCanDrive"] = false,
+                                    }, -- end of [10]
+                                }, -- end of ["units"]
+                                ["y"] = 794641.12861546,
+                                ["x"] = -85498.238686877,
+                                ["name"] = "SA-300",
+                                ["start_time"] = 0,
+                            }, -- end of [3]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
                     ["plane"] = 
@@ -11381,18 +11999,18 @@ mission =
                                                 ["Sequence 1 Blue"] = 
                                                 {
                                                 }, -- end of ["Sequence 1 Blue"]
-                                                ["Start Location"] = 
+                                                ["Sequence 3 Yellow"] = 
                                                 {
-                                                }, -- end of ["Start Location"]
+                                                }, -- end of ["Sequence 3 Yellow"]
                                                 ["A/A Waypoint"] = 
                                                 {
                                                 }, -- end of ["A/A Waypoint"]
                                                 ["PP"] = 
                                                 {
                                                 }, -- end of ["PP"]
-                                                ["Sequence 3 Yellow"] = 
+                                                ["Start Location"] = 
                                                 {
-                                                }, -- end of ["Sequence 3 Yellow"]
+                                                }, -- end of ["Start Location"]
                                             }, -- end of ["GroupsPoints"]
                                             ["Points"] = 
                                             {
@@ -19022,11 +19640,11 @@ mission =
                                         ["AddPropAircraft"] = 
                                         {
                                             ["MissileToneVolume"] = 5,
+                                            ["ADF_Selected_Frequency"] = 1,
                                             ["MountSIRENA"] = false,
-                                            ["NAV_Initial_Hdg"] = 0,
                                             ["ADF_NEAR_Frequency"] = 303,
                                             ["ADF_FAR_Frequency"] = 625,
-                                            ["ADF_Selected_Frequency"] = 1,
+                                            ["NAV_Initial_Hdg"] = 0,
                                         }, -- end of ["AddPropAircraft"]
                                         ["type"] = "MiG-19P",
                                         ["unitId"] = 49,
@@ -20830,11 +21448,11 @@ mission =
                                         ["AddPropAircraft"] = 
                                         {
                                             ["MissileToneVolume"] = 5,
+                                            ["MountSIRENA"] = false,
                                             ["ADF_NEAR_Frequency"] = 303,
-                                            ["NAV_Initial_Hdg"] = 0,
                                             ["ADF_Selected_Frequency"] = 1,
                                             ["ADF_FAR_Frequency"] = 625,
-                                            ["MountSIRENA"] = false,
+                                            ["NAV_Initial_Hdg"] = 0,
                                         }, -- end of ["AddPropAircraft"]
                                         ["type"] = "MiG-19P",
                                         ["unitId"] = 56,
@@ -21291,7 +21909,6 @@ mission =
             }, -- end of ["rules"]
             ["comment"] = "Cancel Help",
             ["eventlist"] = "",
-            ["predicate"] = "triggerOnce",
             ["actions"] = 
             {
                 [1] = 
@@ -21299,6 +21916,7 @@ mission =
                     ["predicate"] = "a_out_sound_stop",
                 }, -- end of [1]
             }, -- end of ["actions"]
+            ["predicate"] = "triggerOnce",
         }, -- end of [4]
         [5] = 
         {
@@ -21315,6 +21933,7 @@ mission =
             }, -- end of ["rules"]
             ["comment"] = "Restart",
             ["eventlist"] = "",
+            ["predicate"] = "triggerOnce",
             ["actions"] = 
             {
                 [1] = 
@@ -21332,7 +21951,6 @@ mission =
                     ["file"] = "Bandit on Demand.miz",
                 }, -- end of [2]
             }, -- end of ["actions"]
-            ["predicate"] = "triggerOnce",
         }, -- end of [5]
         [6] = 
         {
@@ -21348,6 +21966,7 @@ mission =
                 }, -- end of [1]
             }, -- end of ["rules"]
             ["eventlist"] = "",
+            ["predicate"] = "triggerFront",
             ["actions"] = 
             {
                 [1] = 
@@ -21368,8 +21987,25 @@ mission =
                         [2] = 2,
                     }, -- end of ["ai_task"]
                 }, -- end of [2]
+                [3] = 
+                {
+                    ["predicate"] = "a_ai_task",
+                    ["ai_task"] = 
+                    {
+                        [1] = 76,
+                        [2] = 2,
+                    }, -- end of ["ai_task"]
+                }, -- end of [3]
+                [4] = 
+                {
+                    ["predicate"] = "a_ai_task",
+                    ["ai_task"] = 
+                    {
+                        [1] = 77,
+                        [2] = 2,
+                    }, -- end of ["ai_task"]
+                }, -- end of [4]
             }, -- end of ["actions"]
-            ["predicate"] = "triggerFront",
             ["comment"] = "SAMs ON",
         }, -- end of [6]
         [7] = 
@@ -21386,6 +22022,7 @@ mission =
                 }, -- end of [1]
             }, -- end of ["rules"]
             ["eventlist"] = "",
+            ["predicate"] = "triggerFront",
             ["actions"] = 
             {
                 [1] = 
@@ -21406,12 +22043,29 @@ mission =
                         [2] = 1,
                     }, -- end of ["ai_task"]
                 }, -- end of [2]
+                [3] = 
+                {
+                    ["predicate"] = "a_ai_task",
+                    ["ai_task"] = 
+                    {
+                        [1] = 76,
+                        [2] = 1,
+                    }, -- end of ["ai_task"]
+                }, -- end of [3]
+                [4] = 
+                {
+                    ["predicate"] = "a_ai_task",
+                    ["ai_task"] = 
+                    {
+                        [1] = 77,
+                        [2] = 1,
+                    }, -- end of ["ai_task"]
+                }, -- end of [4]
             }, -- end of ["actions"]
-            ["predicate"] = "triggerFront",
             ["comment"] = "SAMs OFF",
         }, -- end of [7]
     }, -- end of ["trigrules"]
-    ["currentKey"] = 52100,
+    ["currentKey"] = 57192,
     ["start_time"] = 21605,
     ["forcedOptions"] = 
     {
