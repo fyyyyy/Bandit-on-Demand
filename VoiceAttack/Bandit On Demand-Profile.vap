@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <HasMB>false</HasMB>
-  <Id>5cbbe738-a64d-4b29-872e-0e774c24dddf</Id>
-  <Name>Bandit on Demand</Name>
+  <Id>23dccba2-e780-4ecd-b006-20866b9d55c2</Id>
+  <Name>My Profile</Name>
   <Commands>
     <Command>
       <Referrer xsi:nil="true" />
@@ -25,10 +25,11 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>79628042-4e77-4c62-81ae-d30f1ac5d32f</Id>
+      <Id>4dd8ebd8-7c96-4ade-a10f-83a0a9e3b30f</Id>
       <CommandString>TRAINING</CommandString>
       <ActionSequence>
         <CommandAction>
+          <_caption>Execute command, 'Comm Reset' (and wait until it completes)</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>0</Ordinal>
@@ -37,12 +38,13 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>d2d816f3-9ef7-427c-a98d-0042c7d00319</Id>
+          <Caption>Execute command, 'Comm Reset' (and wait until it completes)</Caption>
+          <Id>c3030d5e-e9d3-4069-9659-9a187f4c5acd</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>26dd8ed5-4ff2-41f0-9b51-6f4b4210af37</Context>
+          <Context>18c7b317-3e50-4ba2-97a8-08ec72747d6d</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -62,15 +64,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Press F10 key and hold for 0.06 seconds and release</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>1</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>914c0adb-e443-4e5c-999b-a96c3d3f703c</Id>
+          <Caption>Press F10 key and hold for 0.06 seconds and release</Caption>
+          <Id>2068cc23-2ae4-42a8-a8ed-1f7d40495b4b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -97,15 +101,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>DISABLED - Say, 'TRAINING'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>2</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>06eac954-2447-44f4-bebe-bc3d3fa7b6ba</Id>
+          <Caption>DISABLED - Say, 'TRAINING'</Caption>
+          <Id>45d00709-d386-4e65-927c-8970199bea39</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -135,7 +141,7 @@
       </ActionSequence>
       <Async>false</Async>
       <Enabled>true</Enabled>
-      <Category>TRAINING</Category>
+      <Category>BanditOnDemand</Category>
       <UseShortcut>false</UseShortcut>
       <keyValue>0</keyValue>
       <keyShift>0</keyShift>
@@ -224,10 +230,11 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>6f2fb75d-2276-49fa-8adb-ea220e148afa</Id>
-      <CommandString>spawn random [group;fighters]</CommandString>
+      <Id>a25fd555-9131-49a6-b253-9ef6a76273f9</Id>
+      <CommandString>spawn random [group;bandits]</CommandString>
       <ActionSequence>
         <CommandAction>
+          <_caption>Execute command, 'TRAINING' (and wait until it completes)</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>0</Ordinal>
@@ -236,12 +243,13 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>1944f2db-2532-4d78-a6e0-577c819de7de</Id>
+          <Caption>Execute command, 'TRAINING' (and wait until it completes)</Caption>
+          <Id>6da313b7-cb52-4a6a-8399-58da6fa0a77c</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>79628042-4e77-4c62-81ae-d30f1ac5d32f</Context>
+          <Context>4dd8ebd8-7c96-4ade-a10f-83a0a9e3b30f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -261,20 +269,22 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Execute command, 'open COMMANDS' (and wait until it completes)</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>1</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>794c42e4-aa67-4a6c-9c62-69e7c1712160</Id>
+          <Caption>Execute command, 'open COMMANDS' (and wait until it completes)</Caption>
+          <Id>56f08e47-2320-42a5-8a42-74fc7af85a18</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>65fa292d-df51-43c1-905c-811c5ede77a4</Context>
+          <Context>3262c1ef-8200-4167-8c32-2af035a9abf7</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -294,15 +304,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Press F2 key and hold for 0.06 seconds and release</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>2</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>9576e3e6-b2f6-4c5c-a5ec-27a52edef63c</Id>
+          <Caption>Press F2 key and hold for 0.06 seconds and release</Caption>
+          <Id>203075ad-9577-4ecf-bb04-056ea5f23121</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -329,20 +341,22 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Say, 'spawning random bandits'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>3</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>01efb4e5-eef8-4d05-b395-6b086e6df3b3</Id>
+          <Caption>Say, 'spawning random bandits'</Caption>
+          <Id>f8221037-e1ee-474d-8de3-340826102202</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>spawning random group</Context>
+          <Context>spawning random bandits</Context>
           <Context2 xml:space="preserve">Microsoft David Desktop</Context2>
           <Context3>00000000-0000-0000-0000-000000000000</Context3>
           <Context4>Default</Context4>
@@ -367,7 +381,7 @@
       </ActionSequence>
       <Async>false</Async>
       <Enabled>true</Enabled>
-      <Category>TRAINING</Category>
+      <Category>BanditOnDemand</Category>
       <UseShortcut>false</UseShortcut>
       <keyValue>0</keyValue>
       <keyShift>0</keyShift>
@@ -408,7 +422,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>e16d592e-9217-480b-8b3d-9a716dd4c9eb</lastEditedAction>
+      <lastEditedAction>a135ae1a-a24a-40d5-9cd5-a73012a61a56</lastEditedAction>
       <UseProfileProcessOverride>false</UseProfileProcessOverride>
       <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
@@ -455,10 +469,11 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>9def0ca7-33b4-4605-aef0-4d3cfbd33c74</Id>
-      <CommandString>spawn [enemy;bandit;hostile] [group;fighters]</CommandString>
+      <Id>acb5fe97-af53-4aba-9c71-af4fdbad797a</Id>
+      <CommandString>spawn [bandit] [group]</CommandString>
       <ActionSequence>
         <CommandAction>
+          <_caption>Execute command, 'TRAINING' (and wait until it completes)</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>0</Ordinal>
@@ -467,12 +482,13 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>d759da91-7e3b-424c-993f-5e13e35c2c0b</Id>
+          <Caption>Execute command, 'TRAINING' (and wait until it completes)</Caption>
+          <Id>2b5f47c5-1179-40f9-bfbb-08c430ad4afa</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>79628042-4e77-4c62-81ae-d30f1ac5d32f</Context>
+          <Context>4dd8ebd8-7c96-4ade-a10f-83a0a9e3b30f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -492,20 +508,22 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Execute command, 'open COMMANDS' (and wait until it completes)</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>1</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>20fce03f-8bc4-4a6b-b6dd-ec0b6e61ab41</Id>
+          <Caption>Execute command, 'open COMMANDS' (and wait until it completes)</Caption>
+          <Id>47970c1f-5d80-45e2-9dd8-b49cdee6e921</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>65fa292d-df51-43c1-905c-811c5ede77a4</Context>
+          <Context>3262c1ef-8200-4167-8c32-2af035a9abf7</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -525,15 +543,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Press F1 key and hold for 0.06 seconds and release</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>2</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>fbb5e48c-a87c-4b44-93d9-1bbbcec2b21e</Id>
+          <Caption>Press F1 key and hold for 0.06 seconds and release</Caption>
+          <Id>2c818a57-fca0-4239-b6fd-0ac1f74d9c63</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -560,20 +580,22 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Say, 'spawning bandit group'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>3</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>102d37e2-24b5-411b-8b26-44fe67dd8f9a</Id>
+          <Caption>Say, 'spawning bandit group'</Caption>
+          <Id>69540ed9-0657-449c-8f3b-f104fd38d241</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>spawning enemy group</Context>
+          <Context>spawning bandit group</Context>
           <Context2 xml:space="preserve">Microsoft David Desktop</Context2>
           <Context3>00000000-0000-0000-0000-000000000000</Context3>
           <Context4>Default</Context4>
@@ -598,7 +620,7 @@
       </ActionSequence>
       <Async>false</Async>
       <Enabled>true</Enabled>
-      <Category>TRAINING</Category>
+      <Category>BanditOnDemand</Category>
       <UseShortcut>false</UseShortcut>
       <keyValue>0</keyValue>
       <keyShift>0</keyShift>
@@ -639,7 +661,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>0d84db0e-0824-42e2-93b7-0b5286379d4b</lastEditedAction>
+      <lastEditedAction>9ed3b6c3-5346-4e9c-989e-9713fa891986</lastEditedAction>
       <UseProfileProcessOverride>false</UseProfileProcessOverride>
       <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
@@ -686,8 +708,8 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>3f8afc44-43e3-4dc9-9062-bd80ac365d66</Id>
-      <CommandString>set [enemy;bandit;hostile] count [1;2;3;4] [quiet;]</CommandString>
+      <Id>58f2e7b0-c0be-4737-854a-1d8060decd4b</Id>
+      <CommandString>set [bandit] count [1;2;3;4;5;6;7;8] [quiet;]</CommandString>
       <ActionSequence>
         <CommandAction>
           <_caption>Execute command, 'TRAINING' (and wait until it completes)</_caption>
@@ -700,12 +722,12 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Execute command, 'TRAINING' (and wait until it completes)</Caption>
-          <Id>b6c21107-685e-4247-a585-373b0f15cdd1</Id>
+          <Id>6b8f0d4c-8750-4dce-9f22-7fa91fa9c065</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>79628042-4e77-4c62-81ae-d30f1ac5d32f</Context>
+          <Context>4dd8ebd8-7c96-4ade-a10f-83a0a9e3b30f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -735,7 +757,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>df243e96-3f5f-4b3d-b651-01b0322486a4</Id>
+          <Id>04bf423b-847b-4ad6-b6f2-2163b09f8605</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -772,7 +794,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Begin Text Compare : [{CMDSEGMENT:3}] Equals '1'</Caption>
-          <Id>83c6bc99-4114-4cb1-9bf2-30724661831a</Id>
+          <Id>5b1463fe-5e9a-4c52-84f4-592f9d456553</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -808,7 +830,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>75e35910-8682-4144-a95a-eaee70c777f0</Id>
+          <Id>faada6f8-11e9-4881-bfe3-02ce0732a44e</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -845,7 +867,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '2'</Caption>
-          <Id>c8496d5d-1479-4cee-b1da-946f307c2ef6</Id>
+          <Id>14833637-8a9d-42c2-b2bb-d4db4bd534c0</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -881,7 +903,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>64779d8d-77d3-414f-8075-3070137d7543</Id>
+          <Id>e10da5da-8a47-4652-a826-e785d2271204</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -918,7 +940,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '3'</Caption>
-          <Id>27e4806f-361a-4562-a66f-bfebebe9f43b</Id>
+          <Id>6317456d-9f1e-4345-99ba-5bace70ef2f8</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -954,7 +976,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F3 key and hold for 0.06 seconds and release</Caption>
-          <Id>977a114d-185c-4976-8ca1-fc68c5f78fef</Id>
+          <Id>57996dc5-8ddb-410b-ae0b-8e59aebe044e</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -991,7 +1013,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '4'</Caption>
-          <Id>e57432d9-2bd2-46cd-a240-22b8827994d2</Id>
+          <Id>2e0e6fa4-cd38-4705-a0b9-2ae71807ab06</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1027,7 +1049,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F4 key and hold for 0.06 seconds and release</Caption>
-          <Id>53d2a9a6-0d82-4596-8910-a3f3d51e075a</Id>
+          <Id>2a36e1cf-c4b2-4311-afc3-36ec65498de5</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -1054,7 +1076,7 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
-          <_caption>End Condition</_caption>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '5'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>10</Ordinal>
@@ -1063,8 +1085,300 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '5'</Caption>
+          <Id>7519b166-08ae-48e2-87f6-26766057c02b</Id>
+          <ActionType>ConditionElseIf</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context2 xml:space="preserve">5</Context2>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>1</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>12</ConditionPairing>
+          <ConditionGroup>1</ConditionGroup>
+          <ConditionStartNameFrom>{CMDSEGMENT:3}</ConditionStartNameFrom>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartCompareToCondtion />
+          <ConditionStartType>1</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+        <CommandAction>
+          <_caption>    Press F5 key and hold for 0.06 seconds and release</_caption>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>11</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>1</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Caption>    Press F5 key and hold for 0.06 seconds and release</Caption>
+          <Id>b25a26b2-d7ed-4951-b241-7b883ae2f6d9</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.06</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>116</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <ConditionExpressions />
+        </CommandAction>
+        <CommandAction>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '6'</_caption>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>12</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '6'</Caption>
+          <Id>dac65869-7fcb-4853-9f27-83e65b8ebae8</Id>
+          <ActionType>ConditionElseIf</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context2 xml:space="preserve">6</Context2>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>1</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>14</ConditionPairing>
+          <ConditionGroup>1</ConditionGroup>
+          <ConditionStartNameFrom>{CMDSEGMENT:3}</ConditionStartNameFrom>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartCompareToCondtion />
+          <ConditionStartType>1</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+        <CommandAction>
+          <_caption>    Press F6 key and hold for 0.06 seconds and release</_caption>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>13</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>1</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Caption>    Press F6 key and hold for 0.06 seconds and release</Caption>
+          <Id>c0be97dd-dab6-4cb4-9957-184a26de3943</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.06</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>117</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <ConditionExpressions />
+        </CommandAction>
+        <CommandAction>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '7'</_caption>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>14</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '7'</Caption>
+          <Id>3d8e8828-0d71-4a38-a708-3c7048a8262d</Id>
+          <ActionType>ConditionElseIf</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context2 xml:space="preserve">7</Context2>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>1</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>16</ConditionPairing>
+          <ConditionGroup>1</ConditionGroup>
+          <ConditionStartNameFrom>{CMDSEGMENT:3}</ConditionStartNameFrom>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartCompareToCondtion />
+          <ConditionStartType>1</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+        <CommandAction>
+          <_caption>    Press F7 key and hold for 0.06 seconds and release</_caption>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>15</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>1</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Caption>    Press F7 key and hold for 0.06 seconds and release</Caption>
+          <Id>7012f015-6887-4143-bca2-8640a94829f9</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.06</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>118</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <ConditionExpressions />
+        </CommandAction>
+        <CommandAction>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '8'</_caption>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>16</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '8'</Caption>
+          <Id>8bb2479f-e78b-4bf0-9099-a52de4db0a51</Id>
+          <ActionType>ConditionElseIf</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context2 xml:space="preserve">8</Context2>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>1</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>18</ConditionPairing>
+          <ConditionGroup>1</ConditionGroup>
+          <ConditionStartNameFrom>{CMDSEGMENT:3}</ConditionStartNameFrom>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartCompareToCondtion />
+          <ConditionStartType>1</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+        <CommandAction>
+          <_caption>    Press F8 key and hold for 0.06 seconds and release</_caption>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>17</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>1</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Caption>    Press F8 key and hold for 0.06 seconds and release</Caption>
+          <Id>cbb9cbad-4a1b-49b4-a3e1-06b85338a522</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.06</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>119</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <ConditionExpressions />
+        </CommandAction>
+        <CommandAction>
+          <_caption>End Condition</_caption>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>18</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
           <Caption>End Condition</Caption>
-          <Id>81dada59-2925-4f9a-9afa-f93a046e5928</Id>
+          <Id>6c4b94e4-e762-48bc-a630-30715fe63f43</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1090,14 +1404,14 @@
           <_caption>Begin Text Compare : [{CMDSEGMENT:4}] Does Not Equal 'quiet'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>11</Ordinal>
+          <Ordinal>19</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Begin Text Compare : [{CMDSEGMENT:4}] Does Not Equal 'quiet'</Caption>
-          <Id>d20a4a6d-1cce-4002-a08b-519c67eb1657</Id>
+          <Id>5f412c98-c0ec-43c1-8b89-c667ca29b322</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1107,7 +1421,7 @@
           <Y>0</Y>
           <Z>1</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>13</ConditionPairing>
+          <ConditionPairing>21</ConditionPairing>
           <ConditionGroup>2</ConditionGroup>
           <ConditionStartNameFrom>{CMDSEGMENT:4}</ConditionStartNameFrom>
           <ConditionStartOperator>1</ConditionStartOperator>
@@ -1123,22 +1437,22 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
-          <_caption>    Say, 'enemy count is {CMDSEGMENT:3}'</_caption>
+          <_caption>    Say, 'bandit count is {CMDSEGMENT:3}'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>12</Ordinal>
+          <Ordinal>20</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>1</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>    Say, 'enemy count is {CMDSEGMENT:3}'</Caption>
-          <Id>8f24e968-719e-4a71-ad66-6d60f0f10543</Id>
+          <Caption>    Say, 'bandit count is {CMDSEGMENT:3}'</Caption>
+          <Id>28e1213f-4f2a-43dc-b627-c78cb282a45b</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>enemy count is {CMDSEGMENT:3}</Context>
+          <Context>bandit count is {CMDSEGMENT:3}</Context>
           <Context2 xml:space="preserve">Microsoft David Desktop</Context2>
           <Context3>00000000-0000-0000-0000-000000000000</Context3>
           <Context4>Default</Context4>
@@ -1164,14 +1478,14 @@
           <_caption>End Condition</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>13</Ordinal>
+          <Ordinal>21</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>End Condition</Caption>
-          <Id>c4db77aa-5556-462a-b56d-75a28e8f5c83</Id>
+          <Id>753f7ad5-7468-4297-9836-41ff9255c0b8</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1180,7 +1494,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>11</ConditionPairing>
+          <ConditionPairing>19</ConditionPairing>
           <ConditionGroup>2</ConditionGroup>
           <ConditionStartOperator>0</ConditionStartOperator>
           <ConditionStartValue>0</ConditionStartValue>
@@ -1196,7 +1510,7 @@
       </ActionSequence>
       <Async>false</Async>
       <Enabled>true</Enabled>
-      <Category>TRAINING</Category>
+      <Category>BanditOnDemand</Category>
       <UseShortcut>false</UseShortcut>
       <keyValue>0</keyValue>
       <keyShift>0</keyShift>
@@ -1237,7 +1551,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>71f738ec-024e-41db-988f-d2beda35dc85</lastEditedAction>
+      <lastEditedAction>f233cb17-cb88-4197-a5b6-b1338bb31af8</lastEditedAction>
       <UseProfileProcessOverride>false</UseProfileProcessOverride>
       <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
@@ -1284,8 +1598,8 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>1f20bbf2-cbcb-4633-83dc-8a7e5ffc7b21</Id>
-      <CommandString>set [enemy;bandit;hostile] type [F16;F18;F15;F14;SU27;SU30;MIG29;MIG31;MIG21;A10;Bf109;A4;F5;Fw190;I16;MiG15;MiG19;Mosquito;P51D;Spitfire] [quiet;]</CommandString>
+      <Id>3edc3b1a-a67c-4b04-9ea6-ccc68ba4475f</Id>
+      <CommandString>set [bandit] type [F16;F18;F15;F14;SU27;SU30;MIG29;MIG31;MIG21;A10;Bf109;A4;F5;Fw190;I16;MiG15;MiG19;Mosquito;P51D;Spitfire] [quiet;]</CommandString>
       <ActionSequence>
         <CommandAction>
           <_caption>Execute command, 'TRAINING' (and wait until it completes)</_caption>
@@ -1298,12 +1612,12 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Execute command, 'TRAINING' (and wait until it completes)</Caption>
-          <Id>d7d4b9d5-436d-4c47-afbd-83fad276c2a2</Id>
+          <Id>2281a717-d0bf-4414-b1fa-6d4b3881465f</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>79628042-4e77-4c62-81ae-d30f1ac5d32f</Context>
+          <Context>4dd8ebd8-7c96-4ade-a10f-83a0a9e3b30f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -1333,7 +1647,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>ad49f4a3-d16e-4172-9259-19370dfad0bd</Id>
+          <Id>ab442683-f80c-431d-9315-b849630c46cf</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -1370,7 +1684,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Begin Text Compare : [{CMDSEGMENT:3}] Equals 'F16'</Caption>
-          <Id>f59df0c3-5910-43b6-8552-ac6fec995efc</Id>
+          <Id>471fc6e1-03da-4f3e-a9d9-b3f405050743</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1406,7 +1720,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>133c5d3a-992e-4bc8-b2d7-72befe440ba6</Id>
+          <Id>6f9b3da0-b92b-4797-bd9e-c97d442ce72f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -1443,7 +1757,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>336c44e3-f1e4-4fd6-978e-6c4d0a5c310d</Id>
+          <Id>d453c934-86b6-45ad-a194-81c7223837bf</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -1480,7 +1794,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'F18'</Caption>
-          <Id>fe3d0fb8-80cd-4cb0-a697-64d35488a192</Id>
+          <Id>a392915d-7810-4879-9e04-f741f1cba8eb</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1516,7 +1830,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>e0dd6662-a7fb-462c-8ffe-51fd8641de5c</Id>
+          <Id>d00e4d7d-9f3c-4a5b-892b-40ff2574afc5</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -1553,7 +1867,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>c5a59517-b491-4696-b39a-d549b8907020</Id>
+          <Id>d21d2324-468c-4d99-8af8-91bdc1543e9d</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -1590,7 +1904,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'F15'</Caption>
-          <Id>b2a7eb9c-3371-498f-8ee9-fb174498014c</Id>
+          <Id>9ecfc32e-d762-45b3-8fc0-129fd2b4a480</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1626,7 +1940,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>f139cfc4-4599-4d4a-b043-6c8c4957e3b2</Id>
+          <Id>8dee0d2b-8b2b-420c-8d52-5d0f83ca0df4</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -1663,7 +1977,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F3 key and hold for 0.06 seconds and release</Caption>
-          <Id>c7accd67-1284-4861-970a-4fd5f596688e</Id>
+          <Id>9b3eb48f-e575-4358-aaae-88cf2a1d8bdb</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -1700,7 +2014,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'F14'</Caption>
-          <Id>db0320bc-8732-4c01-9ba8-f4f736498d5b</Id>
+          <Id>d75f3ebd-26d5-42c8-9052-223e56a8daae</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1736,7 +2050,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>1ea94243-6fcf-4b77-9d76-dc4621fb56c9</Id>
+          <Id>da014ecc-1453-46b1-9944-151b506c3896</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -1773,7 +2087,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F4 key and hold for 0.06 seconds and release</Caption>
-          <Id>afa8c2ff-2b07-48c9-a77d-d92549d52d0d</Id>
+          <Id>61a032bc-d3d5-46be-a3aa-c8bdde0e2c8d</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -1810,7 +2124,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'SU27'</Caption>
-          <Id>a0d08ca0-b1ec-4d39-9baf-86d926f8cf3f</Id>
+          <Id>c79e18cd-1c26-4ab0-9f97-694b9c7799b2</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1846,7 +2160,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>e481a71b-d518-42b8-a705-202dfa122d4c</Id>
+          <Id>2fa2d3dc-22a6-485f-ad5b-5163023fcea1</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -1883,7 +2197,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F5 key and hold for 0.06 seconds and release</Caption>
-          <Id>654a4b11-3673-4ffe-aabb-1bb150764b8a</Id>
+          <Id>3ba97a18-a0f4-4d18-85fe-fdfc404728b1</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -1920,7 +2234,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'SU30'</Caption>
-          <Id>85823a8a-5d93-49c4-a320-b301ab32c4d7</Id>
+          <Id>f870f8bc-5be6-4062-8692-8ba160229a79</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1956,7 +2270,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>4c2183f1-dcf2-41c2-820b-8fa6436e8c6f</Id>
+          <Id>ec67ab6e-5156-4f4a-9b2f-d9ed20d692e5</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -1993,7 +2307,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F6 key and hold for 0.06 seconds and release</Caption>
-          <Id>17f8b93e-2451-493e-91d3-1d093758c091</Id>
+          <Id>518573c8-d47c-4c7b-b3d3-d6a654a2d2a8</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2030,7 +2344,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'MIG29'</Caption>
-          <Id>3fa2e9c4-bb8b-4d31-b388-62871fb53268</Id>
+          <Id>9dfa289f-4472-4e54-874e-a0eb117721da</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2066,7 +2380,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>10445ff9-e2cb-42bc-8875-a9e4407ebff1</Id>
+          <Id>82078244-5bf3-4728-a6aa-e7854aa5db23</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2103,7 +2417,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F7 key and hold for 0.06 seconds and release</Caption>
-          <Id>8f405b23-95f6-44b7-b795-b75da9ab7a5c</Id>
+          <Id>f8936d06-6dd1-403b-bd5c-6b3b7cd02075</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2140,7 +2454,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'MIG31'</Caption>
-          <Id>3bc66e6a-9da9-4a28-b6eb-a70ee269d50a</Id>
+          <Id>5fd843fb-16ea-4708-ab71-5892ffcd73f6</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2176,7 +2490,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>881848df-398e-40b3-8ffc-086ab92c0c4b</Id>
+          <Id>2aeb6bca-5112-4a1f-96f4-4d699f943cdb</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2213,7 +2527,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F8 key and hold for 0.06 seconds and release</Caption>
-          <Id>979a6c10-3f40-442e-84c2-a753ae27998a</Id>
+          <Id>3f6b5fd4-c423-4d62-8a00-70a5400184c0</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2250,7 +2564,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'MIG21'</Caption>
-          <Id>8b6ef4fc-9d24-4dd3-a415-c8d9b6176012</Id>
+          <Id>d15e9286-dad8-4cd3-b866-cf0c01353289</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2286,7 +2600,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>3f9e5a8d-9f65-4cf1-87e4-857e279c3124</Id>
+          <Id>ba3acac6-c5de-46e8-8165-f0290196ca18</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2323,7 +2637,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F9 key and hold for 0.06 seconds and release</Caption>
-          <Id>cf0f6e33-d9f9-4c87-98cb-6523736768da</Id>
+          <Id>17a99507-6b2c-414d-9f22-5b40bb51a4ba</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2360,7 +2674,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'A10'</Caption>
-          <Id>8a4af711-1123-4902-8884-0d4f6beb2f0a</Id>
+          <Id>4ca26692-f65b-4fad-b034-ce1fca6071d5</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2396,7 +2710,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>55234074-1ecc-44ea-8b41-c970cd701e4d</Id>
+          <Id>55b5e951-6670-4409-988d-bc445af133c0</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2433,7 +2747,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F10 key and hold for 0.06 seconds and release</Caption>
-          <Id>d4b65dc3-121e-4eff-8219-47c7ccc5f0c0</Id>
+          <Id>4942c42c-4715-493d-b3be-97de282b7ed3</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2470,7 +2784,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'Bf109'</Caption>
-          <Id>188512ec-e6d1-47b2-8e70-8599185b3906</Id>
+          <Id>0fdc855e-0634-44b6-9080-a06ce5905f79</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2506,7 +2820,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>3691c50c-baf4-4e02-9cde-4cc981969e61</Id>
+          <Id>4f1c529f-f85e-44b5-9207-1280d9111a8c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2543,7 +2857,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>f42be76b-dcb3-4f40-ba9d-90006a1351b2</Id>
+          <Id>acb407a6-725e-4721-a5ed-188b59988d07</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2580,7 +2894,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'A4'</Caption>
-          <Id>e08a86fa-dfd4-492c-9729-cb18b1b94a12</Id>
+          <Id>f5e78dbc-0fd9-4b43-9666-4c9f62e947fb</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2616,7 +2930,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>242c0bf6-3597-44b2-aa47-dd51f917b92c</Id>
+          <Id>71ab36a0-b513-449d-8a5c-0531f82240aa</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2653,7 +2967,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>9c29fa1f-04f0-4313-a198-103b2f4aae66</Id>
+          <Id>76929963-5126-425d-bb41-37986fdf2884</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2690,7 +3004,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'F5'</Caption>
-          <Id>7a5beea6-5421-439a-b4c0-3ea735085c52</Id>
+          <Id>0aba3ac2-07ba-4700-afa0-88424b58b7cd</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2726,7 +3040,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>542e47ee-f5df-4334-8c32-5aabf5870d53</Id>
+          <Id>69131ba5-84fc-4883-ae9d-ab08c6e65ffe</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2763,7 +3077,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F3 key and hold for 0.06 seconds and release</Caption>
-          <Id>aec67695-6330-4b7c-84e5-d174907f3e31</Id>
+          <Id>e172a6ac-c084-4199-b181-2d298a10c947</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2800,7 +3114,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'Fw190'</Caption>
-          <Id>b5efa4b6-1105-4a08-b7cb-a1cb089ef70a</Id>
+          <Id>83206622-7ca6-4adc-be56-c2b5d361351c</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2836,7 +3150,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>5f588dbe-f6f9-410f-89a8-8eea719d6345</Id>
+          <Id>80b235f2-9514-4b1c-95ee-bf4c62bbe61b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2873,7 +3187,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F4 key and hold for 0.06 seconds and release</Caption>
-          <Id>45333dfb-acc8-4283-84fc-5690b9976294</Id>
+          <Id>e3fad07d-caf1-4cf1-953b-65b9aa09dec7</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2910,7 +3224,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'I16'</Caption>
-          <Id>83e345d4-2587-4d21-8323-39d96a1a26df</Id>
+          <Id>9d316fdd-a006-4112-8498-4cbcda04c3ec</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2946,7 +3260,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>83d97be7-ac48-47b2-913f-f8925af3f584</Id>
+          <Id>2d713988-886f-4790-b952-472037aa7aea</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -2983,7 +3297,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F5 key and hold for 0.06 seconds and release</Caption>
-          <Id>06dcc1f4-54a3-4084-9db2-21011401e73e</Id>
+          <Id>4f1f1890-6513-4df5-ac54-75f45f332473</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -3020,7 +3334,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'Mig15'</Caption>
-          <Id>fab1c856-df5a-49f1-aee5-fe79feda48dd</Id>
+          <Id>85cea87b-eb3b-4e41-bc0d-01a036ea2a6b</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3056,7 +3370,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>ede3088b-5823-4d96-8682-08259b0fd84d</Id>
+          <Id>477d8325-1b28-47fc-a3c0-f6be35f28da2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -3093,7 +3407,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F6 key and hold for 0.06 seconds and release</Caption>
-          <Id>bd35a72b-487f-41e6-be30-fd33ae5e8327</Id>
+          <Id>54754adc-ae46-4a67-83ee-ccdde87ffc17</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -3130,7 +3444,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'Mig19'</Caption>
-          <Id>8db185fa-3b04-4ea7-8245-6474448c613d</Id>
+          <Id>3239b75f-0dcd-4574-8342-9532e8ac7c7b</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3166,7 +3480,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>543c2612-b75c-445c-a4a8-cdb8c3ba5f8b</Id>
+          <Id>37718ed8-1638-410d-bd87-b193652c3128</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -3203,7 +3517,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F7 key and hold for 0.06 seconds and release</Caption>
-          <Id>b002f595-cafe-40ba-b0ad-9e91d5b3b1de</Id>
+          <Id>660244b2-0fbe-4f98-8e03-71233a5bdc86</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -3240,7 +3554,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'Mosquito'</Caption>
-          <Id>fc185876-99a8-46e9-a6e7-5fa0984d141c</Id>
+          <Id>b70df932-90b1-4cdb-9d4f-39cfb37cc689</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3276,7 +3590,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>b0c81598-a0d5-4fac-9a37-c1034e34d54d</Id>
+          <Id>7dd1a920-11a9-4d81-bf73-b286e223cd42</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -3313,7 +3627,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F8 key and hold for 0.06 seconds and release</Caption>
-          <Id>9a2f8841-6da9-48a1-bd78-125b54ef9887</Id>
+          <Id>8c082a55-c790-4a52-aa50-236e522dd65f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -3350,7 +3664,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'P51'</Caption>
-          <Id>03e5f70f-2991-4a37-bfa3-42163f16ea50</Id>
+          <Id>3b592360-53e7-488f-aaeb-5df6f1b15448</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3386,7 +3700,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>933a7f13-4600-46e8-b207-bde1e9848162</Id>
+          <Id>6984dc0e-67e7-434e-b489-f480834a6a05</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -3423,7 +3737,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F9 key and hold for 0.06 seconds and release</Caption>
-          <Id>f99fc055-3bcf-4823-9624-fd0db887e3eb</Id>
+          <Id>3092d994-5747-4a27-8840-f4bccbea8fde</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -3460,7 +3774,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'Spitfire'</Caption>
-          <Id>485872cd-f809-4a7a-a3a4-6fefdfa1f9fe</Id>
+          <Id>b6c9d563-2b80-4b40-aad8-e73c3c2ba9e8</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3496,7 +3810,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>c78453d3-e0a5-41c3-b0e0-220379a6e5b5</Id>
+          <Id>2e9af30e-f5dd-46bf-a375-aa8c398faefb</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -3533,7 +3847,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F10 key and hold for 0.06 seconds and release</Caption>
-          <Id>68741ccd-7f7c-47ba-a5c0-928feb656980</Id>
+          <Id>945e13cb-0d26-4681-b2da-50f8ac50657e</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -3570,7 +3884,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>End Condition</Caption>
-          <Id>07f5bbe1-febd-4794-8e48-f55ec118ad78</Id>
+          <Id>74c3685b-4ade-46c7-b39b-b2d027c688bc</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3603,7 +3917,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Begin Text Compare : [{CMDSEGMENT:4}] Does Not Equal 'quiet'</Caption>
-          <Id>7ff93a7b-392e-44c6-8abe-4c2e0dd40162</Id>
+          <Id>5c819228-4237-4b60-b9da-e0ce64214b78</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3629,7 +3943,7 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
-          <_caption>    Say, 'enemy type is {CMDSEGMENT:3}'</_caption>
+          <_caption>    Say, 'bandit type is {CMDSEGMENT:3}'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>64</Ordinal>
@@ -3638,13 +3952,13 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>    Say, 'enemy type is {CMDSEGMENT:3}'</Caption>
-          <Id>097b28e3-6799-493a-85da-e02b56e4169e</Id>
+          <Caption>    Say, 'bandit type is {CMDSEGMENT:3}'</Caption>
+          <Id>2404d94f-8ba0-40b8-858f-43cf1c1e9c77</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>enemy type is {CMDSEGMENT:3}</Context>
+          <Context>bandit type is {CMDSEGMENT:3}</Context>
           <Context2 xml:space="preserve">Microsoft David Desktop</Context2>
           <Context3>00000000-0000-0000-0000-000000000000</Context3>
           <Context4>Default</Context4>
@@ -3677,7 +3991,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>End Condition</Caption>
-          <Id>288c4b1a-59f0-4b89-af49-c1178a87732a</Id>
+          <Id>35c13b8c-2cce-41f8-a7bd-5b6d068e3085</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3702,7 +4016,7 @@
       </ActionSequence>
       <Async>false</Async>
       <Enabled>true</Enabled>
-      <Category>TRAINING</Category>
+      <Category>BanditOnDemand</Category>
       <UseShortcut>false</UseShortcut>
       <keyValue>0</keyValue>
       <keyShift>0</keyShift>
@@ -3743,7 +4057,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>6799f802-7dab-48ad-a58f-6888505b7723</lastEditedAction>
+      <lastEditedAction>046ce524-84ad-436c-b21e-9635a2d96f3a</lastEditedAction>
       <UseProfileProcessOverride>false</UseProfileProcessOverride>
       <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
@@ -3790,8 +4104,8 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>5b0d4474-4ba4-42cd-9c84-9549297d594e</Id>
-      <CommandString>spawn [1;2;3;4] [F16;F18;F15;F14;SU27;SU30;MIG29;MIG31;MIG21;A10;Bf109;A4;F5;Fw190;I16;MiG15;MiG19;Mosquito;P51D;Spitfire] [at;behind me;on my six;] [1;5;10;25;50;75;100;150;] [mile;miles;] [angels 1;angels 5;angels 10;angels 15;angels 20;angels 25;angels 30;angels 40;angels 50;]</CommandString>
+      <Id>87609cec-7d90-41ff-9855-a3f69c628c4b</Id>
+      <CommandString>spawn [1;2;3;4;5;6;7;8] [F16;F18;F15;F14;SU27;SU30;MIG29;MIG31;MIG21;A10;Bf109;A4;F5;Fw190;I16;MiG15;MiG19;Mosquito;P51D;Spitfire] [at;behind me;on my six;] [1;5;10;25;50;75;100;150;] [mile;miles;] [angels 1;angels 5;angels 10;angels 15;angels 20;angels 25;angels 30;angels 40;angels 50;]</CommandString>
       <ActionSequence>
         <CommandAction>
           <_caption>Say, 'spawning {CMDSEGMENT:1} bandits of type {CMDSEGMENT:2}'  (and wait until it completes)</_caption>
@@ -3804,7 +4118,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Say, 'spawning {CMDSEGMENT:1} bandits of type {CMDSEGMENT:2}'  (and wait until it completes)</Caption>
-          <Id>c2ea6330-e79a-479a-af64-c22a59196011</Id>
+          <Id>77a1f122-8ca1-4ace-a2b4-7fe01282ba3e</Id>
           <ActionType>Say</ActionType>
           <Duration>1</Duration>
           <Delay>0</Delay>
@@ -3842,7 +4156,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Begin Text Compare : [{CMDSEGMENT:3}] Equals 'at'</Caption>
-          <Id>c7546285-7f4b-4705-99de-166fec54697a</Id>
+          <Id>4dbf72ef-583b-4dd2-aea7-f3ff8fb0785a</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3869,7 +4183,7 @@
           <ConditionExpressions>
             <ArrayOfConditionStruct>
               <ConditionStruct>
-                <Id>137c5365-0bcf-43bc-bb7b-17feb2dd36fb</Id>
+                <Id>f65668e8-6331-4e31-823b-60860397e714</Id>
                 <ConditionStartType>1</ConditionStartType>
                 <ConditionStartNameFrom>{CMDSEGMENT:3}</ConditionStartNameFrom>
                 <ConditionStartValueType>0</ConditionStartValueType>
@@ -3885,7 +4199,7 @@
           </ConditionExpressions>
         </CommandAction>
         <CommandAction>
-          <_caption>    Say, 'at {CMDSEGMENT:4} {CMDSEGMENT:5}'</_caption>
+          <_caption>    Say, 'at {CMDSEGMENT:4} {CMDSEGMENT:5}'  (and wait until it completes)</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>2</Ordinal>
@@ -3894,10 +4208,10 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>    Say, 'at {CMDSEGMENT:4} {CMDSEGMENT:5}'</Caption>
-          <Id>b049d59f-e3db-441d-b039-b4cf74052965</Id>
+          <Caption>    Say, 'at {CMDSEGMENT:4} {CMDSEGMENT:5}'  (and wait until it completes)</Caption>
+          <Id>6fabce2f-76f2-4bcc-8cc1-7bf3af0d8943</Id>
           <ActionType>Say</ActionType>
-          <Duration>0</Duration>
+          <Duration>1</Duration>
           <Delay>0</Delay>
           <KeyCodes />
           <Context>at {CMDSEGMENT:4} {CMDSEGMENT:5}</Context>
@@ -3933,7 +4247,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If : [{CMDSEGMENT:3}] Equals 'behind me' OR [{CMDSEGMENT:3}] Equals 'on my six'</Caption>
-          <Id>ce37453f-75a8-4569-892f-17d46984d30b</Id>
+          <Id>366edee9-b03e-458d-be4e-e01f7c4d8b2a</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>1</Duration>
           <Delay>0</Delay>
@@ -3957,7 +4271,7 @@
           <ConditionExpressions>
             <ArrayOfConditionStruct>
               <ConditionStruct>
-                <Id>e10640f5-dc96-4d88-8947-b80b1c9ba201</Id>
+                <Id>367e46c7-2921-46a0-99b6-2405bc4b95fb</Id>
                 <ConditionStartType>1</ConditionStartType>
                 <ConditionStartNameFrom>{CMDSEGMENT:3}</ConditionStartNameFrom>
                 <ConditionStartValueType>0</ConditionStartValueType>
@@ -3972,7 +4286,7 @@
             </ArrayOfConditionStruct>
             <ArrayOfConditionStruct>
               <ConditionStruct>
-                <Id>8e693843-7d81-487a-819b-086fffa383f0</Id>
+                <Id>8e00fd61-6d9f-4dde-9b08-a923905f34f2</Id>
                 <ConditionStartType>1</ConditionStartType>
                 <ConditionStartNameFrom>{CMDSEGMENT:3}</ConditionStartNameFrom>
                 <ConditionStartValueType>0</ConditionStartValueType>
@@ -3988,7 +4302,7 @@
           </ConditionExpressions>
         </CommandAction>
         <CommandAction>
-          <_caption>    Say, 'on your six'</_caption>
+          <_caption>    Say, 'on your six'  (and wait until it completes)</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>4</Ordinal>
@@ -3997,10 +4311,10 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>    Say, 'on your six'</Caption>
-          <Id>f55562b2-005b-45df-8411-ca80b7f55e00</Id>
+          <Caption>    Say, 'on your six'  (and wait until it completes)</Caption>
+          <Id>986a7ce4-4d48-438a-ab4d-b46b17df31e4</Id>
           <ActionType>Say</ActionType>
-          <Duration>0</Duration>
+          <Duration>1</Duration>
           <Delay>0</Delay>
           <KeyCodes />
           <Context>on your six</Context>
@@ -4036,7 +4350,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>End Condition</Caption>
-          <Id>e69f9cfa-113e-4158-80bc-bd890cd26518</Id>
+          <Id>2f244ec3-5f8e-40bb-a843-11d044854470</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4069,7 +4383,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Begin Text Compare : [{CMDSEGMENT:6}] Starts With 'angels'</Caption>
-          <Id>b1a7769b-7f05-433f-8ab5-b837345362c9</Id>
+          <Id>4ae805a4-24fe-4819-956c-21aef4c9516d</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4096,7 +4410,7 @@
           <ConditionExpressions>
             <ArrayOfConditionStruct>
               <ConditionStruct>
-                <Id>b3574364-dee1-4805-85e0-16c104a4483b</Id>
+                <Id>15b0a629-9fe1-42e9-aeed-f067791401f9</Id>
                 <ConditionStartType>1</ConditionStartType>
                 <ConditionStartNameFrom>{CMDSEGMENT:3}</ConditionStartNameFrom>
                 <ConditionStartValueType>0</ConditionStartValueType>
@@ -4122,7 +4436,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Say, '{CMDSEGMENT:6}'</Caption>
-          <Id>e1c275a3-d2a5-4313-952e-c8da8e22dd4c</Id>
+          <Id>ffedaa64-22b8-4c37-8a07-bc53728d5b83</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4160,7 +4474,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>End Condition</Caption>
-          <Id>deb45311-4bc5-46ed-857c-b34a2d199d15</Id>
+          <Id>857047be-a991-429a-ab60-305b986b3251</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4183,7 +4497,7 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
-          <_caption>Execute command, 'set enemy count {CMDSEGMENT:1} quiet' (by name) (and wait until it completes)</_caption>
+          <_caption>Execute command, 'set bandit count {CMDSEGMENT:1} quiet' (by name) (and wait until it completes)</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>9</Ordinal>
@@ -4192,14 +4506,14 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>Execute command, 'set enemy count {CMDSEGMENT:1} quiet' (by name) (and wait until it completes)</Caption>
-          <Id>86420ffd-309d-436b-b2de-9e0dbfc745dd</Id>
+          <Caption>Execute command, 'set bandit count {CMDSEGMENT:1} quiet' (by name) (and wait until it completes)</Caption>
+          <Id>d38b9df9-437f-471b-89e4-488e136079ee</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>1</Delay>
           <KeyCodes />
           <Context>00000000-0000-0000-0000-000000000000</Context>
-          <Context2 xml:space="preserve">set enemy count {CMDSEGMENT:1} quiet</Context2>
+          <Context2 xml:space="preserve">set bandit count {CMDSEGMENT:1} quiet</Context2>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4218,7 +4532,7 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
-          <_caption>Execute command, 'set enemy type {CMDSEGMENT:2} quiet' (by name) (and wait until it completes)</_caption>
+          <_caption>Execute command, 'set bandit type {CMDSEGMENT:2} quiet' (by name) (and wait until it completes)</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>10</Ordinal>
@@ -4227,14 +4541,14 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>Execute command, 'set enemy type {CMDSEGMENT:2} quiet' (by name) (and wait until it completes)</Caption>
-          <Id>c386edaa-6650-48fd-982c-c95ff7010f2d</Id>
+          <Caption>Execute command, 'set bandit type {CMDSEGMENT:2} quiet' (by name) (and wait until it completes)</Caption>
+          <Id>337e1b32-31c5-48e2-a980-50a6a1a63b64</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>1</Delay>
           <KeyCodes />
           <Context>00000000-0000-0000-0000-000000000000</Context>
-          <Context2 xml:space="preserve">set enemy type {CMDSEGMENT:2} quiet</Context2>
+          <Context2 xml:space="preserve">set bandit type {CMDSEGMENT:2} quiet</Context2>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4263,7 +4577,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Begin Condition : [{CMDSEGMENT:3}] Equals 'behind me' OR [{CMDSEGMENT:3}] Equals 'on my six'</Caption>
-          <Id>aebb079b-f9fd-4ad4-8c81-031b66067d32</Id>
+          <Id>bd1024ae-3527-4135-a9d0-5ab4024d4976</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>1</Duration>
           <Delay>0</Delay>
@@ -4287,7 +4601,7 @@
           <ConditionExpressions>
             <ArrayOfConditionStruct>
               <ConditionStruct>
-                <Id>266f07ce-fc83-4d64-b90a-316bd1e2782f</Id>
+                <Id>0818dbd6-1dda-4520-ae9f-f7c5c2ebe756</Id>
                 <ConditionStartType>1</ConditionStartType>
                 <ConditionStartNameFrom>{CMDSEGMENT:3}</ConditionStartNameFrom>
                 <ConditionStartValueType>0</ConditionStartValueType>
@@ -4302,7 +4616,7 @@
             </ArrayOfConditionStruct>
             <ArrayOfConditionStruct>
               <ConditionStruct>
-                <Id>8321e407-bc56-419b-8137-bd63abbecbbd</Id>
+                <Id>4a06e790-0df3-4274-81af-7ea80f95a90b</Id>
                 <ConditionStartType>1</ConditionStartType>
                 <ConditionStartNameFrom>{CMDSEGMENT:3}</ConditionStartNameFrom>
                 <ConditionStartValueType>0</ConditionStartValueType>
@@ -4318,7 +4632,7 @@
           </ConditionExpressions>
         </CommandAction>
         <CommandAction>
-          <_caption>    Execute command, 'set enemy distance {CMDSEGMENT:3} quiet' (by name) (and wait until it completes)</_caption>
+          <_caption>    Execute command, 'set bandit distance {CMDSEGMENT:3} quiet' (by name) (and wait until it completes)</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>12</Ordinal>
@@ -4327,14 +4641,14 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>    Execute command, 'set enemy distance {CMDSEGMENT:3} quiet' (by name) (and wait until it completes)</Caption>
-          <Id>d447deff-e5f2-4a61-8aad-6481928b75bf</Id>
+          <Caption>    Execute command, 'set bandit distance {CMDSEGMENT:3} quiet' (by name) (and wait until it completes)</Caption>
+          <Id>2ab9bf5f-c2b5-4f67-96ba-90dab060a1a9</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>1</Delay>
           <KeyCodes />
           <Context>00000000-0000-0000-0000-000000000000</Context>
-          <Context2 xml:space="preserve">set enemy distance {CMDSEGMENT:3} quiet</Context2>
+          <Context2 xml:space="preserve">set bandit distance {CMDSEGMENT:3} quiet</Context2>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4363,7 +4677,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'at'</Caption>
-          <Id>d768b78d-2f97-46d6-be8b-bf333a10e9d0</Id>
+          <Id>3dc734d9-2fb0-4e3d-9556-19855b3c117d</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4389,7 +4703,7 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
-          <_caption>    Execute command, 'set enemy distance {CMDSEGMENT:4} quiet' (by name) (and wait until it completes)</_caption>
+          <_caption>    Execute command, 'set bandit distance {CMDSEGMENT:4} quiet' (by name) (and wait until it completes)</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>14</Ordinal>
@@ -4398,14 +4712,14 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>    Execute command, 'set enemy distance {CMDSEGMENT:4} quiet' (by name) (and wait until it completes)</Caption>
-          <Id>25d4cdcd-1806-4a20-8687-bdc918d67bfe</Id>
+          <Caption>    Execute command, 'set bandit distance {CMDSEGMENT:4} quiet' (by name) (and wait until it completes)</Caption>
+          <Id>847391af-6eaf-4ad8-b6fd-ebe080423ffc</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>1</Delay>
           <KeyCodes />
           <Context>00000000-0000-0000-0000-000000000000</Context>
-          <Context2 xml:space="preserve">set enemy distance {CMDSEGMENT:4} quiet</Context2>
+          <Context2 xml:space="preserve">set bandit distance {CMDSEGMENT:4} quiet</Context2>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4434,7 +4748,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>End Condition</Caption>
-          <Id>536b913d-b93f-42a6-a2b5-0c1a9521a897</Id>
+          <Id>07ef79dc-bad3-46d0-88b9-3edc0d2a63cf</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4467,7 +4781,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Begin Text Compare : [{CMDSEGMENT:6}] Starts With 'angels'</Caption>
-          <Id>290cd96d-fd21-4dbc-8790-8ff999e0bb50</Id>
+          <Id>286d8678-5e60-405b-b117-76278ede98b3</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4494,7 +4808,7 @@
           <ConditionExpressions>
             <ArrayOfConditionStruct>
               <ConditionStruct>
-                <Id>4a61ca87-9366-4ef6-9e84-10e1376d20e0</Id>
+                <Id>b0b6e19f-9dbb-47de-8372-82709d9cc1bf</Id>
                 <ConditionStartType>1</ConditionStartType>
                 <ConditionStartNameFrom>{CMDSEGMENT:3}</ConditionStartNameFrom>
                 <ConditionStartValueType>0</ConditionStartValueType>
@@ -4510,7 +4824,7 @@
           </ConditionExpressions>
         </CommandAction>
         <CommandAction>
-          <_caption>    Execute command, 'set enemy  {CMDSEGMENT:6} quiet' (by name) (and wait until it completes)</_caption>
+          <_caption>    Execute command, 'set bandit {CMDSEGMENT:6} quiet' (by name) (and wait until it completes)</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>17</Ordinal>
@@ -4519,14 +4833,14 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>    Execute command, 'set enemy  {CMDSEGMENT:6} quiet' (by name) (and wait until it completes)</Caption>
-          <Id>6040b5b7-204a-44cc-8112-d65d736cae4a</Id>
+          <Caption>    Execute command, 'set bandit {CMDSEGMENT:6} quiet' (by name) (and wait until it completes)</Caption>
+          <Id>3a076824-1471-4b1c-9af8-32b8ea692263</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>1</Delay>
           <KeyCodes />
           <Context>00000000-0000-0000-0000-000000000000</Context>
-          <Context2 xml:space="preserve">set enemy  {CMDSEGMENT:6} quiet</Context2>
+          <Context2 xml:space="preserve">set bandit {CMDSEGMENT:6} quiet</Context2>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4555,7 +4869,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>End Condition</Caption>
-          <Id>47bddb77-589f-4910-8b2a-e3bb2073b6ae</Id>
+          <Id>15d8c5d4-0d6c-462a-98a6-cf07f06cb28b</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4588,12 +4902,12 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Execute command, 'TRAINING' (and wait until it completes)</Caption>
-          <Id>8e1cedf7-3b3c-4aec-ac72-a9d54f350f3d</Id>
+          <Id>f21bc8c0-28e9-4cfe-a1b8-f6db5e981a23</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>79628042-4e77-4c62-81ae-d30f1ac5d32f</Context>
+          <Context>4dd8ebd8-7c96-4ade-a10f-83a0a9e3b30f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4622,12 +4936,12 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Execute command, 'open COMMANDS' (and wait until it completes)</Caption>
-          <Id>c708fff6-0f22-402c-a7df-08411ff24538</Id>
+          <Id>0d5b6a12-f873-45d5-90b7-6f3a587f30fc</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>65fa292d-df51-43c1-905c-811c5ede77a4</Context>
+          <Context>3262c1ef-8200-4167-8c32-2af035a9abf7</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4656,7 +4970,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>b2a72fef-cbbe-4bf3-aa4b-d7ef689a16ff</Id>
+          <Id>27f1c7c1-62e3-4a56-ad87-a5862a40bc4e</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -4684,7 +4998,7 @@
       </ActionSequence>
       <Async>false</Async>
       <Enabled>true</Enabled>
-      <Category>TRAINING</Category>
+      <Category>BanditOnDemand</Category>
       <UseShortcut>false</UseShortcut>
       <keyValue>0</keyValue>
       <keyShift>0</keyShift>
@@ -4772,10 +5086,11 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>a187ee1e-f356-41b5-9faf-de618edca8f9</Id>
-      <CommandString>set [enemy;bandit;hostile] distance [behind;behind me;on my six;1;5;10;25;50;75;100;150] [miles;quiet]</CommandString>
+      <Id>13c38f8d-45bb-4f12-a49c-118fa06830b6</Id>
+      <CommandString>set [bandit] distance [behind;behind me;on my six;1;5;10;25;50;75;100;150] [miles;quiet]</CommandString>
       <ActionSequence>
         <CommandAction>
+          <_caption>Execute command, 'TRAINING' (and wait until it completes)</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>0</Ordinal>
@@ -4784,12 +5099,13 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>78ebe68a-6762-408b-a357-05f7911761c2</Id>
+          <Caption>Execute command, 'TRAINING' (and wait until it completes)</Caption>
+          <Id>628eb5a7-e2a3-4dbe-9588-ca110124fce2</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>79628042-4e77-4c62-81ae-d30f1ac5d32f</Context>
+          <Context>4dd8ebd8-7c96-4ade-a10f-83a0a9e3b30f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4809,15 +5125,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Press F3 key and hold for 0.06 seconds and release</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>1</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>b3b64b25-4b16-4da8-99fc-7ec6337286d5</Id>
+          <Caption>Press F3 key and hold for 0.06 seconds and release</Caption>
+          <Id>e5502895-c598-4ab2-942f-c39c7aa69e36</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -4844,15 +5162,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Begin Text Compare : [{CMDSEGMENT:4}] Does Not Equal 'quiet'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>2</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>5c216b2c-7a1c-44e4-a33f-b771721f3077</Id>
+          <Caption>Begin Text Compare : [{CMDSEGMENT:4}] Does Not Equal 'quiet'</Caption>
+          <Id>422350b3-77ad-4223-8cfa-0c33f090d76d</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4878,20 +5198,22 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
+          <_caption>    Say, 'bandit spawn distance is {CMDSEGMENT:3} miles'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>3</Ordinal>
           <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
+          <IndentLevel>1</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>b585e8c8-f0f3-4caa-bf0b-ac6649ea4b5f</Id>
+          <Caption>    Say, 'bandit spawn distance is {CMDSEGMENT:3} miles'</Caption>
+          <Id>15e816d8-bec4-479f-8902-047970681a9d</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>enemy spawn distance is {CMDSEGMENT:3} miles</Context>
+          <Context>bandit spawn distance is {CMDSEGMENT:3} miles</Context>
           <Context2 xml:space="preserve">Microsoft David Desktop</Context2>
           <Context3>00000000-0000-0000-0000-000000000000</Context3>
           <Context4>Default</Context4>
@@ -4914,15 +5236,17 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
+          <_caption>End Condition</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>4</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>5eab4cb6-3f0e-48ab-8fb4-f22fc2d39228</Id>
+          <Caption>End Condition</Caption>
+          <Id>bdb7e9e6-57d3-42b7-9052-d1eb57044ee1</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4945,15 +5269,17 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
+          <_caption>Begin Text Compare : [{CMDSEGMENT:3}] Equals '1'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>5</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>80e7229c-9986-4034-b023-8183d267fe1e</Id>
+          <Caption>Begin Text Compare : [{CMDSEGMENT:3}] Equals '1'</Caption>
+          <Id>16188ed1-7a41-41de-a1fb-3efbac81c21e</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4979,15 +5305,17 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
+          <_caption>    Press F2 key and hold for 0.06 seconds and release</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>6</Ordinal>
           <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
+          <IndentLevel>1</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>81b84385-3707-45e8-916e-116f983b2ab5</Id>
+          <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
+          <Id>8db92d69-5601-458e-93de-dec9905e6ed0</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -5014,15 +5342,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '5'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>7</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>9655ee8e-91c6-4a3e-ae5a-2a59e90f4b24</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '5'</Caption>
+          <Id>efc2db55-7b8a-40f0-9f48-183574e4a11c</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5048,15 +5378,17 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
+          <_caption>    Press F3 key and hold for 0.06 seconds and release</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>8</Ordinal>
           <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
+          <IndentLevel>1</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>c639cb40-2a4f-4c43-85ed-db9aeb8814c7</Id>
+          <Caption>    Press F3 key and hold for 0.06 seconds and release</Caption>
+          <Id>f8255e33-aabb-4c32-988e-4755482c1a2a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -5083,15 +5415,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '10'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>9</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>dc64a7cf-b2a4-40b4-9744-ace0efa0b145</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '10'</Caption>
+          <Id>f433f790-2416-473e-978a-f961538d7628</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5117,15 +5451,17 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
+          <_caption>    Press F4 key and hold for 0.06 seconds and release</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>10</Ordinal>
           <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
+          <IndentLevel>1</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>7e02f68d-872f-4560-8088-c2a13535ce5f</Id>
+          <Caption>    Press F4 key and hold for 0.06 seconds and release</Caption>
+          <Id>e6652a48-9016-4090-82ef-bded44182bf4</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -5152,15 +5488,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '25'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>11</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>26b9ca05-1c89-42ca-b2a7-5346df6b96f1</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '25'</Caption>
+          <Id>6a1e2b30-9ddc-42d9-b623-a744d3f60961</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5186,15 +5524,17 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
+          <_caption>    Press F5 key and hold for 0.06 seconds and release</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>12</Ordinal>
           <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
+          <IndentLevel>1</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>a657b731-364f-453d-a04b-4d38730c5eb1</Id>
+          <Caption>    Press F5 key and hold for 0.06 seconds and release</Caption>
+          <Id>789dada2-f791-488e-8de5-23c714ac95e1</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -5221,15 +5561,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '50'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>13</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>060227ed-3911-49d4-89ab-570beb20adfd</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '50'</Caption>
+          <Id>8213bea1-7964-4e2d-b935-6d161201305c</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5255,15 +5597,17 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
+          <_caption>    Press F6 key and hold for 0.06 seconds and release</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>14</Ordinal>
           <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
+          <IndentLevel>1</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>703b4227-50bc-4a27-b9dc-7459960d56c6</Id>
+          <Caption>    Press F6 key and hold for 0.06 seconds and release</Caption>
+          <Id>23bd2ebc-b6d5-4071-a8a4-a3587404b67b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -5290,15 +5634,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '75'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>15</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>dede823e-92ac-4e8f-9c36-870cf0f2b60f</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '75'</Caption>
+          <Id>8cb9d9c3-1cc0-405f-9850-10fba43296f6</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5324,15 +5670,17 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
+          <_caption>    Press F7 key and hold for 0.06 seconds and release</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>16</Ordinal>
           <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
+          <IndentLevel>1</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>62ee834b-fa43-441c-887c-759a964c5738</Id>
+          <Caption>    Press F7 key and hold for 0.06 seconds and release</Caption>
+          <Id>03d484cd-6fb3-4795-8394-c0879f545cfe</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -5359,15 +5707,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '100'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>17</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>4fe5657c-b9ae-4d75-9316-792782f6b4d7</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '100'</Caption>
+          <Id>fb357502-4f0b-4d0c-bd4c-7d42ea0f23de</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5393,15 +5743,17 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
+          <_caption>    Press F8 key and hold for 0.06 seconds and release</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>18</Ordinal>
           <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
+          <IndentLevel>1</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>6dc087d1-9242-483e-8202-c2cf6a7eebac</Id>
+          <Caption>    Press F8 key and hold for 0.06 seconds and release</Caption>
+          <Id>58ba56b6-ced2-4467-a5db-dd32d7941275</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -5428,15 +5780,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '150'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>19</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>0ccc195d-25f4-471a-bf99-efc974fb096b</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '150'</Caption>
+          <Id>eb5d45ab-26df-4669-b967-80a2f6d47441</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5462,15 +5816,17 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
+          <_caption>    Press F9 key and hold for 0.06 seconds and release</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>20</Ordinal>
           <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
+          <IndentLevel>1</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>d8a206fb-727f-463e-b812-c64078c8bbce</Id>
+          <Caption>    Press F9 key and hold for 0.06 seconds and release</Caption>
+          <Id>fa984d12-48bb-49ba-a019-7fc2f2f0e692</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -5497,15 +5853,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Contains 'behind'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>21</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>9bf89b82-b310-4b3c-aaa2-26d012e2eab0</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Contains 'behind'</Caption>
+          <Id>9dbc23e8-7824-4fb7-872d-2b31bb142cab</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5531,15 +5889,17 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
+          <_caption>    Press F1 key and hold for 0.06 seconds and release</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>22</Ordinal>
           <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
+          <IndentLevel>1</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>c98c45ec-d04e-4602-b83f-3d85023448ca</Id>
+          <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
+          <Id>074bf18f-0821-446b-83c9-dd7e5da6ff90</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -5566,15 +5926,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'on my six'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>23</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>1e248366-9cc6-4394-8350-cdf66e9c4221</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'on my six'</Caption>
+          <Id>ecbf4a6c-baa7-47c6-b843-ea386e8bee1a</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5600,15 +5962,17 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
+          <_caption>    Press F1 key and hold for 0.06 seconds and release</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>24</Ordinal>
           <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
+          <IndentLevel>1</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>fdac8b44-15af-4aa5-b46d-814e3c35703a</Id>
+          <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
+          <Id>9fa05160-51b7-4172-b21d-b8db96f1a1a2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -5635,15 +5999,17 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
+          <_caption>End Condition</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>25</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>ae6feef7-89af-4624-b91f-4ff7cdc073f2</Id>
+          <Caption>End Condition</Caption>
+          <Id>f05dce98-0e11-4b58-9c80-62508a92dc77</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5668,7 +6034,7 @@
       </ActionSequence>
       <Async>false</Async>
       <Enabled>true</Enabled>
-      <Category>TRAINING</Category>
+      <Category>BanditOnDemand</Category>
       <UseShortcut>false</UseShortcut>
       <keyValue>0</keyValue>
       <keyShift>0</keyShift>
@@ -5756,7 +6122,7 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>dcfa1db5-24ca-4ce9-895b-6be38c5f4cf3</Id>
+      <Id>12cd373f-b5a6-401c-a515-bc51f1e2ef01</Id>
       <CommandString>[turn;] sam sites on</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5768,12 +6134,12 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>c593441a-8430-4039-a0aa-a297f71d64bf</Id>
+          <Id>d9451d6b-b2b9-4fcc-aa80-3a3120e9d297</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>79628042-4e77-4c62-81ae-d30f1ac5d32f</Context>
+          <Context>4dd8ebd8-7c96-4ade-a10f-83a0a9e3b30f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -5801,12 +6167,12 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>28a41c82-9185-44f0-b69f-de66877cce87</Id>
+          <Id>fcda9101-1ab4-4714-abe7-7b5a2755ed2a</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>65fa292d-df51-43c1-905c-811c5ede77a4</Context>
+          <Context>3262c1ef-8200-4167-8c32-2af035a9abf7</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -5834,7 +6200,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>316f86ce-621b-40d3-ae9a-2811d9f7d3fa</Id>
+          <Id>9c89ca96-2e68-4639-beaa-fe63c314f0e6</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -5869,7 +6235,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>ab09b757-d92c-4c06-af6c-13fba386c587</Id>
+          <Id>bbb6acc5-cf4c-4749-a0ca-466abb842249</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5899,7 +6265,7 @@
       </ActionSequence>
       <Async>false</Async>
       <Enabled>true</Enabled>
-      <Category>TRAINING</Category>
+      <Category>BanditOnDemand</Category>
       <UseShortcut>false</UseShortcut>
       <keyValue>0</keyValue>
       <keyShift>0</keyShift>
@@ -5987,7 +6353,7 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>f81476cb-fb63-4cc8-9a4a-5439d48d1182</Id>
+      <Id>506afbd5-a69f-4344-aa50-65a80fce5e8e</Id>
       <CommandString>[turn;] sam sites off</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5999,12 +6365,12 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>f627ebd9-aa63-4e06-8fca-92fa09f45496</Id>
+          <Id>d13b917a-0e39-43fa-8e8e-0214db9d3248</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>79628042-4e77-4c62-81ae-d30f1ac5d32f</Context>
+          <Context>4dd8ebd8-7c96-4ade-a10f-83a0a9e3b30f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6032,12 +6398,12 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>9d933e8b-fabc-4ffd-810e-0f36c13c5c45</Id>
+          <Id>16268560-87e9-408d-9b4b-35ac42765dea</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>65fa292d-df51-43c1-905c-811c5ede77a4</Context>
+          <Context>3262c1ef-8200-4167-8c32-2af035a9abf7</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6065,7 +6431,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>e5b735a3-cdaf-4590-ac79-34b4e6ef0ef0</Id>
+          <Id>1bde9641-5ea5-4cea-b1f9-3e3c1fc4aebc</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -6100,7 +6466,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>7ff6befa-8f5e-420e-83aa-666686bb0322</Id>
+          <Id>9283b3f8-3d15-42e5-bc60-702d13626b35</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6131,7 +6497,7 @@
       </ActionSequence>
       <Async>false</Async>
       <Enabled>true</Enabled>
-      <Category>TRAINING</Category>
+      <Category>BanditOnDemand</Category>
       <UseShortcut>false</UseShortcut>
       <keyValue>0</keyValue>
       <keyShift>0</keyShift>
@@ -6219,7 +6585,7 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>609c7c67-f864-42fe-9d2b-1e8dca235727</Id>
+      <Id>e2d274d1-ad71-4ca2-93c1-63ca51120518</Id>
       <CommandString>[turn;] missiles off</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -6231,12 +6597,12 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>249f36d3-393f-494c-999f-8fed373e07bd</Id>
+          <Id>8faadec3-0851-4c59-88c4-555f192e3d21</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>79628042-4e77-4c62-81ae-d30f1ac5d32f</Context>
+          <Context>4dd8ebd8-7c96-4ade-a10f-83a0a9e3b30f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6264,12 +6630,12 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>5acdf321-7c1d-4830-89cf-b63a83786e84</Id>
+          <Id>3eadc75f-0c7b-4067-9ef8-3fe050c6ff55</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>65fa292d-df51-43c1-905c-811c5ede77a4</Context>
+          <Context>3262c1ef-8200-4167-8c32-2af035a9abf7</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6297,7 +6663,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>26c2762b-a424-4dc8-b702-2f4fe757a6ac</Id>
+          <Id>3ea9ed08-496d-414d-9e2a-ccf0f769c479</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -6332,7 +6698,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>155d84aa-1900-4fb1-8753-6445b620e048</Id>
+          <Id>a46ecaaa-bc03-433c-badb-353081fbce48</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6362,7 +6728,7 @@
       </ActionSequence>
       <Async>false</Async>
       <Enabled>true</Enabled>
-      <Category>TRAINING</Category>
+      <Category>BanditOnDemand</Category>
       <UseShortcut>false</UseShortcut>
       <keyValue>0</keyValue>
       <keyShift>0</keyShift>
@@ -6450,7 +6816,7 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>4bdaf8fd-10fa-48f1-b7ef-32542fb9b102</Id>
+      <Id>6bc1c1fd-712c-4ca9-8d46-6e321978f5bb</Id>
       <CommandString>[turn;] missiles on</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -6462,12 +6828,12 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>cbc4d7c3-378e-4717-93a7-8700680afe89</Id>
+          <Id>47ca74c3-5c27-4999-80f2-8531eee98541</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>79628042-4e77-4c62-81ae-d30f1ac5d32f</Context>
+          <Context>4dd8ebd8-7c96-4ade-a10f-83a0a9e3b30f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6495,12 +6861,12 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>10be0f2f-6013-43d2-94a6-f1851837f67d</Id>
+          <Id>b266ba45-4062-4a35-afc7-16169a55a249</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>65fa292d-df51-43c1-905c-811c5ede77a4</Context>
+          <Context>3262c1ef-8200-4167-8c32-2af035a9abf7</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6528,7 +6894,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>6be7c569-bad1-4891-afbc-28e0d0783bcd</Id>
+          <Id>720e05ce-2078-4fec-86fd-7b2e3b4d3d9a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -6563,7 +6929,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>04301c89-2d1e-4d41-8240-debe331134d5</Id>
+          <Id>97b551a8-8e34-4a49-bdce-7f9ee239954f</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6594,7 +6960,7 @@
       </ActionSequence>
       <Async>false</Async>
       <Enabled>true</Enabled>
-      <Category>TRAINING</Category>
+      <Category>BanditOnDemand</Category>
       <UseShortcut>false</UseShortcut>
       <keyValue>0</keyValue>
       <keyShift>0</keyShift>
@@ -6682,7 +7048,7 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>65fa292d-df51-43c1-905c-811c5ede77a4</Id>
+      <Id>3262c1ef-8200-4167-8c32-2af035a9abf7</Id>
       <CommandString>open COMMANDS</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -6694,7 +7060,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>a80e3ef6-629d-4bf0-b5ef-4f40af42ccd7</Id>
+          <Id>61538438-3904-4a43-9b1e-89d9d655a185</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -6722,7 +7088,7 @@
       </ActionSequence>
       <Async>false</Async>
       <Enabled>true</Enabled>
-      <Category>TRAINING</Category>
+      <Category>BanditOnDemand</Category>
       <UseShortcut>false</UseShortcut>
       <keyValue>0</keyValue>
       <keyShift>0</keyShift>
@@ -6810,7 +7176,7 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>5e93c574-21f4-4830-b718-c763fece8c83</Id>
+      <Id>85cfb89c-a931-4fac-a838-a5b279d61027</Id>
       <CommandString>set [bandit] skill [average;good;high;ace;] [quiet;]</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -6824,12 +7190,12 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Execute command, 'TRAINING' (and wait until it completes)</Caption>
-          <Id>39159d7c-3f8a-4718-a9f2-000ba6b2595e</Id>
+          <Id>c43e118e-8de7-4903-a7dc-99504213e628</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>79628042-4e77-4c62-81ae-d30f1ac5d32f</Context>
+          <Context>4dd8ebd8-7c96-4ade-a10f-83a0a9e3b30f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6859,7 +7225,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Press F5 key and hold for 0.06 seconds and release</Caption>
-          <Id>fd0d0e61-b1aa-4cc9-9083-832c0b322ca6</Id>
+          <Id>1f365ee0-04e7-4527-8a81-d7a162246ff9</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -6896,7 +7262,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Begin Text Compare : [{CMDSEGMENT:4}] Does Not Equal 'quiet'</Caption>
-          <Id>4ff634e8-188a-445d-8e08-23a216f2c5a7</Id>
+          <Id>a1f8b869-0680-494a-8b5b-85eefa7114ef</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6922,7 +7288,7 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
-          <_caption>    Say, 'enemy skill level is {CMDSEGMENT:3}'</_caption>
+          <_caption>    Say, 'bandit skill level is {CMDSEGMENT:3}'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>3</Ordinal>
@@ -6931,13 +7297,13 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>    Say, 'enemy skill level is {CMDSEGMENT:3}'</Caption>
-          <Id>29716cc0-2ea0-4e73-9b76-efaa776759cc</Id>
+          <Caption>    Say, 'bandit skill level is {CMDSEGMENT:3}'</Caption>
+          <Id>1dff32c5-b761-4ccc-b6fe-84905a0b5f74</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>enemy skill level is {CMDSEGMENT:3}</Context>
+          <Context>bandit skill level is {CMDSEGMENT:3}</Context>
           <Context2 xml:space="preserve">Microsoft David Desktop</Context2>
           <Context3>00000000-0000-0000-0000-000000000000</Context3>
           <Context4>Default</Context4>
@@ -6970,7 +7336,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>End Condition</Caption>
-          <Id>988f4ffb-7db1-4b96-8995-27dc7323cb5e</Id>
+          <Id>d2e81119-1046-4e3b-98d5-dc6f0e56a31a</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7003,7 +7369,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Begin Text Compare : [{CMDSEGMENT:3}] Equals 'average'</Caption>
-          <Id>54790d5d-4616-4f0a-8081-ba23c69debc7</Id>
+          <Id>6019e8ff-59f3-41b3-b7a1-2c485b2aa6a8</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7039,7 +7405,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>824f3c25-fa33-470c-8354-e8af67ba8637</Id>
+          <Id>f240a56e-f763-4394-bd66-668e1a125ac3</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -7076,7 +7442,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'good'</Caption>
-          <Id>bdcc41ba-ebe8-4453-9755-403f972c165a</Id>
+          <Id>b0cfb105-15aa-4353-a586-6f2e2e3ac434</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7112,7 +7478,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>2924b15d-fd25-46fc-8360-b2d27d583046</Id>
+          <Id>149f0481-bbdd-45ef-bbe9-72f37a97f49c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -7149,7 +7515,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'high'</Caption>
-          <Id>d75a8dae-a39f-4e95-a836-fb19fcdf8f5a</Id>
+          <Id>ed1d2c61-f8ac-45e2-94c2-fcfed560add2</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7185,7 +7551,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F3 key and hold for 0.06 seconds and release</Caption>
-          <Id>d5a27c36-3c6d-43c0-8f6a-b5b5cdd72aec</Id>
+          <Id>838a7376-3051-4553-9c1e-237361b8abb2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -7222,7 +7588,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'ace'</Caption>
-          <Id>44bea1ac-4028-4052-a7db-70dc570bbf2d</Id>
+          <Id>71961195-883e-4f9b-b62a-cd5589266e11</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7258,7 +7624,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F4 key and hold for 0.06 seconds and release</Caption>
-          <Id>e7ef547c-a52e-43e2-b9e2-e312360a5f8a</Id>
+          <Id>94e96a3f-e61e-4012-95b9-793106146735</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -7295,7 +7661,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'random'</Caption>
-          <Id>f2a5e434-6724-40ae-b69e-2183ab1927dc</Id>
+          <Id>a7e8dfc8-caeb-46e5-af8f-2f577f0f8878</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7331,7 +7697,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F5 key and hold for 0.06 seconds and release</Caption>
-          <Id>e1674974-9772-4fe5-a450-8022ce8db20f</Id>
+          <Id>2bd7068a-b254-4119-9188-ae4cc2694a01</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -7368,7 +7734,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>End Condition</Caption>
-          <Id>f7131a5d-63b0-4e72-9e0d-5efe72e7ed1e</Id>
+          <Id>63ec4545-932c-4292-aee5-296e359ce638</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7393,7 +7759,7 @@
       </ActionSequence>
       <Async>false</Async>
       <Enabled>true</Enabled>
-      <Category>TRAINING</Category>
+      <Category>BanditOnDemand</Category>
       <UseShortcut>false</UseShortcut>
       <keyValue>0</keyValue>
       <keyShift>0</keyShift>
@@ -7434,7 +7800,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>9bd98459-8ba8-4bf7-8a1b-81636c9223e2</lastEditedAction>
+      <lastEditedAction>35b20c7e-8e74-4c56-8d46-f059f014adad</lastEditedAction>
       <UseProfileProcessOverride>false</UseProfileProcessOverride>
       <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
@@ -7481,8 +7847,8 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>5c39afb9-6177-4904-ade8-a60b22f41b8b</Id>
-      <CommandString>set [enemy;bandit;hostile] altitude to [equal;same as me;1000;5000;10000;15000;20000;25000;30000;40000;50000] [feet;quiet;]</CommandString>
+      <Id>e3dc05ee-891e-4704-8359-3d267cbe79b5</Id>
+      <CommandString>set [bandit] altitude [equal;same as me;1000;5000;10 thousand;15 thousand;20 thousand;25 thousand;30 thousand;40 thousand;50 thousand] [feet;quiet;]</CommandString>
       <ActionSequence>
         <CommandAction>
           <_caption>Execute command, 'TRAINING' (and wait until it completes)</_caption>
@@ -7495,12 +7861,12 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Execute command, 'TRAINING' (and wait until it completes)</Caption>
-          <Id>d0007dfc-e9e0-476a-be6f-50c1332bfc57</Id>
+          <Id>9366b4ec-63b0-41f5-8b80-0c1417176058</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>79628042-4e77-4c62-81ae-d30f1ac5d32f</Context>
+          <Context>4dd8ebd8-7c96-4ade-a10f-83a0a9e3b30f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -7530,7 +7896,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Press F4 key and hold for 0.06 seconds and release</Caption>
-          <Id>8cbf5313-318d-4f04-a85d-6bdd823fb5e7</Id>
+          <Id>edd66fd0-157c-4392-be2c-278717a36808</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -7567,7 +7933,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Begin Text Compare : [{CMDSEGMENT:4}] Does Not Equal 'quiet'</Caption>
-          <Id>6051e97e-c8a5-49bc-964d-6dac81ead00e</Id>
+          <Id>f23eb53d-92e4-4d0d-8422-0a89d3d4b3a3</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7593,7 +7959,7 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
-          <_caption>    Say, 'enemy altitude is {CMDSEGMENT:3} feet'</_caption>
+          <_caption>    Say, 'bandit altitude is {CMDSEGMENT:3} feet'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>3</Ordinal>
@@ -7602,13 +7968,13 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>    Say, 'enemy altitude is {CMDSEGMENT:3} feet'</Caption>
-          <Id>3a6eebd4-b7a6-4220-8ccb-9ae517feece4</Id>
+          <Caption>    Say, 'bandit altitude is {CMDSEGMENT:3} feet'</Caption>
+          <Id>e7d4385a-2f12-4263-91f8-723b978a5530</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>enemy altitude is {CMDSEGMENT:3} feet</Context>
+          <Context>bandit altitude is {CMDSEGMENT:3} feet</Context>
           <Context2 xml:space="preserve">Microsoft David Desktop</Context2>
           <Context3>00000000-0000-0000-0000-000000000000</Context3>
           <Context4>Default</Context4>
@@ -7641,7 +8007,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>End Condition</Caption>
-          <Id>2f7d4dba-87d2-4423-94a8-3b73c7283083</Id>
+          <Id>fb1aee24-2456-4ec7-a5a9-aac7f21ec57e</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7674,7 +8040,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Begin Text Compare : [{CMDSEGMENT:3}] Equals '1000'</Caption>
-          <Id>1b6380a6-ef2d-43ae-a37e-0427fa11a811</Id>
+          <Id>64c25250-1e03-4a83-9a3d-d3e8253dd9da</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7710,7 +8076,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>b6f53d9b-af60-4cae-bf3f-177ed0b5856a</Id>
+          <Id>4cd04d1b-bf1a-44a0-b1c4-058110234f04</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -7747,7 +8113,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '5000'</Caption>
-          <Id>88d7149a-8424-46a5-ac64-43eea5fa0416</Id>
+          <Id>6fff8a34-3cb1-417c-b6c0-094097c538d6</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7783,7 +8149,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F3 key and hold for 0.06 seconds and release</Caption>
-          <Id>0cb3e5a7-da5f-4d67-af63-d3f33602a647</Id>
+          <Id>aaa30395-05f8-4c5c-8820-60e49654887f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -7810,7 +8176,7 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
-          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '10000'</_caption>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '10 thousand'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>9</Ordinal>
@@ -7819,13 +8185,13 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '10000'</Caption>
-          <Id>3d1fb722-63d3-4866-ab2b-414c20895d17</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '10 thousand'</Caption>
+          <Id>fe6bdf78-dd99-4187-9bb2-c99cf6cb2f90</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context2 xml:space="preserve">10000</Context2>
+          <Context2 xml:space="preserve">10 thousand</Context2>
           <X>0</X>
           <Y>0</Y>
           <Z>1</Z>
@@ -7856,7 +8222,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F4 key and hold for 0.06 seconds and release</Caption>
-          <Id>7b6ba70a-8d43-4b4f-b6c5-de80b48d62d9</Id>
+          <Id>7dd9cc1b-c6fa-433b-aee3-8820bb580336</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -7883,7 +8249,7 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
-          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '15000'</_caption>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '15 thousand'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>11</Ordinal>
@@ -7892,13 +8258,13 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '15000'</Caption>
-          <Id>36a735e0-9c82-4c7e-ba58-c1eaa9e6f308</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '15 thousand'</Caption>
+          <Id>db2723e0-38c0-4eba-8f4e-559fe38ea0a8</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context2 xml:space="preserve">15000</Context2>
+          <Context2 xml:space="preserve">15 thousand</Context2>
           <X>0</X>
           <Y>0</Y>
           <Z>1</Z>
@@ -7929,7 +8295,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F5 key and hold for 0.06 seconds and release</Caption>
-          <Id>33e850c7-6491-4db6-9413-ce6777f19fd8</Id>
+          <Id>b54a4671-dfd5-4398-a693-58277a63f0de</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -7956,7 +8322,7 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
-          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '20000'</_caption>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '20 thousand'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>13</Ordinal>
@@ -7965,13 +8331,13 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '20000'</Caption>
-          <Id>4406db05-3dd7-4c4f-912f-dec673035b7a</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '20 thousand'</Caption>
+          <Id>f8657151-89bd-4b0e-b4b3-0b265489baa6</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context2 xml:space="preserve">20000</Context2>
+          <Context2 xml:space="preserve">20 thousand</Context2>
           <X>0</X>
           <Y>0</Y>
           <Z>1</Z>
@@ -8002,7 +8368,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F6 key and hold for 0.06 seconds and release</Caption>
-          <Id>27574eae-2878-46ce-b68f-4287a114fd4d</Id>
+          <Id>be248f8e-9ef6-4733-b606-ce4e8f2ecf3a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -8029,7 +8395,7 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
-          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '25000'</_caption>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '25 thousand'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>15</Ordinal>
@@ -8038,13 +8404,13 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '25000'</Caption>
-          <Id>d1f105ea-ed33-4a57-9054-0446ef63258b</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '25 thousand'</Caption>
+          <Id>4a7e7a25-fb20-4f4f-acb3-eb797de98d0b</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context2 xml:space="preserve">25000</Context2>
+          <Context2 xml:space="preserve">25 thousand</Context2>
           <X>0</X>
           <Y>0</Y>
           <Z>1</Z>
@@ -8075,7 +8441,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F7 key and hold for 0.06 seconds and release</Caption>
-          <Id>8b61f4ec-0266-4509-a472-c6d038d3c712</Id>
+          <Id>fba336bd-8c9f-47b5-a19c-9033802b251e</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -8102,7 +8468,7 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
-          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '30000'</_caption>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '30 thousand'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>17</Ordinal>
@@ -8111,13 +8477,13 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '30000'</Caption>
-          <Id>c656d4a6-de96-42a1-a167-dce1e9f2da07</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '30 thousand'</Caption>
+          <Id>88f9cadf-2afc-4bc2-97a0-f331c0009526</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context2 xml:space="preserve">30000</Context2>
+          <Context2 xml:space="preserve">30 thousand</Context2>
           <X>0</X>
           <Y>0</Y>
           <Z>1</Z>
@@ -8148,7 +8514,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F8 key and hold for 0.06 seconds and release</Caption>
-          <Id>15303526-8db4-4e87-a4d8-434ca7abb453</Id>
+          <Id>c65a5556-f283-4bb8-b8bf-e232511f0a33</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -8175,7 +8541,7 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
-          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '40000'</_caption>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '40 thousand'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>19</Ordinal>
@@ -8184,13 +8550,13 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '40000'</Caption>
-          <Id>d711ba3c-3bf6-4b0e-a252-637f50e93ff4</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '40 thousand'</Caption>
+          <Id>6d6ede52-1402-43bb-ad17-3c6a50d21392</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context2 xml:space="preserve">40000</Context2>
+          <Context2 xml:space="preserve">40 thousand</Context2>
           <X>0</X>
           <Y>0</Y>
           <Z>1</Z>
@@ -8221,7 +8587,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F9 key and hold for 0.06 seconds and release</Caption>
-          <Id>9105cae9-1176-4c51-bdaf-bd697a6ca9cc</Id>
+          <Id>cd5126d5-321a-4fb3-ad0b-ae8784dc8f79</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -8248,7 +8614,7 @@
           <ConditionExpressions />
         </CommandAction>
         <CommandAction>
-          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '50000'</_caption>
+          <_caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '50 thousand'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>21</Ordinal>
@@ -8257,13 +8623,13 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '50000'</Caption>
-          <Id>5e51a096-eccb-466e-bccc-f740ede9bed5</Id>
+          <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '50 thousand'</Caption>
+          <Id>82972529-283a-4566-aafe-d597502a3d7c</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context2 xml:space="preserve">50000</Context2>
+          <Context2 xml:space="preserve">50 thousand</Context2>
           <X>0</X>
           <Y>0</Y>
           <Z>1</Z>
@@ -8294,7 +8660,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F10 key and hold for 0.06 seconds and release</Caption>
-          <Id>84fba0b6-5fb2-4dbe-a6c8-a4c164580cb1</Id>
+          <Id>af306e94-e84f-4c50-9cfc-9244254277f9</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -8331,7 +8697,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Contains 'equal'</Caption>
-          <Id>3e0d8b6d-5014-48da-98fd-1c255e546189</Id>
+          <Id>789e0434-4fcc-46a9-92d7-73ced0482bfe</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8367,7 +8733,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>5614044e-0cb3-404c-84d3-b1009d4011ac</Id>
+          <Id>cbca2274-30eb-4a3e-afd9-82db89c02759</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -8404,7 +8770,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'same as me'</Caption>
-          <Id>fc1b9e55-abfa-45e3-8c07-59c790d8dbba</Id>
+          <Id>ebd760f0-27d3-4b76-9748-887088903ffe</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8440,7 +8806,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>a75e4418-6ba8-4a36-affa-9f185737ac48</Id>
+          <Id>a7fd67a8-87f6-4a0a-af38-82697cd7aa1e</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -8477,7 +8843,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>End Condition</Caption>
-          <Id>c7e8fe97-8907-4284-b2b7-9893a1445eb4</Id>
+          <Id>fb7d0447-2397-468b-8276-c9fbb90d8ef0</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8502,7 +8868,7 @@
       </ActionSequence>
       <Async>false</Async>
       <Enabled>true</Enabled>
-      <Category>TRAINING</Category>
+      <Category>BanditOnDemand</Category>
       <UseShortcut>false</UseShortcut>
       <keyValue>0</keyValue>
       <keyShift>0</keyShift>
@@ -8543,7 +8909,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>a08a4334-0b9b-421c-90e5-01087bc306ee</lastEditedAction>
+      <lastEditedAction>e9dbc387-0bc2-4bd1-a3a7-6c57323ead1c</lastEditedAction>
       <UseProfileProcessOverride>false</UseProfileProcessOverride>
       <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
@@ -8590,8 +8956,8 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>64427ae8-62c7-457c-9e4e-d9ef89760b2d</Id>
-      <CommandString>set [enemy;bandit;hostile] angels [equal;same as me;1;5;10;15;20;25;30;40;50] [quiet;]</CommandString>
+      <Id>04fd8b3c-0ab7-416e-bcba-4a058a7fe3fa</Id>
+      <CommandString>set [bandit] angels [equal;same as me;1;5;10;15;20;25;30;40;50] [quiet;]</CommandString>
       <ActionSequence>
         <CommandAction>
           <_caption>Execute command, 'TRAINING' (and wait until it completes)</_caption>
@@ -8604,12 +8970,12 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Execute command, 'TRAINING' (and wait until it completes)</Caption>
-          <Id>32d19db2-4b4f-4004-aa36-21da605e4737</Id>
+          <Id>4e89128a-7247-45f6-a895-289fe9cbed63</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>79628042-4e77-4c62-81ae-d30f1ac5d32f</Context>
+          <Context>4dd8ebd8-7c96-4ade-a10f-83a0a9e3b30f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -8639,7 +9005,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Press F4 key and hold for 0.06 seconds and release</Caption>
-          <Id>538cf47c-37d2-4492-a69f-1e10e8cd2f1a</Id>
+          <Id>31991fbe-9273-4663-9204-35d6d668ea14</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -8676,7 +9042,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Begin Text Compare : [{CMDSEGMENT:4}] Does Not Equal 'quiet'</Caption>
-          <Id>51d3aff7-a1f8-4b98-a66d-ee5263202a96</Id>
+          <Id>5a7b04db-cace-4f9f-ac98-d8420b2cb557</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8702,7 +9068,7 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
-          <_caption>    Say, 'enemy angels {CMDSEGMENT:3}'</_caption>
+          <_caption>    Say, 'bandit angels {CMDSEGMENT:3}'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>3</Ordinal>
@@ -8711,16 +9077,17 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Caption>    Say, 'enemy angels {CMDSEGMENT:3}'</Caption>
-          <Id>5de57611-166f-49ef-9406-02229c8fe0ef</Id>
+          <Caption>    Say, 'bandit angels {CMDSEGMENT:3}'</Caption>
+          <Id>008ef524-b059-438c-b2e9-b3f921e53293</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>enemy angels {CMDSEGMENT:3}</Context>
+          <Context>bandit angels {CMDSEGMENT:3}</Context>
           <Context2 xml:space="preserve">Microsoft David Desktop</Context2>
           <Context3>00000000-0000-0000-0000-000000000000</Context3>
           <Context4>Default</Context4>
+          <Context5>8dc4fed4-2d93-445f-b9f3-e3e595353841</Context5>
           <X>100</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -8749,7 +9116,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>End Condition</Caption>
-          <Id>7cb8df7b-c148-4418-ad5a-396f99ad738d</Id>
+          <Id>bdbd97ed-b019-4b49-b901-fd1de76bd8f5</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8782,7 +9149,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Begin Text Compare : [{CMDSEGMENT:3}] Equals '1'</Caption>
-          <Id>14454bd4-1cf4-4809-8684-90e57b934491</Id>
+          <Id>088cc144-6f0f-452e-aa6a-d54eff702e84</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8818,7 +9185,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F2 key and hold for 0.06 seconds and release</Caption>
-          <Id>8ceeb97f-440b-414d-a2bb-8ac27b8699f1</Id>
+          <Id>cafd4297-24c8-4ef3-ac37-7e271123778a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -8855,7 +9222,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '5'</Caption>
-          <Id>d62b3cb2-188d-402e-8d80-aaa2ca6a031b</Id>
+          <Id>321599e0-c9f3-428e-9279-f3cd6f47a45e</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8891,7 +9258,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F3 key and hold for 0.06 seconds and release</Caption>
-          <Id>8f89bc02-3c31-43ad-86d5-3e16a0c65d18</Id>
+          <Id>656927d8-11cd-49fa-b7a3-c6685994a85c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -8928,7 +9295,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '10'</Caption>
-          <Id>61eb7970-4aea-4a50-8d2b-a3f84e1b5d2a</Id>
+          <Id>e5254ac2-8924-4401-aa24-9b27fc06b58e</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8964,7 +9331,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F4 key and hold for 0.06 seconds and release</Caption>
-          <Id>53a7e475-e561-4218-bf3a-6ab2678c95ee</Id>
+          <Id>89736577-9572-4d9d-8dae-4481146acac5</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9001,7 +9368,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '15'</Caption>
-          <Id>edad3a5d-2774-4f24-9db0-297a01801e6b</Id>
+          <Id>8c808aa1-8538-4504-84bc-ee274d24da0a</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9037,7 +9404,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F5 key and hold for 0.06 seconds and release</Caption>
-          <Id>df06eb02-51ee-4965-bdf4-a9a90b7dce4e</Id>
+          <Id>47cffd02-1375-49ff-a815-4993dbbf9874</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9074,7 +9441,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '20'</Caption>
-          <Id>8ef738b2-57b3-4419-b9ea-e66a1571b7c0</Id>
+          <Id>68ac81ac-14b8-4b26-abc6-226205607f41</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9110,7 +9477,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F6 key and hold for 0.06 seconds and release</Caption>
-          <Id>3beee02d-93d3-4624-8640-306602a80fd0</Id>
+          <Id>3c49432f-f562-47bf-be82-6b14b2a1ea14</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9147,7 +9514,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '25'</Caption>
-          <Id>eb4661ea-b86b-4b4a-8738-906f99d42e8d</Id>
+          <Id>72dbc3d4-020a-4c4a-85dd-924d8f246dd0</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9183,7 +9550,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F7 key and hold for 0.06 seconds and release</Caption>
-          <Id>077f9f84-207d-4980-b004-2fa69e0eed08</Id>
+          <Id>6f804d75-5c4b-4d01-9f65-1c673163f239</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9220,7 +9587,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '30'</Caption>
-          <Id>5ec630b3-594d-4643-9113-761dace36937</Id>
+          <Id>013bb485-fd18-4b88-8fb9-d049ba1bb5e5</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9256,7 +9623,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F8 key and hold for 0.06 seconds and release</Caption>
-          <Id>a87ffba7-3d57-4b97-ba32-2a1e9855ba4e</Id>
+          <Id>4d732e6c-fae1-4b67-8024-a6ac755772e5</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9293,7 +9660,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '40'</Caption>
-          <Id>24020d10-12d3-4ce5-99f1-284b2f33e6df</Id>
+          <Id>453bfc62-bfeb-4b51-8d9c-217acc677676</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9329,7 +9696,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F9 key and hold for 0.06 seconds and release</Caption>
-          <Id>ca24dd19-5e19-4b6a-b516-5ef823f4447f</Id>
+          <Id>efcf47ca-9da6-497b-8a4b-2688afed3cad</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9366,7 +9733,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals '50'</Caption>
-          <Id>4b1e3c6f-32f5-40b6-9ef2-b15eaca6bfc6</Id>
+          <Id>9e1f60e9-5312-4105-b986-43090d487105</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9402,7 +9769,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F10 key and hold for 0.06 seconds and release</Caption>
-          <Id>e5726163-1ea5-447e-8db2-a0c89e35581d</Id>
+          <Id>6cbc031f-8af0-4f06-a482-be791e4f55ea</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9439,7 +9806,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Contains 'equal'</Caption>
-          <Id>2e9ca21f-b25a-466d-a090-b19e86258ef7</Id>
+          <Id>d01b7824-10fa-42aa-8f7a-1bff4ae149d3</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9475,7 +9842,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>b36a3296-088b-41b4-a599-e7edc013f66a</Id>
+          <Id>f3aabd7b-f97a-4a51-9b83-6f2fb405e868</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9512,7 +9879,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>Else If Text Compare : [{CMDSEGMENT:3}] Equals 'same as me'</Caption>
-          <Id>3cc441af-5892-493c-af19-a062e8117d4b</Id>
+          <Id>ae0b6657-e404-40ef-8f21-1f0701dc8fba</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9548,7 +9915,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>    Press F1 key and hold for 0.06 seconds and release</Caption>
-          <Id>9b2cb068-2bba-4fb9-8761-5122a9f5e92a</Id>
+          <Id>46310342-d648-4576-9f6b-c21465e30bba</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9585,7 +9952,7 @@
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
           <Caption>End Condition</Caption>
-          <Id>0a39828b-a10d-4629-bfc8-8b194e807357</Id>
+          <Id>bde9c96b-1b24-446c-ab35-f84ffabe183e</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9610,7 +9977,7 @@
       </ActionSequence>
       <Async>false</Async>
       <Enabled>true</Enabled>
-      <Category>TRAINING</Category>
+      <Category>BanditOnDemand</Category>
       <UseShortcut>false</UseShortcut>
       <keyValue>0</keyValue>
       <keyShift>0</keyShift>
@@ -9651,7 +10018,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>9fb53574-bc33-4218-ac95-ebabe8f3ce3c</lastEditedAction>
+      <lastEditedAction>96fbdf0b-e2c8-43e4-9fe5-ea7c4d0bad9d</lastEditedAction>
       <UseProfileProcessOverride>false</UseProfileProcessOverride>
       <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
@@ -9698,7 +10065,7 @@
       <LongTapInvoked>false</LongTapInvoked>
       <ShortTapDelayedInvoked>false</ShortTapDelayedInvoked>
       <SleepFlag>0</SleepFlag>
-      <Id>26dd8ed5-4ff2-41f0-9b51-6f4b4210af37</Id>
+      <Id>18c7b317-3e50-4ba2-97a8-08ec72747d6d</Id>
       <CommandString>Comm Reset</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -9710,7 +10077,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>0b4b319a-a6d5-4f0b-8f2c-b3badcfef55f</Id>
+          <Id>ed75efc0-8518-4dd4-8821-a84eacbc8b00</Id>
           <ActionType>SoundFile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9748,7 +10115,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>2f2ea50b-96c1-47ee-a5bd-7a0b07799f1c</Id>
+          <Id>5814d3a3-fa63-4fa6-abc5-0e2358b8f271</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9783,7 +10150,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>3b1d1933-dfb1-43b1-b110-1428bd34757a</Id>
+          <Id>c34c736a-7259-411e-8a99-5552a6743d6a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9818,7 +10185,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>88f5df4f-809e-4509-b5ea-a17bcbe21532</Id>
+          <Id>889369ab-e80c-46dc-bf82-efe6876693ac</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9853,7 +10220,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>ae265c6f-8f72-4266-a912-a4f3a0365c9f</Id>
+          <Id>016d37b5-831d-4629-a90c-9c1a4446da3c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9888,7 +10255,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>e3945d6f-e7eb-46b0-b50d-cc5625a197fb</Id>
+          <Id>298dee99-50a4-4701-96cb-e7fefa350005</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9923,7 +10290,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>d23eccdc-3339-4355-a36b-f50d434c8c86</Id>
+          <Id>b00e5007-dc79-4710-8146-cf541370c001</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9958,7 +10325,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>ba07d224-fb03-4c2c-b324-d41e91886f3d</Id>
+          <Id>e2b6cb42-c1db-4e1c-a5e0-aaaf3fbca87e</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -9993,7 +10360,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>2a95d703-6b93-4d86-beed-9132a411da7f</Id>
+          <Id>b7b6d247-645e-4529-b1b2-213c541a4af4</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10027,7 +10394,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>e7cefc60-38a2-4624-bb3f-8a9d8f95e6bf</Id>
+          <Id>c24eed86-ceb6-42ef-be3e-ccafe0f81ed7</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -10063,7 +10430,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>57fb834b-9114-47ee-944f-896fc56f43f6</Id>
+          <Id>2ff97993-378a-4a77-8cda-a6c97ae3e1c6</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10097,7 +10464,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>fbccfad8-f320-4924-a486-526b6b50c728</Id>
+          <Id>c3f250aa-5d1b-41dd-a4e8-29584d09e5d5</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -10133,7 +10500,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>7622f1f7-f5ff-4ba5-8c57-7059fae27472</Id>
+          <Id>ea7041e3-90b1-4038-9071-8fbdfabeb8cd</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10167,7 +10534,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>a9455fc7-1122-4a70-bd1b-d92dfb6c4a86</Id>
+          <Id>360ecd92-1c04-455e-8eff-e4dd5fe64fb3</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.06</Duration>
           <Delay>0</Delay>
@@ -10202,7 +10569,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>6ae34b7c-a270-4e0a-864e-8dccb7724cc8</Id>
+          <Id>48143b01-ef07-42f3-aa8a-34f1cb6c0d36</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10341,7 +10708,7 @@
   <EnableProfileSwitch>false</EnableProfileSwitch>
   <CategoryGroups />
   <GroupCategory>false</GroupCategory>
-  <LastEditedCommand>0b3a4f1f-848b-43d9-9ab8-33aae2732dd8</LastEditedCommand>
+  <LastEditedCommand>b43ccd0b-a571-4c35-9fc3-2bf024cc8912</LastEditedCommand>
   <IS>0</IS>
   <IO>0</IO>
   <IP>0</IP>
