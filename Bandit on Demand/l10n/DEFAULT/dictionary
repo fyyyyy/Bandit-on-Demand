@@ -13,6 +13,7 @@ HOW TO USE\
     ["DictKey_descriptionText_1"] = "BFM (Basic Fighter Maneuvers) and BVR Trainer for F-5, F-14 A/B.  F-15, F-16, F-18, P51\
 \
 ",
+    ["DictKey_ActionText_114"] = "Auto-restart OFF",
     ["DictKey_descriptionBlueTask_3"] = "USAGE:\
 =======================\
 Please use VoiceAttack or F10 Menu:\
@@ -24,12 +25,11 @@ Please use VoiceAttack or F10 Menu:\
             Default SAM sites: OFF\
             Default Missiles: OFF\
 ",
-    ["DictKey_ActionText_114"] = "Auto-restart OFF",
     ["DictKey_ActionRadioText_7"] = "",
     ["DictKey_ActionText_113"] = "SAM sites OFF",
     ["DictKey_ActionText_60"] = "Loading Bandit On Demand BFM & BVR Training Program. Please wait...",
     ["DictKey_descriptionNeutralsTask_4"] = "",
-    ["DictKey_sortie_5"] = "",
+    ["DictKey_ActionText_115"] = "Auto-restart ON",
     ["DictKey_ActionText_110"] = "...reloading...",
     ["DictKey_ActionText_95"] = "This mission is designed to test your piloting skill in BVR and BFM.\
 \
@@ -37,6 +37,6 @@ You and your opponents will be armed with cannons or missiles. \
 \
 You will start at angels 20. Spawn bandits with VoiceAttack or F10 comms menu.",
     ["DictKey_ActionText_112"] = "SAM sites ON",
-    ["DictKey_ActionText_115"] = "Auto-restart ON",
+    ["DictKey_sortie_5"] = "",
     ["DictKey_descriptionRedTask_2"] = "",
 } -- end of dictionary
