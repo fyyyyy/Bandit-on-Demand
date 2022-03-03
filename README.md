@@ -4,7 +4,8 @@ Spawn bandits with your voice in DCS.
 Hello
 This is a universal BFM/BVR training mission/script which allows you to spawn bandits with your voice (VoiceAttack). If you don't have VoiceAttack, the F10 menu works as well but not as convenient.
 
-![bandit ib demand](https://user-images.githubusercontent.com/3744048/155346797-d5f901c1-5d33-43cf-8860-a7b776bb0203.jpg)
+
+![bandit on demand v2(2)(2)](https://user-images.githubusercontent.com/3744048/156612949-8a655584-b2ce-4ca7-9960-5a53ac15dfb6.png)
 
 ## COMBO voice commands:
 
@@ -21,6 +22,10 @@ This is a universal BFM/BVR training mission/script which allows you to spawn ba
 * "Set enemy type (F16 F18 F15 F14 SU27 SU30 MIG29 MIG31 MIG21 A10 Bf109 A4 F5 Fw190 I16 MiG15 MiG19 Mosquito P51D Spitfire)" - Sets enemy aircraft type for next spawn
 * "Set enemy distance (1-150) miles" - Sets enemy distance to 1,5,10.25,50,75,100,150 miles
 * "Set enemy distance on my six" - next wave will spawn 1 mile on your 6'o clock
+* "Set bandit angels (1,5,10,15,20,25,30,40,50)" - Next bandits will spawn at 1,000, 5,000, 10,000, 15,000, 20,000, 25,000, 30,000, 40,000 or 50,000 feet
+* "Set bandit angels same as me" - Next bandits will spawn at your altitude
+* "Set bandit altitude 30 thousand feet" - Next bandits will spawn at 30,000 feet
+* "Set bandit altitude equal - Next bandits will spawn at your altitude
 * "Spawn random group" - spawns 1-4 random bandits at previous distance
 * "Spawn enemy group" - spawns bandits with current/last used settings
 
