@@ -24,6 +24,7 @@ This is a universal BFM/BVR training mission/script which allows you to spawn ba
 * "Set bandit angels (1,5,10,15,20,25,30,40,50)" - Next bandits will spawn at 1,000, 5,000, 10,000, 15,000, 20,000, 25,000, 30,000, 40,000 or 50,000 feet
 * "Set bandit angels same as me" - Next bandits will spawn at your altitude
 * "Set bandit altitude 30 thousand feet" - Next bandits will spawn at 30,000 feet
+* "Set bandit altitude equal - Next bandits will spawn at your altitude
 * "Spawn random group" - spawns 1-4 random bandits at previous distance
 * "Spawn enemy group" - spawns bandits with current/last used settings
 
