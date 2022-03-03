@@ -57,7 +57,7 @@ EnemyTypes = {
     MiG31 = 9,
     MiG21 = 10,
     Bf109 = 11,
-    A4E = 12,
+    AJS37 = 12,
     F5E = 13,
     Fw190 = 14,
     I16 = 15,
@@ -143,9 +143,9 @@ EnemyGroups = {
         missiles_id = "Red-Bf-109",    
     },
     [EnemyKeys[12]] = {
-        description = "A-4's",
-        guns_id = "Red-A4E-C",
-        missiles_id = "Red-A4E-C-M",    
+        description = "AJS 37's",
+        guns_id = "Red-AJS37",
+        missiles_id = "Red-AJS37-M",    
     },
     [EnemyKeys[13]] = {
         description = "F-5's",
@@ -493,7 +493,7 @@ function ctl.initializeF10Menu()
 
     local historicMenu = missionCommands.addSubMenu("Historic", enemiesMenu)
     local Bf109Cmd = missionCommands.addCommand("BF-109", historicMenu, ctl.setEnemyType, "Bf109")
-    local A4ECmd = missionCommands.addCommand("A4E-C Skyhawk", historicMenu, ctl.setEnemyType, "A4E")
+    local A4ECmd = missionCommands.addCommand("AJS 37 Viggen", historicMenu, ctl.setEnemyType, "AJS37")
     local F5ECmd = missionCommands.addCommand("F-5E Tiger", historicMenu, ctl.setEnemyType, "F5E")
     local Fw190Cmd = missionCommands.addCommand("Fw-190", historicMenu, ctl.setEnemyType, "Fw190")
     local I16Cmd = missionCommands.addCommand("I-16 Ishak", historicMenu, ctl.setEnemyType, "I16")
