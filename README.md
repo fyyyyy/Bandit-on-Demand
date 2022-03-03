@@ -4,7 +4,8 @@ Spawn bandits with your voice in DCS.
 Hello
 This is a universal BFM/BVR training mission/script which allows you to spawn bandits with your voice (VoiceAttack). If you don't have VoiceAttack, the F10 menu works as well but not as convenient.
 
-![bandit ib demand](https://user-images.githubusercontent.com/3744048/155346797-d5f901c1-5d33-43cf-8860-a7b776bb0203.jpg)
+
+![bandit on demand v2(2)(2)](https://user-images.githubusercontent.com/3744048/156612949-8a655584-b2ce-4ca7-9960-5a53ac15dfb6.png)
 
 ## COMBO voice commands:
 
