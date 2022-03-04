@@ -21,8 +21,13 @@ _distance = 5
 _angels = -1
 
 
-function log_table(table)
-    mist.log:warn(mist.utils.oneLineSerialize(table))
+function log_table(table, name)
+    if name then
+        name = name .. ': '
+    else
+        name = ''
+    end
+    mist.log:warn(name .. mist.utils.oneLineSerialize(table))
 end
 
 
@@ -85,7 +90,8 @@ Menus = {
 }
 
 
--- If bandits dont have a missile configuration, just set the same group name for missiles_id and guns_id
+-- If bandits dont have a missile configuration, just set the 
+-- same group name for missiles_id and guns_id
 EnemyGroups = {
     [EnemyKeys[1]] = {
         description = "A-10C's",
@@ -203,6 +209,55 @@ end
 
 
 
+
+function ctl.getPlayerGroupData(unit)
+    local playerGroup = Unit.getGroup(unit)
+    -- log_table(playerGroup, "playerGroup")
+    playerGroupData = mist.DBs.groupsById[playerGroup.id_]
+    return playerGroupData
+end
+
+local MarkHandler = {}
+-- remember in case player dies but wants to respawn
+local player = coalition.getPlayers(coalition.side.BLUE)[1]
+local lastPlayerGroupName = ctl.getPlayerGroupData(player).groupName
+
+function MarkHandler:onEvent(event)
+    if event.id == 25 then --marker added
+        local playerGroupData = nil
+
+        --if player dead, no initiator
+        if event.initiator then
+            playerGroupData = ctl.getPlayerGroupData(event.initiator)
+        end
+
+        if not playerGroupData then
+            if lastPlayerGroupName then
+                playerGroupData = mist.getGroupData(lastPlayerGroupName)
+            else
+                ctl.send_message("playerGroupData not found!")
+                return
+            end
+        end
+
+        -- prevent CTD when skill is "Client"
+        playerGroupData.units[1].skill = "Player"
+
+        lastPlayerGroupName = playerGroupData.groupName
+        
+        local pos = mist.utils.deepCopy(event.pos)
+        local alt = playerGroupData.units[1].alt
+        if pos.y < alt then pos.y = alt else pos.y = pos.y + 300 end
+
+        ctl.teleport(playerGroupData, lastPlayerGroupName, pos)
+        log_table('Respawned ' .. playerGroupData.groupName)
+        ctl.send_message('Respawned ' .. playerGroupData.groupName)
+    end       
+end
+world.addEventHandler(MarkHandler)
+
+
+
 function ctl.setDistance(distance, silent)
     _distance = distance
     if (not silent) then ctl.updatedSettings() end
@@ -305,7 +360,7 @@ function ctl.spawnGroup(rnd)
 
     local numberOfEnemies = ctl.getNumberOfEnemies()
 
-    local grp = ctl.getGroupName()
+    local grp = ctl.getBanditGroupName()
     if (not grp) then return end
 
     local player = coalition.getPlayers(coalition.side.BLUE)[1]
@@ -398,7 +453,7 @@ function ctl.teleport( group, groupName , spawnPoint)
         action = 'respawn',
     }
     g = mist.teleportToPoint(vars)
-    log_table(g)
+    -- log_table(g)
 end
 
 function ctl.spawnRandomGroup()
@@ -439,7 +494,7 @@ function ctl.toggleMissiles(bool)
     ctl.updateCommandMenu()
 end
 
-function ctl.getGroupName()
+function ctl.getBanditGroupName()
     local missiles = trigger.misc.getUserFlag(StateFlags.missiles)
     local enemyType = ctl.getEnemyType()
     local enemyGroup = EnemyGroups[enemyType]
@@ -541,6 +596,7 @@ function ctl.initializeF10Menu()
     ctl.updateCommandMenu()
     
     ctl.send_message(
+        "Teleport: Open F10 map. Add a marker to respawn / teleport to this location instantly.\n\n" ..
         "Use F10 Menu or VoiceAttack\n" ..
         "=======================\n" ..
         "1. Select number of bandits\n" ..

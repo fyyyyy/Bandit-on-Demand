@@ -17,9 +17,10 @@ Hostile Stingers at BV75 - turn on with F10 SAM menu\
 Hostile SA-2 at Minakh - turn on with F10 SAM menu\
 Hostile S-300 at Cyprus and Tabqa - turn on with F10 SAM menu\
 ",
-    ["DictKey_ActionText_114"] = "Auto-restart OFF",
     ["DictKey_descriptionBlueTask_3"] = "USAGE:\
 =======================\
+Teleport: Open F10 map. Add a marker to respawn / teleport to this location instantly.\
+\
 Please use VoiceAttack or F10 Menu:\
         1. Select number of bandits\
         2. Select bandit aircraft type\
@@ -27,13 +28,13 @@ Please use VoiceAttack or F10 Menu:\
         4. Use Command menu to 'Spawn Group'\
             Default Bandits: 2× MiG 21\
             Default SAM sites: OFF\
-            Default Missiles: OFF\
-",
+            Default Missiles: OFF",
+    ["DictKey_ActionText_114"] = "Auto-restart OFF",
     ["DictKey_ActionRadioText_7"] = "",
     ["DictKey_ActionText_113"] = "SAM sites OFF",
     ["DictKey_ActionText_60"] = "Loading Bandit On Demand BFM & BVR Training Program. Please wait...",
     ["DictKey_descriptionNeutralsTask_4"] = "",
-    ["DictKey_ActionText_115"] = "Auto-restart ON",
+    ["DictKey_sortie_5"] = "",
     ["DictKey_ActionText_110"] = "...reloading...",
     ["DictKey_ActionText_95"] = "This mission is designed to test your piloting skill in BVR and BFM.\
 \
@@ -41,6 +42,6 @@ You and your opponents will be armed with cannons or missiles. \
 \
 You will start at angels 20. Spawn bandits with VoiceAttack or F10 comms menu.",
     ["DictKey_ActionText_112"] = "SAM sites ON",
-    ["DictKey_sortie_5"] = "",
+    ["DictKey_ActionText_115"] = "Auto-restart ON",
     ["DictKey_descriptionRedTask_2"] = "",
 } -- end of dictionary
